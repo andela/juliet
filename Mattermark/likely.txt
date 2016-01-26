@@ -1,0 +1,662 @@
+American Express
+Company: American Express | MatterMarkID: 8374 | URL: americanexpress.com | AlexaRank: 214 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: American Express
+
+Apple
+Company: Apple | MatterMarkID: 547 | URL: apple.com | AlexaRank: 41 | MozRank: 0 | MatterMarkScore: 297| Appeared In Search For: Apple
+
+HotelQuickly
+Company: HotelQuickly | MatterMarkID: 143641 | URL: hotelquickly.com | AlexaRank: 97901 | MozRank: 0 | MatterMarkScore: 575| Appeared In Search For: HotelQuickly
+
+Ripple
+Company: Ripple | MatterMarkID: 274266 | URL: ripple.com | AlexaRank: 78302 | MozRank: 0 | MatterMarkScore: 268| Appeared In Search For: Ripple
+
+451 Research
+Company: 451 Research | MatterMarkID: 189406 | URL: 451research.com | AlexaRank: 183371 | MozRank: 0 | MatterMarkScore: 97| Appeared In Search For: 451 Research
+
+Billtrust
+Company: Billtrust | MatterMarkID: 35709 | URL: billtrust.com | AlexaRank: 49809 | MozRank: 0 | MatterMarkScore: 135| Appeared In Search For: Billtrust
+
+Blockchain
+Company: Blockchain | MatterMarkID: 132318 | URL: blockchain.info | AlexaRank: 3145 | MozRank: 0 | MatterMarkScore: 511| Appeared In Search For: Blockchain
+
+Curalate
+Company: Curalate | MatterMarkID: 88204 | URL: curalate.com | AlexaRank: 56204 | MozRank: 0 | MatterMarkScore: 256| Appeared In Search For: Curalate
+
+DeviceFidelity
+Company: DeviceFidelity | MatterMarkID: 81366 | URL: devicefidelity.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -8| Appeared In Search For: DeviceFidelity
+
+EyeVerify
+Company: EyeVerify | MatterMarkID: 88946 | URL: eyeverify.com | AlexaRank: 1415296 | MozRank: 0 | MatterMarkScore: 61| Appeared In Search For: EyeVerify
+
+FieldLens
+Company: FieldLens | MatterMarkID: 98556 | URL: fieldlens.com | AlexaRank: 593227 | MozRank: 0 | MatterMarkScore: 294| Appeared In Search For: FieldLens
+
+Flip.to
+Company: Flip.to | MatterMarkID: 10585162 | URL: flip.to | AlexaRank: 528919 | MozRank: 0 | MatterMarkScore: 4| Appeared In Search For: Flip.to
+
+FreshOffice
+Company: FreshOffice | MatterMarkID: 11049278 | URL: freshoffice.sg | AlexaRank: 7914367 | MozRank: 0 | MatterMarkScore: -152| Appeared In Search For: FreshOffice
+
+Kopo Kopo
+Company: Kopo Kopo | MatterMarkID: 118558 | URL: kopokopo.com | AlexaRank: 590511 | MozRank: 0 | MatterMarkScore: -7| Appeared In Search For: Kopo Kopo
+
+oneID
+Company: OneID | MatterMarkID: 83354 | URL: oneid.com | AlexaRank: 580846 | MozRank: 0 | MatterMarkScore: 45| Appeared In Search For: oneID
+
+Shopline
+Company: Shopline | MatterMarkID: 264083 | URL: shoplineapp.com | AlexaRank: 26582 | MozRank: 0 | MatterMarkScore: 634| Appeared In Search For: Shopline
+
+Asset Control
+Company: Asset Control | MatterMarkID: 153968 | URL: asset-control.com | AlexaRank: 4534763 | MozRank: 0 | MatterMarkScore: 50| Appeared In Search For: Asset Control
+
+Nest
+Company: Nest Labs | MatterMarkID: 51236 | URL: nest.com | AlexaRank: 5008 | MozRank: 0 | MatterMarkScore: 856| Appeared In Search For: Nest
+Company: NestAway | MatterMarkID: 10927532 | URL: nestaway.com | AlexaRank: 19253 | MozRank: 0 | MatterMarkScore: 1308| Appeared In Search For: Nest
+Company: Nestpick | MatterMarkID: 284642 | URL: nestpick.com | AlexaRank: 88239 | MozRank: 0 | MatterMarkScore: 659| Appeared In Search For: Nest
+Company: The Echo Nest | MatterMarkID: 1987 | URL: the.echonest.com | AlexaRank: 115721 | MozRank: 0 | MatterMarkScore: 234| Appeared In Search For: Nest
+Company: Nestify | MatterMarkID: 246790 | URL: nestify.io | AlexaRank: 188552 | MozRank: 0 | MatterMarkScore: 182| Appeared In Search For: Nest
+Company: NEST Fragrances | MatterMarkID: 99064 | URL: nestfragrances.com | AlexaRank: 513758 | MozRank: 0 | MatterMarkScore: 130| Appeared In Search For: Nest
+Company: NEST HK | MatterMarkID: 27653 | URL: nest.vc | AlexaRank: 541786 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Nest
+Company: NEST Investments | MatterMarkID: 276281 | URL: nest.vc | AlexaRank: 541786 | MozRank: 0 | MatterMarkScore: 169| Appeared In Search For: Nest
+Company: Nestio | MatterMarkID: 60848 | URL: nestio.com | AlexaRank: 717001 | MozRank: 0 | MatterMarkScore: -63| Appeared In Search For: Nest
+Company: Innovation Nest | MatterMarkID: 11686 | URL: innovationnest.co | AlexaRank: 785581 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Nest
+Company: nestholma.com | MatterMarkID: 10029721 | URL: nestholma.com | AlexaRank: 1041892 | MozRank: 0 | MatterMarkScore: 101| Appeared In Search For: Nest
+Company: Nestigator | MatterMarkID: 10968256 | URL: nestigator.com | AlexaRank: 1234664 | MozRank: 0 | MatterMarkScore: 211| Appeared In Search For: Nest
+Company: Nest DC | MatterMarkID: 10096448 | URL: nest-dc.com | AlexaRank: 1267942 | MozRank: 0 | MatterMarkScore: -21| Appeared In Search For: Nest
+Company: Nestle Health Science | MatterMarkID: 25284 | URL: nestlehealthscience.com | AlexaRank: 1564056 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Nest
+Company: Nest Wealth | MatterMarkID: 10936776 | URL: nestwealth.com | AlexaRank: 1797896 | MozRank: 0 | MatterMarkScore: 165| Appeared In Search For: Nest
+Company: My Nest Home | MatterMarkID: 205760 | URL: mynesthome.com | AlexaRank: 1964348 | MozRank: 0 | MatterMarkScore: -114| Appeared In Search For: Nest
+Company: White Nest LLC | MatterMarkID: 10186062 | URL: whitenestshop.com | AlexaRank: 2041577 | MozRank: 0 | MatterMarkScore: 48| Appeared In Search For: Nest
+Company: Falcons Nest | MatterMarkID: 263480 | URL: falconsnest.in | AlexaRank: 2581687 | MozRank: 0 | MatterMarkScore: -5| Appeared In Search For: Nest
+Company: Nest Investments | MatterMarkID: 26203 | URL: nestco.org | AlexaRank: 2724882 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Nest
+Company: Safe Nest TADC | MatterMarkID: 10126745 | URL: safenest.org | AlexaRank: 2763129 | MozRank: 0 | MatterMarkScore: 24| Appeared In Search For: Nest
+Company: NeST Group | MatterMarkID: 35949 | URL: nestgroup.net | AlexaRank: 3922646 | MozRank: 0 | MatterMarkScore: 9| Appeared In Search For: Nest
+Company: Nestdrop | MatterMarkID: 285501 | URL: nestdrop.com | AlexaRank: 5068697 | MozRank: 0 | MatterMarkScore: 49| Appeared In Search For: Nest
+Company: nest4less | MatterMarkID: 252898 | URL: nest4less.com | AlexaRank: 5380328 | MozRank: 0 | MatterMarkScore: 53| Appeared In Search For: Nest
+Company: Nesta Investment Management | MatterMarkID: 27687 | URL: nestainvestments.org.uk | AlexaRank: 5482151 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Nest
+Company: nestGSV | MatterMarkID: 96350 | URL: nestgsv.com | AlexaRank: 7849209 | MozRank: 0 | MatterMarkScore: 12| Appeared In Search For: Nest
+Company: The Green Nest | MatterMarkID: 206454 | URL: thegreennest.in | AlexaRank: 8211852 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Nest
+Company: Robins' Nest Inc. | MatterMarkID: 10160660 | URL: robinsnestinc.org | AlexaRank: 9064985 | MozRank: 0 | MatterMarkScore: 4| Appeared In Search For: Nest
+Company: NATIONAL ENGINEERING SERVICES &TRADING CO | MatterMarkID: 10170621 | URL: nest.ae | AlexaRank: 10479900 | MozRank: 0 | MatterMarkScore: -2| Appeared In Search For: Nest
+Company: Vitaflo International Ltd Part of the Nestle Group | MatterMarkID: 10193366 | URL: vitaflo.co.uk | AlexaRank: 10764662 | MozRank: 0 | MatterMarkScore: -59| Appeared In Search For: Nest
+Company: Nest New York | MatterMarkID: 10017647 | URL: nestnewyork.com | AlexaRank: 17616552 | MozRank: 0 | MatterMarkScore: -10| Appeared In Search For: Nest
+Company: Nest Environments, Inc. | MatterMarkID: 10107497 | URL: nestenvironments.com | AlexaRank: 18979897 | MozRank: 0 | MatterMarkScore: -52| Appeared In Search For: Nest
+Company: NEST CGF | MatterMarkID: 10194236 | URL: nest.com.co | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Nest
+Company: SW Sports Nest | MatterMarkID: 10182932 | URL: swsportsnest.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -2| Appeared In Search For: Nest
+Company: Airplant Nest | MatterMarkID: 254965 | URL: opusgarten.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -18| Appeared In Search For: Nest
+Company: Nestible | MatterMarkID: 269488 | URL: nestible.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 9| Appeared In Search For: Nest
+Company: N.E.S.T. Solutions | MatterMarkID: 10204181 | URL: nest-solutions.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -11| Appeared In Search For: Nest
+Company: Nestus | MatterMarkID: 294094 | URL: nestus.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 37| Appeared In Search For: Nest
+Company: Cuckoo Nest Films LLC | MatterMarkID: 10193787 | URL: pondfilms.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Nest
+Company: NESTech | MatterMarkID: 10040150 | URL: nestech.co.il | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -11| Appeared In Search For: Nest
+Company: Nest Labs Ltd | MatterMarkID: 269377 | URL: thenest.io | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -9| Appeared In Search For: Nest
+Company: nesteggbio.com | MatterMarkID: 10149410 | URL: nesteggbio.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -8| Appeared In Search For: Nest
+Company: Marianne Nestor Consulting, Inc | MatterMarkID: 10064491 | URL: mariannenestorconsulting.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Nest
+Company: Nest Dynamiques SL | MatterMarkID: 10083641 | URL: nextdynamiques.net | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Nest
+Company: Nestadio Capital | MatterMarkID: 9162 | URL: nestadio-capital.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Nest
+Company: Nestful | MatterMarkID: 271217 | URL: nestful.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -7| Appeared In Search For: Nest
+Company: Nestwell Technologies | MatterMarkID: 10088020 | URL: nestwelltech.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Nest
+Company: IT Nestori | MatterMarkID: 10141923 | URL: nestori.fi | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Nest
+Company: Ballooning Nest Eggs | MatterMarkID: 82443 | URL: ballooningnesteggs.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 4| Appeared In Search For: Nest
+Company: NestingBits Technologies | MatterMarkID: 205790 | URL: nestingbits.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -1| Appeared In Search For: Nest
+Company: DLA Piper NEST | MatterMarkID: 269414 | URL: dlapipernest.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 2| Appeared In Search For: Nest
+
+Booker
+Company: Booker | MatterMarkID: 59652 | URL: booker.com | AlexaRank: 117182 | MozRank: 0 | MatterMarkScore: 245| Appeared In Search For: Booker
+
+Bombfell
+Company: Bombfell | MatterMarkID: 88487 | URL: bombfell.com | AlexaRank: 83563 | MozRank: 0 | MatterMarkScore: 457| Appeared In Search For: Bombfell
+
+Signpost
+Company: Signpost | MatterMarkID: 28806 | URL: signpost.com | AlexaRank: 139263 | MozRank: 0 | MatterMarkScore: 185| Appeared In Search For: Signpost
+
+Ziggeo
+Company: ziggeo.com | MatterMarkID: 10933656 | URL: ziggeo.com | AlexaRank: 703923 | MozRank: 0 | MatterMarkScore: 267| Appeared In Search For: Ziggeo
+
+OnDeck
+Company: OnDeck | MatterMarkID: 70232 | URL: ondeck.com | AlexaRank: 99959 | MozRank: 0 | MatterMarkScore: 469| Appeared In Search For: OnDeck
+
+Moat
+Company: Moat | MatterMarkID: 61444 | URL: moat.com | AlexaRank: 33987 | MozRank: 0 | MatterMarkScore: 245| Appeared In Search For: Moat
+
+Commonbond
+Company: CommonBond | MatterMarkID: 105010 | URL: commonbond.co | AlexaRank: 203252 | MozRank: 0 | MatterMarkScore: 218| Appeared In Search For: Commonbond
+
+Care.com
+Company: Care.com | MatterMarkID: 118314 | URL: care.com | AlexaRank: 4915 | MozRank: 0 | MatterMarkScore: 399| Appeared In Search For: Care.com
+
+Facebook
+Company: Facebook | MatterMarkID: 163595 | URL: facebook.com | AlexaRank: 2 | MozRank: 0 | MatterMarkScore: 1258| Appeared In Search For: Facebook
+
+MasterCard
+Company: Mastercard | MatterMarkID: 12676 | URL: mastercard.com | AlexaRank: 10105 | MozRank: 0 | MatterMarkScore: 367| Appeared In Search For: MasterCard
+
+Fit Pay
+Company: Anytime Fitness Toa Payoh | MatterMarkID: 11043569 | URL: anytimefitness.sg | AlexaRank: 830089 | MozRank: 0 | MatterMarkScore: 148| Appeared In Search For: Fit Pay
+Company: fit-pay.com | MatterMarkID: 10648596 | URL: fit-pay.com | AlexaRank: 2773922 | MozRank: 0 | MatterMarkScore: 93| Appeared In Search For: Fit Pay
+
+GoodLabs
+Company: GoodLabs | MatterMarkID: 178416 | URL: goodlabs.io | AlexaRank: 4341075 | MozRank: 0 | MatterMarkScore: 21| Appeared In Search For: GoodLabs
+
+PayPal
+Company: PayPal | MatterMarkID: 124397 | URL: paypal.com | AlexaRank: 38 | MozRank: 0 | MatterMarkScore: 777| Appeared In Search For: PayPal
+
+METRO AG
+Company: Metropolitan Development and Housing Agency | MatterMarkID: 10571058 | URL: nashville-mdha.org | AlexaRank: 2733699 | MozRank: 0 | MatterMarkScore: 27| Appeared In Search For: METRO AG
+Company: Metro Title Agency of Arizona | MatterMarkID: 10151620 | URL: metrotitleaz.com | AlexaRank: 10589077 | MozRank: 0 | MatterMarkScore: 7| Appeared In Search For: METRO AG
+Company: Metro Group (AG) | MatterMarkID: 10554754 | URL: metro-mga.de | AlexaRank: 14798283 | MozRank: 0 | MatterMarkScore: -1| Appeared In Search For: METRO AG
+Company: Metro Interactive Agency | MatterMarkID: 10490812 | URL: metrointeractiveagency.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -15| Appeared In Search For: METRO AG
+Company: Metropolitan -Creative Agency- | MatterMarkID: 10758706 | URL: metropolitan-agency.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: METRO AG
+Company: Metronome Agency | MatterMarkID: 10213947 | URL: gandc.com.au | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: METRO AG
+Company: Metropolitan Protective Agency, LLC | MatterMarkID: 10487196 | URL: metropatrol911.org | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: METRO AG
+Company: AGP Metro Polska | MatterMarkID: 10236443 | URL: agpmetro.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: METRO AG
+Company: Empresa Pública Metropolitana de Agua Potable y Saneamiento de Quito | MatterMarkID: 10119599 | URL: emaapq.gov.ec | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: METRO AG
+Company: Metro - Montagens Industriais e Agrícolas | MatterMarkID: 10819954 | URL: metroedra.com.br | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: METRO AG
+Company: Metro Allied Insurance Agency Texas, LLC | MatterMarkID: 11064058 | URL: metroallied.net | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: METRO AG
+
+Time Inc.
+Company: Time Inc. | MatterMarkID: 234115 | URL: time.com | AlexaRank: 477 | MozRank: 0 | MatterMarkScore: 512| Appeared In Search For: Time Inc.
+
+Insight Venture Partners
+Company: Insight Venture Partners | MatterMarkID: 57 | URL: insightpartners.com | AlexaRank: 167503 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Insight Venture Partners
+
+Advance Vixeid Partners
+Company: Advance Vixeid Partners (AVP) | MatterMarkID: 27899 | URL: avpgrowth.com | AlexaRank: 10049214 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Advance Vixeid Partners
+
+Wellsbi
+Company: Wellsbi | MatterMarkID: 11076003 | URL: wellsbi.com | AlexaRank: 22152595 | MozRank: 0 | MatterMarkScore: 7| Appeared In Search For: Wellsbi
+
+Stripe
+Company: Stripe | MatterMarkID: 59884 | URL: stripe.com | AlexaRank: 3970 | MozRank: 0 | MatterMarkScore: 819| Appeared In Search For: Stripe
+
+NYTM
+Company: nytm.org | MatterMarkID: 244112 | URL: nytm.org | AlexaRank: 141657 | MozRank: 0 | MatterMarkScore: -43| Appeared In Search For: NYTM
+Company: nytm.com | MatterMarkID: 10880768 | URL: nytm.com | AlexaRank: 18189290 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: NYTM
+Company: NY Travel & Marketing Consultancy | MatterMarkID: 10211076 | URL: nytmco.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 4| Appeared In Search For: NYTM
+
+SmartSign
+Company: SmartSign | MatterMarkID: 82738 | URL: smartsign.com | AlexaRank: 406323 | MozRank: 0 | MatterMarkScore: 65| Appeared In Search For: SmartSign
+
+Shapeways
+Company: Shapeways | MatterMarkID: 5669 | URL: shapeways.com | AlexaRank: 12647 | MozRank: 0 | MatterMarkScore: 575| Appeared In Search For: Shapeways
+
+Samsung Electronics
+Company: Samsung Electronics Austria | MatterMarkID: 11041842 | URL: samsung.at | AlexaRank: 651706 | MozRank: 0 | MatterMarkScore: -125| Appeared In Search For: Samsung Electronics
+Company: Samsung Electronics America | MatterMarkID: 10523810 | URL: samsungamerica.com | AlexaRank: 3703521 | MozRank: 0 | MatterMarkScore: -39| Appeared In Search For: Samsung Electronics
+
+Pond5
+Company: Pond5 | MatterMarkID: 6612 | URL: pond5.com | AlexaRank: 10538 | MozRank: 0 | MatterMarkScore: 298| Appeared In Search For: Pond5
+
+General Assembly
+Company: General Assembly | MatterMarkID: 61738 | URL: generalassemb.ly | AlexaRank: 13281 | MozRank: 0 | MatterMarkScore: 563| Appeared In Search For: General Assembly
+
+ADP
+Company: ADP | MatterMarkID: 5382 | URL: adp.com | AlexaRank: 795 | MozRank: 0 | MatterMarkScore: 512| Appeared In Search For: ADP
+
+Explore Schools
+Company: Explore Schools Inc. | MatterMarkID: 10903401 | URL: explorenetwork.org | AlexaRank: 3149958 | MozRank: 0 | MatterMarkScore: 52| Appeared In Search For: Explore Schools
+
+Bloomberg
+Company: Bloomberg | MatterMarkID: 5260 | URL: bloomberg.com | AlexaRank: 317 | MozRank: 0 | MatterMarkScore: 591| Appeared In Search For: Bloomberg
+
+UnitedHealth Group
+Company: UnitedHealth Group | MatterMarkID: 221240 | URL: unitedhealthgroup.com | AlexaRank: 27169 | MozRank: 0 | MatterMarkScore: -4| Appeared In Search For: UnitedHealth Group
+
+Cross Commerce Media
+Company: Cross Commerce Media | MatterMarkID: 54911 | URL: collectivei.com | AlexaRank: 1925644 | MozRank: 0 | MatterMarkScore: 22| Appeared In Search For: Cross Commerce Media
+
+Faire Collection
+Company: Faire Collection | MatterMarkID: 10658018 | URL: theandeancollection.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Faire Collection
+
+Nielsen
+Company: Nielsen | MatterMarkID: 15085 | URL: nngroup.com | AlexaRank: 18002 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Nielsen
+
+ClassPass
+Company: ClassPass | MatterMarkID: 253037 | URL: classpass.com | AlexaRank: 20549 | MozRank: 0 | MatterMarkScore: 1273| Appeared In Search For: ClassPass
+
+BJC Branding
+Company: BJC Branding | MatterMarkID: 10796389 | URL: bjcbranding.com | AlexaRank: 5572028 | MozRank: 0 | MatterMarkScore: -27| Appeared In Search For: BJC Branding
+
+Hack Pack
+Company: Hack Pack | MatterMarkID: 10994335 | URL: hackpack.press | AlexaRank: 1907409 | MozRank: 0 | MatterMarkScore: 88| Appeared In Search For: Hack Pack
+
+stensul
+Company: stensul | MatterMarkID: 11149870 | URL: stensul.com | AlexaRank: 4335688 | MozRank: 0 | MatterMarkScore: 79| Appeared In Search For: stensul
+
+Eaton
+Company: switchon.eaton.com | MatterMarkID: 282656 | URL: switchon.eaton.com | AlexaRank: 34911 | MozRank: 0 | MatterMarkScore: 92| Appeared In Search For: Eaton
+Company: Eaton Corporation | MatterMarkID: 49007 | URL: eaton.com | AlexaRank: 34911 | MozRank: 0 | MatterMarkScore: 97| Appeared In Search For: Eaton
+Company: eaton.k12.co.us | MatterMarkID: 11122402 | URL: eaton.k12.co.us | AlexaRank: 36765 | MozRank: 0 | MatterMarkScore: -65| Appeared In Search For: Eaton
+Company: EatOnGo.in | MatterMarkID: 10898365 | URL: eatongo.in | AlexaRank: 246804 | MozRank: 0 | MatterMarkScore: 212| Appeared In Search For: Eaton
+Company: eatonhand.com | MatterMarkID: 11182320 | URL: eatonhand.com | AlexaRank: 341267 | MozRank: 0 | MatterMarkScore: 6| Appeared In Search For: Eaton
+Company: Eatonomist | MatterMarkID: 11150962 | URL: eatonomist.com | AlexaRank: 450938 | MozRank: 0 | MatterMarkScore: -240| Appeared In Search For: Eaton
+Company: corporate.eatonvance.com | MatterMarkID: 312412 | URL: corporate.eatonvance.com | AlexaRank: 510195 | MozRank: 0 | MatterMarkScore: 580| Appeared In Search For: Eaton
+Company: Eaton Vance Corp. | MatterMarkID: 10249292 | URL: eatonvance.com | AlexaRank: 510195 | MozRank: 0 | MatterMarkScore: -69| Appeared In Search For: Eaton
+Company: eatoncompressor.com | MatterMarkID: 10931779 | URL: eatoncompressor.com | AlexaRank: 902921 | MozRank: 0 | MatterMarkScore: -109| Appeared In Search For: Eaton
+Company: Van Eaton & Romero Realtors | MatterMarkID: 10147816 | URL: vaneatonromero.com | AlexaRank: 1300443 | MozRank: 0 | MatterMarkScore: 74| Appeared In Search For: Eaton
+Company: eatonassoc.com | MatterMarkID: 11107883 | URL: eatonassoc.com | AlexaRank: 1790557 | MozRank: 0 | MatterMarkScore: -168| Appeared In Search For: Eaton
+Company: Eaton Towers | MatterMarkID: 10338268 | URL: eatontowers.com | AlexaRank: 2037593 | MozRank: 0 | MatterMarkScore: -81| Appeared In Search For: Eaton
+Company: Eaton Partners | MatterMarkID: 10866507 | URL: eatonpartnersllc.com | AlexaRank: 2338536 | MozRank: 0 | MatterMarkScore: 18| Appeared In Search For: Eaton
+Company: Community Mental Health Authority of Clinton, Eaton and Ingham Counties | MatterMarkID: 10322408 | URL: ceicmh.org | AlexaRank: 2623541 | MozRank: 0 | MatterMarkScore: -54| Appeared In Search For: Eaton
+Company: Eaton Steel Bar Company | MatterMarkID: 10316338 | URL: eatonsteel.com | AlexaRank: 2688200 | MozRank: 0 | MatterMarkScore: 45| Appeared In Search For: Eaton
+Company: Dix & Eaton | MatterMarkID: 11087178 | URL: dix-eaton.com | AlexaRank: 3570461 | MozRank: 0 | MatterMarkScore: 75| Appeared In Search For: Eaton
+Company: Pine Belt Chevrolet of Eatontown | MatterMarkID: 10110598 | URL: pinebeltauto.com | AlexaRank: 7361497 | MozRank: 0 | MatterMarkScore: 4| Appeared In Search For: Eaton
+Company: Yates, Matthews & Eaton, P.C. | MatterMarkID: 10860084 | URL: yatesmatthews.com | AlexaRank: 8153741 | MozRank: 0 | MatterMarkScore: 17| Appeared In Search For: Eaton
+Company: Eaton Green Estate Agents | MatterMarkID: 10308661 | URL: eatongreen.com | AlexaRank: 8226937 | MozRank: 0 | MatterMarkScore: -13| Appeared In Search For: Eaton
+Company: Eaton Medical | MatterMarkID: 10616508 | URL: easyeyes.com | AlexaRank: 9067848 | MozRank: 0 | MatterMarkScore: 17| Appeared In Search For: Eaton
+Company: Eaton Metal Products Company | MatterMarkID: 10086540 | URL: eatonmetal.com | AlexaRank: 14882244 | MozRank: 0 | MatterMarkScore: 6| Appeared In Search For: Eaton
+Company: Eaton Insurance Services | MatterMarkID: 10535395 | URL: eatoninsuranceservices.com | AlexaRank: 16030955 | MozRank: 0 | MatterMarkScore: 2| Appeared In Search For: Eaton
+Company: Ashanti Eaton | MatterMarkID: 10522803 | URL: ashantieaton.com | AlexaRank: 16519836 | MozRank: 0 | MatterMarkScore: -8| Appeared In Search For: Eaton
+Company: Eaton Escrow | MatterMarkID: 10809258 | URL: eatonescrow.com | AlexaRank: 17695837 | MozRank: 0 | MatterMarkScore: -15| Appeared In Search For: Eaton
+Company: Eaton Sales LLC | MatterMarkID: 10860305 | URL: eatonsales.com | AlexaRank: 18849849 | MozRank: 0 | MatterMarkScore: -50| Appeared In Search For: Eaton
+Company: eatontario | MatterMarkID: 10244640 | URL: eatontario.ca | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Eaton
+Company: Roy & Eaton, P.A. | MatterMarkID: 10672192 | URL: royandeaton.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Eaton
+Company: Eaton Financial Services | MatterMarkID: 10550742 | URL: eatonfs.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Eaton
+Company: Eaton Insurance Agency | MatterMarkID: 10319485 | URL: eatoninsurance.net | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 5| Appeared In Search For: Eaton
+Company: The Law Office of Jacqueline M. Eaton | MatterMarkID: 10518629 | URL: jmeatonlaw.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Eaton
+Company: Eaton Art Gallery | MatterMarkID: 10298830 | URL: eatonartgallery.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Eaton
+Company: Eaton National Bank & Trust Co | MatterMarkID: 211061 | URL: enbbank.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -3| Appeared In Search For: Eaton
+Company: Eaton Rapids Castings LLC | MatterMarkID: 10348042 | URL: ercastings.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Eaton
+Company: Lucy Eaton Corder Consulting | MatterMarkID: 10526588 | URL: lucyeatoncorder.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Eaton
+Company: Eaton-Cambridge, Inc. | MatterMarkID: 10637622 | URL: cambridgewm.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Eaton
+Company: John Eaton Designs | MatterMarkID: 10607305 | URL: johneatondesigns.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Eaton
+Company: Eaton Pharmaceutical Resources | MatterMarkID: 10585587 | URL: eatonpharmaresources.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Eaton
+Company: Eaton Gorge Theatre Company | MatterMarkID: 10610335 | URL: egtc.com.au | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Eaton
+Company: Eaton Financial & Tax PLLC | MatterMarkID: 10445558 | URL: eatontax.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Eaton
+Company: Eaton Rapids Medical Center | MatterMarkID: 10436399 | URL: ermchealth.org | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 8| Appeared In Search For: Eaton
+Company: Eaton House Investments | MatterMarkID: 10801021 | URL: eaton-house.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Eaton
+Company: CHURCH EATON INSURANCE | MatterMarkID: 10821805 | URL: churcheaton.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Eaton
+Company: Eatoni Ergonomics | MatterMarkID: 38433 | URL: eatoni.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -5| Appeared In Search For: Eaton
+Company: EATON Building Services | MatterMarkID: 10080922 | URL: eatonbuildingservices.net | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Eaton
+Company: Eatonline | MatterMarkID: 93187 | URL: eatonline.eu | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -18| Appeared In Search For: Eaton
+Company: eatonomy | MatterMarkID: 128261 | URL: eatonomy.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -3| Appeared In Search For: Eaton
+Company: East of Eaton | MatterMarkID: 10191730 | URL: eastofeaton.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Eaton
+Company: eatonisd.org | MatterMarkID: 11122403 | URL: eatonisd.org | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Eaton
+Company: Rick Eaton | MatterMarkID: 5447 | URL:  | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Eaton
+Company: Eaton Arrowsmith School Victoria | MatterMarkID: 10678032 | URL: eatonarrowsmithschool.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -6| Appeared In Search For: Eaton
+
+MBI Inc.
+Company: MBI Inc. | MatterMarkID: 10187882 | URL: osherl.com | AlexaRank: 22077598 | MozRank: 0 | MatterMarkScore: -19| Appeared In Search For: MBI Inc.
+
+salesforce.com
+Company: Salesforce | MatterMarkID: 24774 | URL: salesforce.com | AlexaRank: 188 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: salesforce.com
+Company: Salesforce Ventures | MatterMarkID: 23525 | URL: salesforce.com | AlexaRank: 188 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: salesforce.com
+Company: salesforceiq.com | MatterMarkID: 11149414 | URL: salesforceiq.com | AlexaRank: 23366 | MozRank: 0 | MatterMarkScore: 1315| Appeared In Search For: salesforce.com
+Company: salesforcemarketingcloud.com | MatterMarkID: 11201817 | URL: salesforcemarketingcloud.com | AlexaRank: 281109 | MozRank: 0 | MatterMarkScore: 613| Appeared In Search For: salesforce.com
+Company: Sales Force Europe | MatterMarkID: 81423 | URL: salesforceeurope.com | AlexaRank: 2781410 | MozRank: 0 | MatterMarkScore: 47| Appeared In Search For: salesforce.com
+Company: Sales Force Recruitment | MatterMarkID: 10335181 | URL: salesforcejobs.com.au | AlexaRank: 6399939 | MozRank: 0 | MatterMarkScore: 39| Appeared In Search For: salesforce.com
+Company: SaaS Solutions - salesforce.com Certified Partner | MatterMarkID: 10368989 | URL: mysalesforcecrm.com | AlexaRank: 7007484 | MozRank: 0 | MatterMarkScore: -1| Appeared In Search For: salesforce.com
+Company: Sales Force Dynamics | MatterMarkID: 10448144 | URL: salesforcedynamics.com | AlexaRank: 22013303 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: salesforce.com
+Company: Sales Force Latianamerica Ltda. | MatterMarkID: 10723349 | URL: salesforcela.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: salesforce.com
+Company: Salesforce Assessments | MatterMarkID: 60905 | URL: salesforceassessments.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -5| Appeared In Search For: salesforce.com
+Company: AppBuddy | MatterMarkID: 10537830 | URL: salesforceappbuddy.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 5| Appeared In Search For: salesforce.com
+Company: SalesforceCAD | MatterMarkID: 43239 | URL: salesforcecad.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: salesforce.com
+Company: SalesForceXP | MatterMarkID: 10808905 | URL: salesforcexp.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: salesforce.com
+Company: Salesforce Mentor | MatterMarkID: 10765491 | URL: salesforcementor.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: salesforce.com
+Company: The SalesForce Group | MatterMarkID: 10602398 | URL: thesalesforcegroup.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: salesforce.com
+Company: SalesForce Recruiters, Inc. | MatterMarkID: 10140170 | URL: salesforcerecruiters.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 20| Appeared In Search For: salesforce.com
+Company: Sales Force Safety Pty Ltd | MatterMarkID: 10449740 | URL: salesforcesafety.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -4| Appeared In Search For: salesforce.com
+
+MOVE Systems
+Company: MOVE Systems | MatterMarkID: 11073838 | URL: movesystems.com | AlexaRank: 7708179 | MozRank: 0 | MatterMarkScore: -67| Appeared In Search For: MOVE Systems
+
+AptAmigo
+Company: AptAmigo | MatterMarkID: 11236830 | URL: aptamigo.com | AlexaRank: 1899174 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: AptAmigo
+
+Agrilyst
+Company: Agrilyst | MatterMarkID: 11044008 | URL: agrilyst.com | AlexaRank: 498856 | MozRank: 0 | MatterMarkScore: 253| Appeared In Search For: Agrilyst
+
+MM.LaFleur
+Company: M.M. Lafleur | MatterMarkID: 252590 | URL: mmlafleur.com | AlexaRank: 153613 | MozRank: 0 | MatterMarkScore: 409| Appeared In Search For: MM.LaFleur
+
+Chromatik
+Company: Chromatik | MatterMarkID: 71677 | URL: chromatik.com | AlexaRank: 117987 | MozRank: 0 | MatterMarkScore: 137| Appeared In Search For: Chromatik
+
+Crowdstar
+Company: CrowdStar | MatterMarkID: 29693 | URL: crowdstar.com | AlexaRank: 732642 | MozRank: 0 | MatterMarkScore: -281| Appeared In Search For: Crowdstar
+
+Dotsub.com
+Company: Dotsub | MatterMarkID: 1713 | URL: dotsub.com | AlexaRank: 113853 | MozRank: 0 | MatterMarkScore: -18| Appeared In Search For: Dotsub.com
+
+Firecracker
+Company: Firecracker | MatterMarkID: 132009 | URL: firecracker.me | AlexaRank: 118970 | MozRank: 0 | MatterMarkScore: 168| Appeared In Search For: Firecracker
+
+Fluent City
+Company: Fluent City | MatterMarkID: 10919340 | URL: fluentcity.com | AlexaRank: 787226 | MozRank: 0 | MatterMarkScore: -49| Appeared In Search For: Fluent City
+
+Fueled
+Company: Fueled | MatterMarkID: 69592 | URL: fueled.com | AlexaRank: 101543 | MozRank: 0 | MatterMarkScore: 60| Appeared In Search For: Fueled
+
+Gameface Media
+Company: Gameface Media | MatterMarkID: 291487 | URL: gamefacemedia.com | AlexaRank: 203156 | MozRank: 0 | MatterMarkScore: 449| Appeared In Search For: Gameface Media
+
+GoEnnounce.com
+Company: Goennounce | MatterMarkID: 48973 | URL: goennounce.com | AlexaRank: 1016471 | MozRank: 0 | MatterMarkScore: 139| Appeared In Search For: GoEnnounce.com
+
+Intrans
+Company: Intrans | MatterMarkID: 274387 | URL: intrans.com | AlexaRank: 16195327 | MozRank: 0 | MatterMarkScore: -1| Appeared In Search For: Intrans
+
+Keaton Row
+Company: Keaton Row | MatterMarkID: 130472 | URL: keatonrow.com | AlexaRank: 528796 | MozRank: 0 | MatterMarkScore: 292| Appeared In Search For: Keaton Row
+
+KISSmetrics
+Company: KISSmetrics | MatterMarkID: 4993 | URL: kissmetrics.com | AlexaRank: 5835 | MozRank: 0 | MatterMarkScore: 321| Appeared In Search For: KISSmetrics
+
+LeagueApps
+Company: LeagueApps | MatterMarkID: 178032 | URL: leagueapps.com | AlexaRank: 70521 | MozRank: 0 | MatterMarkScore: 261| Appeared In Search For: LeagueApps
+
+Learnmetrics
+Company: Learnmetrics | MatterMarkID: 101806 | URL: learnmetrics.com | AlexaRank: 3835776 | MozRank: 0 | MatterMarkScore: 35| Appeared In Search For: Learnmetrics
+
+Minerva Project
+Company: The Minerva Project | MatterMarkID: 85024 | URL: minervaproject.com | AlexaRank: 1300383 | MozRank: 0 | MatterMarkScore: 144| Appeared In Search For: Minerva Project
+
+Panjo
+Company: Panjo | MatterMarkID: 109023 | URL: panjo.com | AlexaRank: 94995 | MozRank: 0 | MatterMarkScore: 249| Appeared In Search For: Panjo
+
+Red Rover
+Company: Red Rover | MatterMarkID: 61077 | URL: redroverhq.com | AlexaRank: 21453291 | MozRank: 0 | MatterMarkScore: -33| Appeared In Search For: Red Rover
+
+SeedInvest
+Company: SeedInvest | MatterMarkID: 89809 | URL: seedinvest.com | AlexaRank: 196205 | MozRank: 0 | MatterMarkScore: 323| Appeared In Search For: SeedInvest
+
+Simple Energy
+Company: Simple Energy | MatterMarkID: 53713 | URL: simpleenergy.com | AlexaRank: 2149939 | MozRank: 0 | MatterMarkScore: 101| Appeared In Search For: Simple Energy
+
+SmartAsset.com
+Company: SmartAsset | MatterMarkID: 93857 | URL: smartasset.com | AlexaRank: 34703 | MozRank: 0 | MatterMarkScore: 474| Appeared In Search For: SmartAsset.com
+
+Startup Institute
+Company: Business Startup Institute | MatterMarkID: 10512575 | URL: businesses2learn.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Startup Institute
+
+StellaService
+Company: STELLAService | MatterMarkID: 31729 | URL: stellaservice.com | AlexaRank: 198171 | MozRank: 0 | MatterMarkScore: 15| Appeared In Search For: StellaService
+
+StraighterLine
+Company: StraighterLine | MatterMarkID: 54621 | URL: straighterline.com | AlexaRank: 131618 | MozRank: 0 | MatterMarkScore: -29| Appeared In Search For: StraighterLine
+
+THINX
+Company: THINX | MatterMarkID: 10892476 | URL: shethinx.com | AlexaRank: 51951 | MozRank: 0 | MatterMarkScore: 462| Appeared In Search For: THINX
+
+TrackMaven
+Company: TrackMaven | MatterMarkID: 151795 | URL: trackmaven.com | AlexaRank: 116200 | MozRank: 0 | MatterMarkScore: 528| Appeared In Search For: TrackMaven
+
+youAPPi
+Company: YouAppi | MatterMarkID: 91951 | URL: youappi.com | AlexaRank: 278184 | MozRank: 0 | MatterMarkScore: 294| Appeared In Search For: youAPPi
+
+Zady
+Company: Zady | MatterMarkID: 114338 | URL: zady.com | AlexaRank: 128353 | MozRank: 0 | MatterMarkScore: 500| Appeared In Search For: Zady
+
+ZADY
+Company: Zady | MatterMarkID: 114338 | URL: zady.com | AlexaRank: 128353 | MozRank: 0 | MatterMarkScore: 500| Appeared In Search For: ZADY
+
+Zealot Networks
+Company: Zealot Networks | MatterMarkID: 10015553 | URL: zealotnetworks.com | AlexaRank: 879063 | MozRank: 0 | MatterMarkScore: 190| Appeared In Search For: Zealot Networks
+
+Zola.com
+Company: Zola | MatterMarkID: 193753 | URL: zola.com | AlexaRank: 64706 | MozRank: 0 | MatterMarkScore: 602| Appeared In Search For: Zola.com
+Company: zolahost.com | MatterMarkID: 11247185 | URL: zolahost.com | AlexaRank: 108894 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Zola.com
+Company: Zola Books | MatterMarkID: 149996 | URL: zolabooks.com | AlexaRank: 1401121 | MozRank: 0 | MatterMarkScore: -4| Appeared In Search For: Zola.com
+Company: Zolanis | MatterMarkID: 11082531 | URL: zolanis.com | AlexaRank: 1432287 | MozRank: 0 | MatterMarkScore: -329| Appeared In Search For: Zola.com
+Company: Zolar Technology & Mfg Co. Inc | MatterMarkID: 151623 | URL: zolartek.com | AlexaRank: 3597845 | MozRank: 0 | MatterMarkScore: -46| Appeared In Search For: Zola.com
+Company: Zola | MatterMarkID: 268185 | URL: wearzola.com | AlexaRank: 5239264 | MozRank: 0 | MatterMarkScore: 21| Appeared In Search For: Zola.com
+Company: Zola Distributing | MatterMarkID: 10732871 | URL: zoladist.com | AlexaRank: 7721939 | MozRank: 0 | MatterMarkScore: 24| Appeared In Search For: Zola.com
+Company: zolair-energy.com | MatterMarkID: 10693688 | URL: zolair-energy.com | AlexaRank: 8932125 | MozRank: 0 | MatterMarkScore: 12| Appeared In Search For: Zola.com
+Company: Vip Dekorasyon, ?zolasyon ve Yal?t?m | MatterMarkID: 11087832 | URL: vipdekorasyon.com | AlexaRank: 17483589 | MozRank: 0 | MatterMarkScore: 12| Appeared In Search For: Zola.com
+Company: ZOLAR Entertainment, LLC. | MatterMarkID: 10926780 | URL: zolarentertainment.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -23| Appeared In Search For: Zola.com
+Company: Zolaks | MatterMarkID: 11062447 | URL: zolaks.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -48| Appeared In Search For: Zola.com
+Company: zolark.com | MatterMarkID: 11145548 | URL: zolark.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 5| Appeared In Search For: Zola.com
+Company: Zola Fruits of the World | MatterMarkID: 10702699 | URL: zolaacai.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 27| Appeared In Search For: Zola.com
+
+Direct Match
+Company: Direct Match | MatterMarkID: 11019441 | URL: directmatch.com | AlexaRank: 2897978 | MozRank: 0 | MatterMarkScore: 182| Appeared In Search For: Direct Match
+
+Genentech
+Company: Genentech | MatterMarkID: 294716 | URL: gene.com | AlexaRank: 39562 | MozRank: 0 | MatterMarkScore: 266| Appeared In Search For: Genentech
+
+HellermannTyton
+Company: hellermanntyton.com | MatterMarkID: 10984248 | URL: hellermanntyton.com | AlexaRank: 1012432 | MozRank: 0 | MatterMarkScore: -11| Appeared In Search For: HellermannTyton
+Company: hellermanntyton.us | MatterMarkID: 11221817 | URL: hellermanntyton.us | AlexaRank: 1201925 | MozRank: 0 | MatterMarkScore: 123| Appeared In Search For: HellermannTyton
+Company: HellermannTyton France | MatterMarkID: 10600709 | URL: hellermanntyton.fr | AlexaRank: 2371347 | MozRank: 0 | MatterMarkScore: -5| Appeared In Search For: HellermannTyton
+Company: HellermannTyton Nederland/België | MatterMarkID: 10252620 | URL: hellermanntyton.nl | AlexaRank: 10085004 | MozRank: 0 | MatterMarkScore: 53| Appeared In Search For: HellermannTyton
+
+ebow
+Company: Ebo Worlwide GmbH | MatterMarkID: 67884 | URL: eboworldwide.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 7| Appeared In Search For: ebow
+
+Intrinio
+Company: Intrinio | MatterMarkID: 10922827 | URL: intrinio.com | AlexaRank: 2349130 | MozRank: 0 | MatterMarkScore: 149| Appeared In Search For: Intrinio
+
+HealPros
+Company: HealPros | MatterMarkID: 10349619 | URL: healpros.com | AlexaRank: 9699376 | MozRank: 0 | MatterMarkScore: -40| Appeared In Search For: HealPros
+
+The Business Backer
+Company: The Business Backer | MatterMarkID: 173622 | URL: businessbacker.com | AlexaRank: 1416178 | MozRank: 0 | MatterMarkScore: 120| Appeared In Search For: The Business Backer
+
+Great Ecology
+Company: Great Ecology | MatterMarkID: 174584 | URL: greatecology.com | AlexaRank: 4231542 | MozRank: 0 | MatterMarkScore: 59| Appeared In Search For: Great Ecology
+
+Maker Media
+Company: Maker Media | MatterMarkID: 207636 | URL: makermedia.com | AlexaRank: 318369 | MozRank: 0 | MatterMarkScore: 246| Appeared In Search For: Maker Media
+
+ZogSports
+Company: ZogSports | MatterMarkID: 10296848 | URL: zogsports.org | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -252| Appeared In Search For: ZogSports
+
+The Zebra
+Company: The Zebra | MatterMarkID: 218741 | URL: thezebra.com | AlexaRank: 131579 | MozRank: 0 | MatterMarkScore: 182| Appeared In Search For: The Zebra
+
+CrowdComfort
+Company: CrowdComfort | MatterMarkID: 220937 | URL: crowdcomfort.com | AlexaRank: 3529492 | MozRank: 0 | MatterMarkScore: 75| Appeared In Search For: CrowdComfort
+
+Planwise
+Company: Planwise | MatterMarkID: 62763 | URL: planwise.com | AlexaRank: 1061775 | MozRank: 0 | MatterMarkScore: -47| Appeared In Search For: Planwise
+
+3DPrinterOS
+Company: 3DPrinterOS | MatterMarkID: 10899186 | URL: 3dprinteros.com | AlexaRank: 657116 | MozRank: 0 | MatterMarkScore: 164| Appeared In Search For: 3DPrinterOS
+
+Kinvey
+Company: Kinvey | MatterMarkID: 65389 | URL: kinvey.com | AlexaRank: 83157 | MozRank: 0 | MatterMarkScore: 239| Appeared In Search For: Kinvey
+
+Ajax Union
+Company: Ajax Union | MatterMarkID: 77703 | URL: ajaxunion.com | AlexaRank: 1597738 | MozRank: 0 | MatterMarkScore: -117| Appeared In Search For: Ajax Union
+
+DashBid
+Company: Dashbid | MatterMarkID: 125471 | URL: dashbid.com | AlexaRank: 92052 | MozRank: 0 | MatterMarkScore: 286| Appeared In Search For: DashBid
+
+BigRentz.com
+Company: BigRentz.com | MatterMarkID: 224995 | URL: bigrentz.com | AlexaRank: 780469 | MozRank: 0 | MatterMarkScore: 135| Appeared In Search For: BigRentz.com
+
+Notion
+Company: Notion | MatterMarkID: 10926653 | URL: getnotion.com | AlexaRank: 536902 | MozRank: 0 | MatterMarkScore: 356| Appeared In Search For: Notion
+
+Imagination
+Company: Imagination | MatterMarkID: 174770 | URL: imaginepub.com | AlexaRank: 828804 | MozRank: 0 | MatterMarkScore: 25| Appeared In Search For: Imagination
+
+Skanska
+Company: Skanska | MatterMarkID: 11065640 | URL: skanska.com | AlexaRank: 236254 | MozRank: 0 | MatterMarkScore: -114| Appeared In Search For: Skanska
+
+Truveris
+Company: Truveris | MatterMarkID: 56837 | URL: truveris.com | AlexaRank: 3328092 | MozRank: 0 | MatterMarkScore: 84| Appeared In Search For: Truveris
+
+Everyday Health
+Company: Everyday Health | MatterMarkID: 154873 | URL: everydayhealth.com | AlexaRank: 2406 | MozRank: 0 | MatterMarkScore: 74| Appeared In Search For: Everyday Health
+
+BuzzFeed
+Company: BuzzFeed | MatterMarkID: 1003 | URL: buzzfeed.com | AlexaRank: 124 | MozRank: 0 | MatterMarkScore: 1580| Appeared In Search For: BuzzFeed
+
+SANDAG
+Company: Sandag | MatterMarkID: 187438 | URL: sandag.org | AlexaRank: 560073 | MozRank: 0 | MatterMarkScore: 48| Appeared In Search For: SANDAG
+
+Barclays Capital
+Company: Barclays Capital | MatterMarkID: 295044 | URL: barcap.com | AlexaRank: 145801 | MozRank: 0 | MatterMarkScore: 190| Appeared In Search For: Barclays Capital
+
+Thomson Reuters
+Company: Thomson Reuters | MatterMarkID: 6799 | URL: thomsonreuters.com | AlexaRank: 3058 | MozRank: 0 | MatterMarkScore: 248| Appeared In Search For: Thomson Reuters
+
+Amazon.com
+Company: Amazon | MatterMarkID: 123197 | URL: amazon.com | AlexaRank: 6 | MozRank: 0 | MatterMarkScore: 937| Appeared In Search For: Amazon.com
+Company: Amazon | MatterMarkID: 13522 | URL: amazon.com | AlexaRank: 6 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Amazon.com
+Company: Amazon Fresh | MatterMarkID: 283784 | URL: fresh.amazon.com | AlexaRank: 6 | MozRank: 0 | MatterMarkScore: 859| Appeared In Search For: Amazon.com
+Company: GamerDeal.TV | MatterMarkID: 11049496 | URL: amazonaws.com | AlexaRank: 136 | MozRank: 0 | MatterMarkScore: 453| Appeared In Search For: Amazon.com
+Company: paula frassinetti mattos advogados | MatterMarkID: 10290628 | URL: amazon.com.br | AlexaRank: 3621 | MozRank: 0 | MatterMarkScore: 275| Appeared In Search For: Amazon.com
+Company: Amazon Print | MatterMarkID: 10249527 | URL: amazonprint.com.br | AlexaRank: 610130 | MozRank: 0 | MatterMarkScore: 161| Appeared In Search For: Amazon.com
+Company: Magnum Indústria da Amazônia SA | MatterMarkID: 10204946 | URL: magnumsa.com.br | AlexaRank: 1518862 | MozRank: 0 | MatterMarkScore: 42| Appeared In Search For: Amazon.com
+Company: BS Informatica LTDA / Banco da Amazonia  (Cobra Tecnologia) | MatterMarkID: 10227751 | URL: cobra.com.br | AlexaRank: 1611396 | MozRank: 0 | MatterMarkScore: -24| Appeared In Search For: Amazon.com
+Company: Amazon Filler Item Finder | MatterMarkID: 32093 | URL: filleritemfinder.com | AlexaRank: 2344524 | MozRank: 0 | MatterMarkScore: -5| Appeared In Search For: Amazon.com
+Company: Amazonic Ventures, LLC dba Nativo Amazon Acai | MatterMarkID: 10334346 | URL: nativoacai.com | AlexaRank: 3123588 | MozRank: 0 | MatterMarkScore: 59| Appeared In Search For: Amazon.com
+Company: AmazonSupply | MatterMarkID: 282746 | URL: amazonsupply.com | AlexaRank: 4040660 | MozRank: 0 | MatterMarkScore: -196| Appeared In Search For: Amazon.com
+Company: Amazon Veículos e Peças Ltda | MatterMarkID: 10562445 | URL: vwamazon.com.br | AlexaRank: 5054235 | MozRank: 0 | MatterMarkScore: -22| Appeared In Search For: Amazon.com
+Company: Grupo Amazónia Hotéis | MatterMarkID: 10201787 | URL: amazoniahoteis.com | AlexaRank: 7042591 | MozRank: 0 | MatterMarkScore: 25| Appeared In Search For: Amazon.com
+Company: Amazoneg | MatterMarkID: 10557160 | URL: web-4-all.com | AlexaRank: 10052017 | MozRank: 0 | MatterMarkScore: 13| Appeared In Search For: Amazon.com
+Company: AmazonBella | MatterMarkID: 154810 | URL: amazonbella.com | AlexaRank: 12901937 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Amazon.com
+Company: True Hero Events, Productions and Amazon Rep Services | MatterMarkID: 10407398 | URL: trueheroevents.com | AlexaRank: 16766340 | MozRank: 0 | MatterMarkScore: -4| Appeared In Search For: Amazon.com
+Company: Amazon Energy Limited | MatterMarkID: 10219143 | URL: amazon-energy.com | AlexaRank: 19402433 | MozRank: 0 | MatterMarkScore: 43| Appeared In Search For: Amazon.com
+Company: Amazon Art Studio | MatterMarkID: 272493 | URL: amazonartstudio.com | AlexaRank: 19663269 | MozRank: 0 | MatterMarkScore: 16| Appeared In Search For: Amazon.com
+Company: TechIzzoid | MatterMarkID: 245519 | URL: amazon.com (currently) | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Amazon.com
+Company: Impressora Amazonense Ltda - IMPRAM | MatterMarkID: 10091653 | URL: impram.com.br | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Amazon.com
+Company: AmazonDrops Organic Care for Skin & Hair | MatterMarkID: 10117793 | URL: amazondrops.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -16| Appeared In Search For: Amazon.com
+Company: DIGITRON DA AMAZONIA INDUSTRIA E COMERCIO.S/A | MatterMarkID: 10132398 | URL: digitron.com.br | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 39| Appeared In Search For: Amazon.com
+Company: Águas do Amazonas | MatterMarkID: 10082062 | URL: moinhosveracruz.com.br | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Amazon.com
+Company: Agência Amazônia - Marketing e Comunicação | MatterMarkID: 10080391 | URL: agenciaamazonia.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Amazon.com
+Company: ADE, Inc. | MatterMarkID: 242245 | URL: amazondecisionengine.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Amazon.com
+Company: Dawn on the Amazon Cafe | MatterMarkID: 10109597 | URL: dawnontheamazoncafe.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -1| Appeared In Search For: Amazon.com
+Company: Amazon Startups | MatterMarkID: 197416 | URL: amazonstartups.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Amazon.com
+Company: Amazon Music | MatterMarkID: 10127624 | URL: a2z.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -88| Appeared In Search For: Amazon.com
+Company: Oud's Amazone Trading | MatterMarkID: 10253957 | URL: amazone.com.au | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -19| Appeared In Search For: Amazon.com
+Company: BRASIL AMAZÔNIA PUBLICIDADE E MARKETING | MatterMarkID: 10206489 | URL: brasilamazonia.com.br | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Amazon.com
+Company: CFC DA AMAZONIA LTDA | MatterMarkID: 10159321 | URL: cfcdaamazonia.com.br | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Amazon.com
+Company: The Amazon Handbook | MatterMarkID: 10158299 | URL: visitmanaus.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Amazon.com
+Company: Amazon Relocation Moving & Storage | MatterMarkID: 107931 | URL: amazonrelocation.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -4| Appeared In Search For: Amazon.com
+Company: Flight of the Amazon Queen – Android Retro Adventure Ga | MatterMarkID: 260550 | URL: serendipity-apps.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 47| Appeared In Search For: Amazon.com
+Company: Career Amazon | MatterMarkID: 15775 | URL: careeramazon.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 7| Appeared In Search For: Amazon.com
+Company: Amazon Falls Co. Ltd | MatterMarkID: 10293949 | URL: amazonfallsthailand.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Amazon.com
+Company: s3.amazonaws.com | MatterMarkID: 312174 | URL: s3.amazonaws.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 27| Appeared In Search For: Amazon.com
+Company: Sustainable Amazon Inc. | MatterMarkID: 10803505 | URL: sustainableamazon.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Amazon.com
+Company: OGasta.com | MatterMarkID: 10745642 | URL: amazonitbd.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Amazon.com
+Company: Amazonian Studios | MatterMarkID: 10756363 | URL: amazonianstudios.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Amazon.com
+Company: Amazon Reforestation Project Inc. | MatterMarkID: 10402956 | URL: amazonreforestation.us.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Amazon.com
+Company: Amazon Color | MatterMarkID: 10040910 | URL: amazoncolor.com.br | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Amazon.com
+Company: Amazonas Shopping | MatterMarkID: 10378024 | URL: amshopping.com.br | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -30| Appeared In Search For: Amazon.com
+Company: Amazon Totem | MatterMarkID: 10058260 | URL: amazontotem.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Amazon.com
+Company: Amazon Natural Essentials, LLC | MatterMarkID: 10064947 | URL: amazonsaloninc.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 7| Appeared In Search For: Amazon.com
+Company: Las Pirañas Amazónicas | MatterMarkID: 10564702 | URL: laspiranasamazonicas.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Amazon.com
+Company: Amazonica Distribuidora Ltda | MatterMarkID: 10490572 | URL: amazonica.com.co | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Amazon.com
+Company: Amazon-Dreams-2 | MatterMarkID: 195466 | URL: amazondreams.com.br | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 6| Appeared In Search For: Amazon.com
+Company: Amazonian Trips/Chullachaqui Lodge | MatterMarkID: 10495984 | URL: amazoniantrips.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 23| Appeared In Search For: Amazon.com
+Company: Papyrus Chemicals Pvt. Ltd | MatterMarkID: 10732205 | URL: amazon-papyrus.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 51| Appeared In Search For: Amazon.com
+
+Intel
+Company: Intelex | MatterMarkID: 94991 | URL: intelex.com | AlexaRank: 158108 | MozRank: 0 | MatterMarkScore: 166| Appeared In Search For: Intel
+Company: IntelligenceNODE | MatterMarkID: 242930 | URL: intelligencenode.com | AlexaRank: 253452 | MozRank: 0 | MatterMarkScore: 228| Appeared In Search For: Intel
+Company: Digital Intelligence Systems | MatterMarkID: 98562 | URL: disys.com | AlexaRank: 321191 | MozRank: 0 | MatterMarkScore: 151| Appeared In Search For: Intel
+Company: Intelligize | MatterMarkID: 32126 | URL: intelligize.com | AlexaRank: 584527 | MozRank: 0 | MatterMarkScore: 113| Appeared In Search For: Intel
+Company: Access Intelligence | MatterMarkID: 19855 | URL: accessintel.com | AlexaRank: 759477 | MozRank: 0 | MatterMarkScore: 76| Appeared In Search For: Intel
+Company: Intelligent Energy | MatterMarkID: 21418 | URL: intelligent-energy.com | AlexaRank: 889764 | MozRank: 0 | MatterMarkScore: 90| Appeared In Search For: Intel
+Company: IntelePeer | MatterMarkID: 6321 | URL: intelepeer.com | AlexaRank: 893364 | MozRank: 0 | MatterMarkScore: 58| Appeared In Search For: Intel
+Company: Signals Intelligence Group | MatterMarkID: 227207 | URL: signalsgroup.com | AlexaRank: 1113930 | MozRank: 0 | MatterMarkScore: 62| Appeared In Search For: Intel
+Company: Growth Intelligence | MatterMarkID: 103470 | URL: growthintel.com | AlexaRank: 1146100 | MozRank: 0 | MatterMarkScore: 102| Appeared In Search For: Intel
+Company: Intellitix | MatterMarkID: 153681 | URL: intellitix.com | AlexaRank: 1408478 | MozRank: 0 | MatterMarkScore: 57| Appeared In Search For: Intel
+Company: Intelligent Mechatronic Systems | MatterMarkID: 161475 | URL: intellimec.com | AlexaRank: 1443192 | MozRank: 0 | MatterMarkScore: 61| Appeared In Search For: Intel
+Company: Intellia Therapeutics | MatterMarkID: 10885058 | URL: intelliatx.com | AlexaRank: 1475096 | MozRank: 0 | MatterMarkScore: 208| Appeared In Search For: Intel
+Company: Agent Video Intelligence | MatterMarkID: 20894 | URL: agentvi.com | AlexaRank: 1557604 | MozRank: 0 | MatterMarkScore: 42| Appeared In Search For: Intel
+Company: K2 Intelligence | MatterMarkID: 146636 | URL: k2intelligence.com | AlexaRank: 1633746 | MozRank: 0 | MatterMarkScore: 53| Appeared In Search For: Intel
+Company: Flashpoint | MatterMarkID: 10959819 | URL: flashpoint-intel.com | AlexaRank: 1900851 | MozRank: 0 | MatterMarkScore: -4| Appeared In Search For: Intel
+Company: IntelleGrow Finance | MatterMarkID: 248751 | URL: intellegrow.com | AlexaRank: 1909892 | MozRank: 0 | MatterMarkScore: 47| Appeared In Search For: Intel
+Company: Communication Intelligence Corp. | MatterMarkID: 103775 | URL: cic.com | AlexaRank: 1943743 | MozRank: 0 | MatterMarkScore: 38| Appeared In Search For: Intel
+Company: Blue Health Intelligence(BHI) | MatterMarkID: 177112 | URL: bluehealthintelligence.com | AlexaRank: 2200553 | MozRank: 0 | MatterMarkScore: 56| Appeared In Search For: Intel
+Company: Intela | MatterMarkID: 7013 | URL: intela.com | AlexaRank: 2624149 | MozRank: 0 | MatterMarkScore: -322| Appeared In Search For: Intel
+Company: Intellicyt | MatterMarkID: 193300 | URL: intellicyt.com | AlexaRank: 2848538 | MozRank: 0 | MatterMarkScore: 54| Appeared In Search For: Intel
+Company: Intelligent Beauty | MatterMarkID: 33769 | URL: ibinc.com | AlexaRank: 3041007 | MozRank: 0 | MatterMarkScore: -43| Appeared In Search For: Intel
+Company: Intelleflex | MatterMarkID: 12848 | URL: intelleflex.com | AlexaRank: 4704467 | MozRank: 0 | MatterMarkScore: -4| Appeared In Search For: Intel
+Company: OnAsset Intelligence | MatterMarkID: 63016 | URL: onasset.com | AlexaRank: 5919635 | MozRank: 0 | MatterMarkScore: 5| Appeared In Search For: Intel
+Company: Intellipharmaceutics International | MatterMarkID: 218280 | URL: intellipharmaceutics.com | AlexaRank: 6223733 | MozRank: 0 | MatterMarkScore: 14| Appeared In Search For: Intel
+Company: IntellinX | MatterMarkID: 36809 | URL: intellinx-sw.com | AlexaRank: 7222903 | MozRank: 0 | MatterMarkScore: 69| Appeared In Search For: Intel
+Company: Intelescope | MatterMarkID: 10940685 | URL: intelescope.com | AlexaRank: 7487502 | MozRank: 0 | MatterMarkScore: 26| Appeared In Search For: Intel
+Company: Intelomed | MatterMarkID: 186359 | URL: intelomed.com | AlexaRank: 7910722 | MozRank: 0 | MatterMarkScore: 34| Appeared In Search For: Intel
+Company: Wearable Intelligence | MatterMarkID: 270901 | URL: wearableintelligence.com | AlexaRank: 9371068 | MozRank: 0 | MatterMarkScore: 102| Appeared In Search For: Intel
+Company: IntelliCell™ BioSciences | MatterMarkID: 157003 | URL: intellicellbiosciences.com | AlexaRank: 12112577 | MozRank: 0 | MatterMarkScore: -1| Appeared In Search For: Intel
+Company: Intelligent Fingerprinting | MatterMarkID: 178905 | URL: intelligentfingerprinting.com | AlexaRank: 14807520 | MozRank: 0 | MatterMarkScore: 50| Appeared In Search For: Intel
+Company: Collective Intellect | MatterMarkID: 2531 | URL: collectiveintellect.com | AlexaRank: 15609716 | MozRank: 0 | MatterMarkScore: -60| Appeared In Search For: Intel
+Company: Intelliworks | MatterMarkID: 3951 | URL: intelliworks.com | AlexaRank: 16206820 | MozRank: 0 | MatterMarkScore: -1| Appeared In Search For: Intel
+Company: DVS Intelestream | MatterMarkID: 35303 | URL: dvs.tv | AlexaRank: 17321366 | MozRank: 0 | MatterMarkScore: -4| Appeared In Search For: Intel
+Company: InteliCloud Technology | MatterMarkID: 17646 | URL: intelicloud.com | AlexaRank: 17675246 | MozRank: 0 | MatterMarkScore: -25| Appeared In Search For: Intel
+Company: Elastic Intelligence | MatterMarkID: 53674 | URL: elasticintelligence.com | AlexaRank: 18484140 | MozRank: 0 | MatterMarkScore: 1| Appeared In Search For: Intel
+Company: Music Intelligence Solutions | MatterMarkID: 455 | URL: uplaya.com | AlexaRank: 21101468 | MozRank: 0 | MatterMarkScore: -14| Appeared In Search For: Intel
+Company: Intellon Corporation | MatterMarkID: 11891 | URL: intellon.com | AlexaRank: 21387009 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Intel
+Company: Intellikine | MatterMarkID: 21477 | URL: intellikine.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Intel
+Company: IntelliBatt | MatterMarkID: 93392 | URL: intellibatt.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 7| Appeared In Search For: Intel
+Company: Intellione | MatterMarkID: 33380 | URL: intellione.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Intel
+Company: Sano Intelligence | MatterMarkID: 90862 | URL: sanointelligence.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -12| Appeared In Search For: Intel
+Company: Intelliden | MatterMarkID: 12865 | URL: intelliden.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Intel
+Company: Intellitactics | MatterMarkID: 41936 | URL: intellitactics.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Intel
+Company: SQFive Intelligent Oilfield Solutions | MatterMarkID: 17325 | URL: sqfive.ca | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Intel
+Company: Anthem Healthcare Intelligence | MatterMarkID: 61668 | URL: anthemhi.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Intel
+Company: Clique Intelligence | MatterMarkID: 151179 | URL: cliqueintelligence.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 28| Appeared In Search For: Intel
+Company: Intellitect Water Holdings | MatterMarkID: 42362 | URL: intellitect-water.co.uk | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 12| Appeared In Search For: Intel
+Company: Intelliject | MatterMarkID: 28291 | URL: intelliject.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 3| Appeared In Search For: Intel
+Company: Site Intelligence | MatterMarkID: 52067 | URL: site-intelligence.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 17| Appeared In Search For: Intel
+Company: IntelliRad Control | MatterMarkID: 160919 | URL: intelliradcontrol.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Intel
+
+Ipreo
+Company: Ipreo | MatterMarkID: 38651 | URL: ipreo.com | AlexaRank: 209495 | MozRank: 0 | MatterMarkScore: 105| Appeared In Search For: Ipreo
+
+UBS
+Company: UBS | MatterMarkID: 282148 | URL: ubs.com | AlexaRank: 4977 | MozRank: 0 | MatterMarkScore: 148| Appeared In Search For: UBS
+
+Viacom
+Company: Viacom | MatterMarkID: 14753 | URL: viacom.com | AlexaRank: 60811 | MozRank: 0 | MatterMarkScore: 0| Appeared In Search For: Viacom
+
+Apple Inc.
+Company: Apple Vacations Inc. | MatterMarkID: 10950166 | URL: applevacations.com | AlexaRank: 36753 | MozRank: 0 | MatterMarkScore: -176| Appeared In Search For: Apple Inc.
+Company: Apple World, Inc. | MatterMarkID: 10368555 | URL: post.appleworld.com | AlexaRank: 127809 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Apple Inc.
+Company: Applegate Group, Inc. | MatterMarkID: 10467171 | URL: applegategroup.com | AlexaRank: 3719261 | MozRank: 0 | MatterMarkScore: 34| Appeared In Search For: Apple Inc.
+Company: Aly's Apples Inc. | MatterMarkID: 10603111 | URL: alysapples.com | AlexaRank: 5613743 | MozRank: 0 | MatterMarkScore: 29| Appeared In Search For: Apple Inc.
+Company: Applepalm Enterprise Inc | MatterMarkID: 11059669 | URL: applepalm.com | AlexaRank: 7466950 | MozRank: 0 | MatterMarkScore: 37| Appeared In Search For: Apple Inc.
+Company: DI-NO Computers Inc Apple Reseller | MatterMarkID: 10585983 | URL: di-no.com | AlexaRank: 7608533 | MozRank: 0 | MatterMarkScore: 12| Appeared In Search For: Apple Inc.
+Company: Apple Nannies Inc. | MatterMarkID: 10497043 | URL: applenannies.com | AlexaRank: 10317863 | MozRank: 0 | MatterMarkScore: -9| Appeared In Search For: Apple Inc.
+Company: Green Apple Entertainment, Inc. | MatterMarkID: 10594919 | URL: greenapple-ent.com | AlexaRank: 13282938 | MozRank: 0 | MatterMarkScore: -38| Appeared In Search For: Apple Inc.
+Company: Applewood Controls Inc. | MatterMarkID: 10710286 | URL: applewoodcontrols.com | AlexaRank: 13728488 | MozRank: 0 | MatterMarkScore: -10| Appeared In Search For: Apple Inc.
+Company: Apple Valley Agency, Inc. | MatterMarkID: 10818301 | URL: applevalleyagency.com | AlexaRank: 18415340 | MozRank: 0 | MatterMarkScore: -16| Appeared In Search For: Apple Inc.
+Company: Apple Valley Transfer & Storage, Inc. | MatterMarkID: 10835179 | URL: applevalleyatlas.com | AlexaRank: 19961362 | MozRank: 0 | MatterMarkScore: -12| Appeared In Search For: Apple Inc.
+Company: Apple Personnel, Inc. | MatterMarkID: 10095151 | URL: applepersonnel.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Apple Inc.
+Company: Appleby & Company, Inc. | MatterMarkID: 10237875 | URL: applebyco.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: -12| Appeared In Search For: Apple Inc.
+Company: Red Apple School Supply, Inc. | MatterMarkID: 10652897 | URL: redapplesupply.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Apple Inc.
+Company: Applegate, Inc. | MatterMarkID: 10873371 | URL: steelapple.net | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Apple Inc.
+Company: Wild Apple Marketing, Inc. | MatterMarkID: 10536580 | URL: wildapplemarketing.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Apple Inc.
+Company: Bob for Apples, Inc. | MatterMarkID: 10477752 | URL: bobforapples.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Apple Inc.
+Company: Apple Realm Inc. | MatterMarkID: 10853188 | URL: applerealm.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Apple Inc.
+Company: Core Commercial, Inc. Appleton, WI | MatterMarkID: 10190841 | URL: corewis.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: 28| Appeared In Search For: Apple Inc.
+Company: Red Apple Marketing International Inc. | MatterMarkID: 10170206 | URL: redapplepartners.com | AlexaRank: 100000000000000 | MozRank: 0 | MatterMarkScore: | Appeared In Search For: Apple Inc.
+
+Casper
+Company: Casper | MatterMarkID: 245652 | URL: casper.com | AlexaRank: 23963 | MozRank: 0 | MatterMarkScore: 1075| Appeared In Search For: Casper
+
+Double Robotics
+Company: Double Robotics | MatterMarkID: 98786 | URL: doublerobotics.com | AlexaRank: 341262 | MozRank: 0 | MatterMarkScore: 192| Appeared In Search For: Double Robotics
+
+Duolingo
+Company: Duolingo | MatterMarkID: 88676 | URL: duolingo.com | AlexaRank: 1321 | MozRank: 0 | MatterMarkScore: 711| Appeared In Search For: Duolingo
+
+New York Times
+Company: New York Times | MatterMarkID: 126283 | URL: nytimes.com | AlexaRank: 97 | MozRank: 0 | MatterMarkScore: 380| Appeared In Search For: New York Times
+
+eShares
+Company: eShares | MatterMarkID: 134748 | URL: esharesinc.com | AlexaRank: 201827 | MozRank: 0 | MatterMarkScore: 276| Appeared In Search For: eShares
+
+Adore Me
+Company: Adore Me | MatterMarkID: 89917 | URL: adoreme.com | AlexaRank: 18540 | MozRank: 0 | MatterMarkScore: 624| Appeared In Search For: Adore Me
+
+Bolstr
+Company: Bolstr | MatterMarkID: 51065 | URL: bolstr.com | AlexaRank: 973298 | MozRank: 0 | MatterMarkScore: 47| Appeared In Search For: Bolstr
+
+Dering Hall
+Company: Dering Hall | MatterMarkID: 151950 | URL: deringhall.com | AlexaRank: 136572 | MozRank: 0 | MatterMarkScore: 385| Appeared In Search For: Dering Hall
+
+Explain Everything
+Company: Explain Everything | MatterMarkID: 10987600 | URL: explaineverything.com | AlexaRank: 448281 | MozRank: 0 | MatterMarkScore: 583| Appeared In Search For: Explain Everything
+
+Global Relay
+Company: Global Relay | MatterMarkID: 8192 | URL: globalrelay.com | AlexaRank: 176155 | MozRank: 0 | MatterMarkScore: 204| Appeared In Search For: Global Relay
+
+TopLine Game Labs
+Company: TopLine Game Labs | MatterMarkID: 156096 | URL: toplinegamelabs.com | AlexaRank: 2487171 | MozRank: 0 | MatterMarkScore: 48| Appeared In Search For: TopLine Game Labs
+

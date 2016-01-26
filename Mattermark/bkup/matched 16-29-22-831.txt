@@ -1,0 +1,51 @@
+Safire Partners
+Company: Safire Partners | MatterMarkID: 32877 | URL: safire.la | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: -9| Appeared In Search For: Safire Partners
+
+HackHands
+Company: hackhands | MatterMarkID: 200462 | URL: hackhands.com | PageRank: {:alexa=>80194, :moz=>5} | MatterMarkScore: 523| Appeared In Search For: HackHands
+
+MOVE Systems
+Company: MOVE Systems | MatterMarkID: 11073838 | URL: movesystems.com | PageRank: {:alexa=>7708280, :moz=>0} | MatterMarkScore: -67| Appeared In Search For: MOVE Systems
+Company: Movement Systems | MatterMarkID: 10602218 | URL: movementsystems.org | PageRank: {:alexa=>100000000000000, :moz=>4} | MatterMarkScore: | Appeared In Search For: MOVE Systems
+Company: MoveeCom Systems | MatterMarkID: 10456252 | URL: moveecom.com | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: | Appeared In Search For: MOVE Systems
+Company: CoreVYO Movement Systems | MatterMarkID: 285152 | URL: corevyo.com | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: 3| Appeared In Search For: MOVE Systems
+
+salesforce.com
+Company: Salesforce | MatterMarkID: 24774 | URL: salesforce.com | PageRank: {:alexa=>187, :moz=>6} | MatterMarkScore: 0| Appeared In Search For: salesforce.com
+Company: Salesforce Ventures | MatterMarkID: 23525 | URL: salesforce.com | PageRank: {:alexa=>187, :moz=>6} | MatterMarkScore: 0| Appeared In Search For: salesforce.com
+Company: salesforceiq.com | MatterMarkID: 11149414 | URL: salesforceiq.com | PageRank: {:alexa=>23862, :moz=>0} | MatterMarkScore: 1315| Appeared In Search For: salesforce.com
+Company: salesforcemarketingcloud.com | MatterMarkID: 11201817 | URL: salesforcemarketingcloud.com | PageRank: {:alexa=>270084, :moz=>4} | MatterMarkScore: 613| Appeared In Search For: salesforce.com
+Company: Sales Force Europe | MatterMarkID: 81423 | URL: salesforceeurope.com | PageRank: {:alexa=>2730529, :moz=>0} | MatterMarkScore: 47| Appeared In Search For: salesforce.com
+Company: Sales Force Recruitment | MatterMarkID: 10335181 | URL: salesforcejobs.com.au | PageRank: {:alexa=>6399367, :moz=>3} | MatterMarkScore: 39| Appeared In Search For: salesforce.com
+Company: SaaS Solutions - salesforce.com Certified Partner | MatterMarkID: 10368989 | URL: mysalesforcecrm.com | PageRank: {:alexa=>7007474, :moz=>4} | MatterMarkScore: -1| Appeared In Search For: salesforce.com
+Company: Sales Force Dynamics | MatterMarkID: 10448144 | URL: salesforcedynamics.com | PageRank: {:alexa=>22035366, :moz=>0} | MatterMarkScore: 0| Appeared In Search For: salesforce.com
+Company: Salesforce Assessments | MatterMarkID: 60905 | URL: salesforceassessments.com | PageRank: {:alexa=>100000000000000, :moz=>4} | MatterMarkScore: -5| Appeared In Search For: salesforce.com
+Company: SalesforceCAD | MatterMarkID: 43239 | URL: salesforcecad.com | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: 0| Appeared In Search For: salesforce.com
+Company: The SalesForce Group | MatterMarkID: 10602398 | URL: thesalesforcegroup.com | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: | Appeared In Search For: salesforce.com
+Company: Sales Force Safety Pty Ltd | MatterMarkID: 10449740 | URL: salesforcesafety.com | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: -4| Appeared In Search For: salesforce.com
+Company: SalesForceXP | MatterMarkID: 10808905 | URL: salesforcexp.com | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: | Appeared In Search For: salesforce.com
+Company: AppBuddy | MatterMarkID: 10537830 | URL: salesforceappbuddy.com | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: 5| Appeared In Search For: salesforce.com
+Company: Salesforce Mentor | MatterMarkID: 10765491 | URL: salesforcementor.com | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: | Appeared In Search For: salesforce.com
+Company: SalesForce Recruiters, Inc. | MatterMarkID: 10140170 | URL: salesforcerecruiters.com | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: 20| Appeared In Search For: salesforce.com
+Company: Sales Force Latianamerica Ltda. | MatterMarkID: 10723349 | URL: salesforcela.com | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: 0| Appeared In Search For: salesforce.com
+
+2U
+Company: 2U | MatterMarkID: 18916 | URL: 2u.com | PageRank: {:alexa=>174857, :moz=>6} | MatterMarkScore: 178| Appeared In Search For: 2U
+Company: 2Ultra Marketing | MatterMarkID: 10960625 | URL: 2ultra.com | PageRank: {:alexa=>5088158, :moz=>4} | MatterMarkScore: 17| Appeared In Search For: 2U
+Company: Promo 2U | MatterMarkID: 10831135 | URL: promo2u.com.au | PageRank: {:alexa=>5285014, :moz=>0} | MatterMarkScore: 0| Appeared In Search For: 2U
+Company: 2up.es | MatterMarkID: 10028880 | URL: 2up.es | PageRank: {:alexa=>5908606, :moz=>3} | MatterMarkScore: -18| Appeared In Search For: 2U
+Company: 2U Laundry | MatterMarkID: 11249927 | URL: 2ulaundry.com | PageRank: {:alexa=>11828534, :moz=>0} | MatterMarkScore: | Appeared In Search For: 2U
+Company: 2up Mobile | MatterMarkID: 10399739 | URL: 2upmobile.com | PageRank: {:alexa=>15459357, :moz=>5} | MatterMarkScore: 2| Appeared In Search For: 2U
+Company: me-2u.com | MatterMarkID: 10935152 | URL: me-2u.com | PageRank: {:alexa=>20873732, :moz=>3} | MatterMarkScore: -100| Appeared In Search For: 2U
+Company: 2UTVAds | MatterMarkID: 10919980 | URL: 2utvads.com | PageRank: {:alexa=>21074150, :moz=>0} | MatterMarkScore: 0| Appeared In Search For: 2U
+Company: A Song 2u | MatterMarkID: 98447 | URL: asong2u.com | PageRank: {:alexa=>100000000000000, :moz=>7} | MatterMarkScore: -14| Appeared In Search For: 2U
+Company: Nu 2U PC | MatterMarkID: 10301083 | URL: nu2upc.com | PageRank: {:alexa=>100000000000000, :moz=>3} | MatterMarkScore: -11| Appeared In Search For: 2U
+Company: BeanCounters 2U Pty Ltd | MatterMarkID: 10731156 | URL: beancounters2u.com.au | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: -31| Appeared In Search For: 2U
+Company: 2uo Imagina y Crea | MatterMarkID: 10374061 | URL: 2uo.mx | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: | Appeared In Search For: 2U
+Company: 2U Business Consulting | MatterMarkID: 10290399 | URL: 2ubconsulting.com | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: -6| Appeared In Search For: 2U
+Company: Chiropractic 2U | MatterMarkID: 10849811 | URL: chiropractic2u.co.uk | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: | Appeared In Search For: 2U
+Company: 2 under entertainment | MatterMarkID: 940 | URL: 2underentertainment.com | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: -20| Appeared In Search For: 2U
+Company: TUIUIU | MatterMarkID: 10763961 | URL: 2u-u.com | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: | Appeared In Search For: 2U
+Company: Sabbatical / Extended Leave | MatterMarkID: 10684964 | URL: 2unowtechnologies.com | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: | Appeared In Search For: 2U
+Company: 2U Group Portugal;2U Group Mozambique;Purple Cow | MatterMarkID: 10684499 | URL: 2ugroup.co.mz | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: | Appeared In Search For: 2U
+Company: Happy Cleaners 2U | MatterMarkID: 10401608 | URL: happycleanersplymouth.co.uk | PageRank: {:alexa=>100000000000000, :moz=>0} | MatterMarkScore: | Appeared In Search For: 2U

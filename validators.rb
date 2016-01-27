@@ -29,7 +29,7 @@ module Validator
   end
 
   def language_exclude
-    /(?:\.net|c\#|\bsr\b)/i
+    /(?:\.net|c\#|\bsr\b|\bsenior\b|\bsnr\b)/i
     # (?:\bsr\b)
   end
 

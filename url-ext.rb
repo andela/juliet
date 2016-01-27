@@ -26,5 +26,7 @@ module URLable
     # Thread.new{
       new_url = Typhoeus.get(uri, followlocation: true).effective_url
     # }.join
+    # puts new_url
+    new_url
   end
 end

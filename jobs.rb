@@ -10,7 +10,7 @@ require './sheets'
 require './date-ext'
 require './obj-ext'
 require './url-ext'
-require './listing'
+# require './listing'
 require './listing-ext'
 
 
@@ -38,18 +38,22 @@ end
 
 MAXLIMIT = 100
 
-def indeed_url(limit = MAXLIMIT)
+def indeed_url(limit = MAXLIMIT, search: nil)
+  params_to_search = search || %w{ full stack developer }
+  search_for = params_to_search.join("+")
+  # require 'pry' ; binding.pry
   upper_bound = MAXLIMIT > limit ? limit : MAXLIMIT
-  indeed_url = "http://www.indeed.com/jobs?as_and=full+stack+developer&as_phr=&as_any=&as_not=senior,+lead,+director,+specialist,+experienced,+senior,+Mid+Level,+Seasoned,+Parttime&as_ttl=&as_cmp=&jt=fulltime&st=employer&sr=directhire&salary=&radius=25&fromage=any&limit=#{upper_bound}&sort=&psf=advsrch"
+  indeed_url = "http://www.indeed.com/jobs?as_and=#{search_for}&as_phr=&as_any=&as_not=senior,+lead,+director,+specialist,+experienced,+senior,+Mid+Level,+Seasoned,+Parttime&as_ttl=&as_cmp=&jt=fulltime&st=employer&sr=directhire&salary=&radius=25&fromage=any&limit=#{upper_bound}&sort=&psf=advsrch"
   indeed_url
 end
 
 
-def get_indeed_data(limit: 100)
+def get_indeed_data(limit: 100, search: nil)
   real_limit = limit
 
   begin
-    next_url ||= indeed_url(limit)
+    next_url ||= indeed_url(limit, search: search )
+    puts next_url
     page = HTTParty.get(next_url)
     html = Nokogiri::HTML(page)
 
@@ -61,7 +65,7 @@ def get_indeed_data(limit: 100)
       obj[:post_date] = result.css('.result-link-bar').css('.date').text
       obj[:company] = result.css('.company').text.strip
       obj[:company_url]
-      Listing.new(obj)
+      Listing.new(obj, finalize: true)
     }
 
     jobs = Listing.all
@@ -69,8 +73,9 @@ def get_indeed_data(limit: 100)
     next_limit = limit - valid_gotten.size
     remaining = real_limit - valid_gotten.size
     limit **= 2 if limit == next_limit && limit < MAXLIMIT
-    next_url = indeed_url(next_limit) +  "&start=#{jobs.size}"
-    next_btn = html.css("#resultsCol").css(".pagination").css(".pn").css(".np").last.text
+    next_url = indeed_url(next_limit, search: search) +  "&start=#{jobs.size}"
+    next_btn = html.css("#resultsCol").css(".pagination").css(".pn").css(".np").try(:last).try(:text)
+    require 'pry' ; binding.pry unless next_btn
   end while( remaining > 0 && next_btn.match(/Next/))
   # Listing.all
 end

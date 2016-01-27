@@ -54,7 +54,8 @@ class Listing
   end
 
   def valid?
-    !!(/indeed\.com.+(?=cmp)/i =~ url)
+    regex_match = /^http[s]?:\/\/www.indeed.com\//i
+    !!(regex_match =~ url)
   end
 
   def self.all

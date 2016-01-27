@@ -6,7 +6,9 @@ require './url-ext'
 
 
 class Listing
-  attr_accessor :title, :url, :source, :post_date, :company, :company_url, :finalize
+  attr_accessor :title, :url, :source, :post_date, :company, :company_url
+  attr_reader :finalize
+
   include Dateable, URLable
 
   extend SingleForwardable
@@ -70,9 +72,3 @@ class Listing
     end
   end
 end
-
-# include Forwardable
-# all.map(&:to_h)
-# all.select{|listing|
-#   listing.to_h if listing.valid?
-# }

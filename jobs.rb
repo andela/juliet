@@ -10,26 +10,7 @@ require './sheets'
 require './date-ext'
 require './obj-ext'
 require './url-ext'
-# require './listing'
 require './listing-ext'
-
-
-# def exclusion_list
-#   sheet = GSheet.new '18qGCs7WC09In3yD-HH3F1h-ysLuMDKyPRpCadS0A77g'
-#   exclusion_sheet = sheet.worksheets[2]
-#   excludes = exclusion_sheet.rows
-#   @company_url_map = {}
-#   excludes.each{ |row|
-#     row.each_with_index{ |col, index|
-#       # mapping the company to the url using the spreadsheet format
-#       next_col = row[index + 1]
-#       @company_url_map[col] = next_col unless col.blank? || next_col.blank?
-#     }
-#   }
-#   @company_url_map
-# end
-
-# exclusion_list
 
 
 def get_dice_data(limit: 100)
@@ -41,7 +22,6 @@ MAXLIMIT = 100
 def indeed_url(limit = MAXLIMIT, search: nil)
   params_to_search = search || %w{ full stack developer }
   search_for = params_to_search.join("+")
-  # require 'pry' ; binding.pry
   upper_bound = MAXLIMIT > limit ? limit : MAXLIMIT
   indeed_url = "http://www.indeed.com/jobs?as_and=#{search_for}&as_phr=&as_any=&as_not=senior,+lead,+director,+specialist,+experienced,+senior,+Mid+Level,+Seasoned,+Parttime&as_ttl=&as_cmp=&jt=fulltime&st=employer&sr=directhire&salary=&radius=25&fromage=any&limit=#{upper_bound}&sort=&psf=advsrch"
   indeed_url
@@ -50,6 +30,7 @@ end
 
 def get_indeed_data(limit: 100, search: nil)
   real_limit = limit
+  total = 0
 
   begin
     next_url ||= indeed_url(limit, search: search )
@@ -57,15 +38,19 @@ def get_indeed_data(limit: 100, search: nil)
     page = HTTParty.get(next_url)
     html = Nokogiri::HTML(page)
 
-    html.css('#resultsCol').css('.result').each{ |result|
-      obj = {}
-      obj[:title] = result.css('.turnstileLink')[0]['title']
-      obj[:url] = 'http://www.indeed.com'+ result.css('.turnstileLink')[0]['href']
-      obj[:source] =  'Indeed'
-      obj[:post_date] = result.css('.result-link-bar').css('.date').text
-      obj[:company] = result.css('.company').text.strip
-      obj[:company_url]
-      Listing.new(obj, finalize: true)
+    all_listings = html.css('#resultsCol').css('.result')
+    all_listings.each{ |result|
+      unless result.css('span.iaLabel').blank?
+        obj = {}
+        obj[:title] = result.css('.turnstileLink')[0]['title']
+        obj[:url] = 'http://www.indeed.com'+ result.css('.turnstileLink')[0]['href']
+        obj[:source] =  'Indeed'
+        obj[:post_date] = result.css('.result-link-bar').css('.date').text
+        obj[:company] = result.css('.company').text.strip
+        obj[:company_url]
+        Listing.new(obj, finalize: true)
+      end
+      total += 1
     }
 
     jobs = Listing.all
@@ -73,9 +58,8 @@ def get_indeed_data(limit: 100, search: nil)
     next_limit = limit - valid_gotten.size
     remaining = real_limit - valid_gotten.size
     limit **= 2 if limit == next_limit && limit < MAXLIMIT
-    next_url = indeed_url(next_limit, search: search) +  "&start=#{jobs.size}"
+    next_url = indeed_url(next_limit, search: search) +  "&start=#{total}" # "&start=#{jobs.size}"
     next_btn = html.css("#resultsCol").css(".pagination").css(".pn").css(".np").try(:last).try(:text)
-    require 'pry' ; binding.pry unless next_btn
   end while( remaining > 0 && next_btn.match(/Next/))
   # Listing.all
 end

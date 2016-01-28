@@ -6,7 +6,7 @@ require './url-ext'
 
 
 class Listing
-  attr_accessor :title, :url, :source, :post_date, :company, :company_url
+  attr_accessor :id, :title, :url, :source, :post_date, :company, :company_url
   attr_reader :finalize
 
   include Dateable, URLable
@@ -14,15 +14,33 @@ class Listing
   extend SingleForwardable
 
   @@listings = []
+  @@ie_listings = []
 
-  def_delegators :all, :size, :first, :last, :each, :reduce
 
-  def initialize(*args, finalize: true)
+  def_delegators :all, :size, :first, :last, :each, :reduce, :select
+
+  def initialize(*args, finalize: true, ie: false)
     @finalize = finalize
+    unless args.blank?
+      listing_id = args.first[:id]
+      listing_url = args.first[:url]
+      listing_by_id = listing_id.nil? ? nil : self.class.find(listing_id)
+      listing_by_url = listing_url.nil? ? nil : self.class.find_by_url(listing_url)
+      existing_listing = listing_by_id || listing_by_url
+      if existing_listing
+        return existing_listing
+      else
+        populate_attr(args)
+      end
+    end
+    @@ie_listings << self if ie
+    @@listings << self
+  end
+
+  def populate_attr(args)
     args.each do |attrib|
       set_attributes(attrib)
     end
-    @@listings << self
   end
 
   def set_attributes(attrs_to_set={})
@@ -44,7 +62,6 @@ class Listing
     else
       @url = uri
     end
-    # require 'pry' ; binding.pry
   end
 
   def to_h
@@ -53,6 +70,17 @@ class Listing
       info[attribute] = self.send(attribute)
     }
     info
+  end
+
+  def ie_to_h
+    {
+      title: title,
+      company: company,
+      source: source,
+      post_date: post_date,
+      url: url,
+      company_url: company_url
+    }
   end
 
   def valid?
@@ -64,6 +92,13 @@ class Listing
     @@listings
   end
 
+  def self.find(listing_id)
+    select{|listing| listing.id == listing_id }.first
+  end
+
+  def self.find_by_url(url)
+    select{|listing| listing.url == url }.first
+  end
 
   def self.saveable
     reduce([]) do |all_listings, listing|
@@ -71,4 +106,13 @@ class Listing
       all_listings
     end
   end
+
+  def self.ie_saveable
+    @@ie_listings.reduce([]) do |all_listings, listing|
+      all_listings.push(listing.ie_to_h) if listing.valid?
+      all_listings
+    end
+  end
 end
+
+# self.send(attr_set, val) if self.respond_to? attr_set

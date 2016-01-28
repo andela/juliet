@@ -4,7 +4,6 @@ class Object
   end
 end
 
-
 Object.class_eval do
   def self.attr_accessor(*vars)
     @attributes ||= []

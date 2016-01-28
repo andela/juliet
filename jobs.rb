@@ -28,7 +28,7 @@ def indeed_url(limit = MAXLIMIT, search: nil)
 end
 
 
-def get_indeed_data(limit: 100, search: nil)
+def get_indeed_data(limit: 100, search: nil, ie_populate: true)
   real_limit = limit
   total = 0
 
@@ -42,19 +42,20 @@ def get_indeed_data(limit: 100, search: nil)
     all_listings.each{ |result|
       unless result.css('span.iaLabel').blank?
         obj = {}
+        obj[:id] = result.css('h2.jobtitle')[0]['id']
         obj[:title] = result.css('.turnstileLink')[0]['title']
         obj[:url] = 'http://www.indeed.com'+ result.css('.turnstileLink')[0]['href']
         obj[:source] =  'Indeed'
         obj[:post_date] = result.css('.result-link-bar').css('.date').text
         obj[:company] = result.css('.company').text.strip
         obj[:company_url]
-        Listing.new(obj, finalize: true)
+        Listing.new(obj, finalize: true, ie: ie_populate)
       end
       total += 1
     }
 
     jobs = Listing.all
-    valid_gotten = Listing.saveable
+    valid_gotten = ie_populate ? Listing.ie_saveable : Listing.saveable
     next_limit = limit - valid_gotten.size
     remaining = real_limit - valid_gotten.size
     limit **= 2 if limit == next_limit && limit < MAXLIMIT
@@ -145,28 +146,58 @@ def get_company_url(sheet, tab)
   end
 end
 
-def repopulate_data
+def repopulate_data(sheet, tab)
   # get data from here
-  sheet1 = GSheet.new('1fYSSp1v3zBQ4mhKrIcJ9Sox-BZCE052doPk5gCJ-U00')
-  data_sheet = sheet1.worksheets[0]
+  sheet1 = GSheet.new(sheet)
+  data_sheet = sheet1.worksheets[tab]
   valids = []
   1.upto(data_sheet.num_rows) do |row|
       listing = Listing.new(finalize: false).tap do |l|
-        l.title = data_sheet[row, 1]
-        l.url = data_sheet[row, 2]
-        l.source = data_sheet[row, 3]
-        l.post_date = data_sheet[row, 4]
-        l.company = data_sheet[row, 5]
+        l.id = data_sheet[row, 1]
+        l.title = data_sheet[row, 2]
+        l.url = data_sheet[row, 3]
+        l.source = data_sheet[row, 4]
+        l.post_date = data_sheet[row, 5]
+        l.company = data_sheet[row, 6]
       end
-
-      valids << listing if listing.validated?
+      valids << listing if listing.validated? # [at this point this is Listing.all]
   end
   # require 'pry' ; binding.pry
+  # 1uAFNyapvG2n1PhtxDmhOxz52sXJ_hKg5FusYgYAxdK0
 # sheet = GSheet.new('1uVZkmo_SPTjXEDc9CZ0QEMotfWiwtybb1QuA7A_cJZI')
 # sheet.save(0, valids.map(&:to_h))
 
 end
 
+def ie_populate_data(sheet, tab)
+  sheet1 = GSheet.new(sheet)
+  data_sheet = sheet1.worksheets[tab]
+  valids = []
+  1.upto(data_sheet.num_rows) do |row|
+      obj = {}
+      obj[:title] = data_sheet[row, 1]
+      obj[:company] = data_sheet[row, 2]
+      obj[:source] = data_sheet[row, 3]
+      obj[:post_date] = data_sheet[row, 4]
+      obj[:url] = data_sheet[row, 5]
+      obj[:company_url] = data_sheet[row, 6]
+      listing = Listing.new(obj, finalize: false, ie: false)
+      valids << listing if listing.validated? # [at this point this is Listing.all]
+  end
+
+end
+
+
+
+
+# listing = Listing.new(finalize: false).tap do |l|
+  # l.title = data_sheet[row, 1]
+  # l.company = data_sheet[row, 2]
+  # l.source = data_sheet[row, 3]
+  # l.post_date = data_sheet[row, 4]
+  # l.url = data_sheet[row, 5]
+  # l.company_url = data_sheet[row, 6]
+# end
 
 
 # remaining = limit - jobs.size

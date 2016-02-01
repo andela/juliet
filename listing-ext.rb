@@ -24,8 +24,8 @@ class Listing
   end
 
   def self.ie_saveable
-    @@ie_listings.reduce([]) do |all_listings, listing|
-      all_listings.push(listing.ie_to_h) if listing.validated?
+    ie_all.reduce([]) do |all_listings, listing|
+      all_listings.push(listing.to_h) if listing.validated?
       all_listings
     end
   end

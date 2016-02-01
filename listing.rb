@@ -6,8 +6,8 @@ require './url-ext'
 
 
 class Listing
-  attr_accessor :id, :title, :url, :source, :post_date, :company, :company_url
-  attr_reader :finalize
+  attr_accessor :id, :title, :company, :source, :post_date, :url, :company_url
+  attr_reader :finalize, :search_date, :search_type
 
   include Dateable, URLable
 
@@ -17,15 +17,15 @@ class Listing
   @@ie_listings = []
 
 
-  def_delegators :all, :size, :first, :last, :each, :reduce, :select
+  def_delegators :all, :size, :first, :last, :each, :reduce, :select, :map
 
   def initialize(*args, finalize: true, ie: false)
     @finalize = finalize
     unless args.blank?
       listing_id = args.first[:id]
       listing_url = args.first[:url]
-      listing_by_id = listing_id.nil? ? nil : self.class.find(listing_id)
-      listing_by_url = listing_url.nil? ? nil : self.class.find_by_url(listing_url)
+      listing_by_id = listing_id.blank? ? nil : self.class.find(listing_id)
+      listing_by_url = listing_url.blank? ? nil : self.class.find_by_url(listing_url)
       existing_listing = listing_by_id || listing_by_url
       if existing_listing
         return existing_listing
@@ -47,7 +47,12 @@ class Listing
     if attrs_to_set.is_a? Hash
       attrs_to_set.each do |key, val|
         attr_set = "#{key}="
-        self.send(attr_set, val) if self.respond_to? attr_set
+        if self.respond_to? attr_set
+          self.send(attr_set, val)
+        else
+          var = "@#{key}"
+          self.instance_variable_set(var, val)
+        end
       end
     end
   end
@@ -72,16 +77,17 @@ class Listing
     info
   end
 
-  def ie_to_h
-    {
-      title: title,
-      company: company,
-      source: source,
-      post_date: post_date,
-      url: url,
-      company_url: company_url
-    }
-  end
+  # def ie_to_h
+  #   {
+  #     id: id,
+  #     title: title,
+  #     company: company,
+  #     source: source,
+  #     post_date: post_date,
+  #     url: url,
+  #     company_url: company_url
+  #   }
+  # end
 
   def valid?
     regex_match = /^http[s]?:\/\/www.indeed.com\//i
@@ -90,6 +96,10 @@ class Listing
 
   def self.all
     @@listings
+  end
+
+  def self.ie_all
+    @@ie_listings
   end
 
   def self.find(listing_id)
@@ -108,8 +118,8 @@ class Listing
   end
 
   def self.ie_saveable
-    @@ie_listings.reduce([]) do |all_listings, listing|
-      all_listings.push(listing.ie_to_h) if listing.valid?
+    ie_all.reduce([]) do |all_listings, listing|
+      all_listings.push(listing.to_h) if listing.valid?
       all_listings
     end
   end

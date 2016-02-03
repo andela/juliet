@@ -3,6 +3,7 @@ require 'httparty'
 require 'pry'
 require 'httpclient'
 require 'active_support/core_ext/integer/time'
+require 'hashie'
 require 'forwardable'
 
 require './custom_google'
@@ -23,9 +24,13 @@ def indeed_url(limit = MAXLIMIT, search: nil)
   params_to_search = search || %w{ full stack developer }
   search_for = params_to_search.join("+")
   upper_bound = MAXLIMIT > limit ? limit : MAXLIMIT
-  indeed_url = "http://www.indeed.com/jobs?as_and=#{search_for}&as_phr=&as_any=&as_not=senior,+lead,+director,+specialist,+experienced,+senior,+Mid+Level,+Seasoned,+Parttime&as_ttl=&as_cmp=&jt=fulltime&st=employer&sr=directhire&salary=&radius=25&fromage=any&limit=#{upper_bound}&sort=&psf=advsrch"
+  indeed_url = "http://www.indeed.com/jobs?as_and=#{search_for},Indeedapply:1&as_phr=&as_any=&as_not=senior,+lead,+director,+specialist,+experienced,+senior,+Mid+Level,+Seasoned,+Parttime&as_ttl=&as_cmp=&jt=fulltime&st=employer&sr=directhire&salary=&fromage=any&limit=#{upper_bound}&sort=&psf=advsrch"
   indeed_url
 end
+
+# "http://www.indeed.com/jobs?q=#{search_for}+-senior,+-lead,+-director,+-specialist,+-experienced,+-senior,+-Mid+-Level,+-Seasoned,+-Parttime,+Indeedapply%3A1&radius=25"
+# "http://www.indeed.com/jobs?q=full+stack+developer+-senior%2C+-lead%2C+-director%2C+-specialist%2C+-experienced%2C+-senior%2C+-Mid+-Level%2C+-Seasoned%2C+-Parttime%2C+Indeedapply%3A1&start=30"
+
 
 
 def get_indeed_data(limit: 100, search: nil, ie_populate: true)
@@ -33,25 +38,13 @@ def get_indeed_data(limit: 100, search: nil, ie_populate: true)
   total = 0
 
   begin
-    next_url ||= indeed_url(limit, search: search )
+    next_url ||= indeed_url(limit, search: search)
     page = HTTParty.get(next_url)
     html = Nokogiri::HTML(page)
 
     all_listings = html.css('#resultsCol').css('.result')
     all_listings.each{ |result|
-      unless result.css('span.iaLabel').blank?
-        obj = {}
-        obj[:id] = result.css('h2.jobtitle')[0]['id']
-        obj[:title] = result.css('.turnstileLink')[0]['title']
-        obj[:url] = 'http://www.indeed.com'+ result.css('.turnstileLink')[0]['href']
-        obj[:source] =  'Indeed'
-        obj[:post_date] = result.css('.result-link-bar').css('.date').text
-        obj[:company] = result.css('.company').text.strip
-        obj[:search_date] = Date.today.strftime("%d-%m-%Y")
-        obj[:search_type] = search.join(' ')
-        obj[:company_url]
-        Listing.new(obj, finalize: true, ie: ie_populate)
-      end
+      evaluate_object(result, search, ie_populate)
       total += 1
     }
 
@@ -63,7 +56,43 @@ def get_indeed_data(limit: 100, search: nil, ie_populate: true)
     next_url = indeed_url(next_limit, search: search) +  "&start=#{total}" # "&start=#{jobs.size}"
     next_btn = html.css("#resultsCol").css(".pagination").css(".pn").css(".np").try(:last).try(:text)
   end while( remaining > 0 && next_btn.match(/Next/))
-  # Listing.all
+end
+
+def evaluate_object(result, search, ie_populate)
+  unless result.css('span.iaLabel').blank?
+    obj = populate_obj(result, search)
+    url = obj[:url]
+    finalize= !(/^http[s]?:\/\/www.indeed.com\/cmp/i).match(url)
+    obj[:url] = get_url(url) if finalize
+    Listing.new(obj, finalize: false, ie: ie_populate)
+  end
+end
+
+def populate_obj(result, search)
+  obj = {}
+  obj[:id] = result.css('h2.jobtitle')[0]['id']
+  obj[:title] = result.css('.turnstileLink')[0]['title']
+  obj[:url] = 'http://www.indeed.com'+ result.css('.turnstileLink')[0]['href']
+  obj[:source] =  'Indeed'
+  obj[:post_date] = result.css('.result-link-bar').css('.date').text
+  obj[:company] = result.css('.company').text.strip
+  obj[:search_date] = Date.today.strftime("%d-%m-%Y")
+  obj[:search_type] = search.join(' ')
+  obj[:company_url]
+
+  obj
+end
+
+
+def get_url url
+  uri = URI(url)
+  id = params(uri.query)[:jk]
+  # puts obj[:url] #if finalize
+  "http://www.indeed.com/viewjob?jk=#{id}"
+end
+
+def params(q)
+  Hashie.symbolize_keys q.split('&').map{|x| x.split('=')}.to_h
 end
 
 def save_data(tab=1)
@@ -102,6 +131,8 @@ def populate_indeed
   sheet = GSheet.new('1JmDKlL-Z_LuM0P-ON7gZTbq3G-4dxiHw9Lo33F4n1jQ')
   sheet.save(0, jobs)
 end
+
+# def indeed_d
 
 def check_remote_co(url)
   page = HTTParty.get(url)
@@ -202,6 +233,20 @@ def ie_repopulate_data_remove_applied(sheet, tab)
   sheet
 end
 
+def ie_repopulate_data_resort(sheet, tab)
+  sheet = sheet.is_a?(String) ? GSheet.new(sheet) : sheet
+  data_sheet = sheet.worksheets[tab]
+  data = Listing.saveable
+  (3..data_sheet.num_rows).each do |x|
+    1.upto(data_sheet.num_cols) do |y|
+      data_sheet[x, y] = nil
+    end
+  end
+  data_sheet.save
+  sheet.save(tab, data, start_row: 3, sheet: data_sheet)
+  sheet
+end
+
 def save_listing_record(sheet, tab, listing: Listing.ie_saveable)
   sheet = sheet.is_a?(String) ? GSheet.new(sheet) : sheet
   next_data_row = sheet.worksheets[tab].num_rows + 1
@@ -222,7 +267,8 @@ def record_stats(sheet, tab)
   raise StandardError unless sheet.is_a? GSheet
   data_sheet = sheet.worksheets[tab]
   listing_data = Listing.ie_all.reduce(Hash.new(0)){ |all, listing|
-    all[listing.search_type] += 1 # if listing.is_a? Listing
+    all[listing.search_type] += 1
+    # if listing.is_a? Listing
     # all[listing[]]
     all
   }
@@ -248,108 +294,5 @@ def init(sheet, search: ['full', 'stack', 'developer'] , data_sheet: 1, id_sheet
   new_ids = listings.rows.flatten
   puts "Total of #{ new_ids.size - ids.size } listings has been added"
   record_stats(sheet, stats_sheet)
-  # require 'pry' ; binding.pry
+  require 'pry' ; binding.pry
 end
-
-# init # ie_populate_data
-# get_indeed_data(search: [], limit: 400)
-# save_listing_record
-
-# save_job_ids
-# record_stats
-
-# (3..data_sheet.num_rows).each do |x|
-#   1.upto(data_sheet.num_cols) do |y|
-#     data_sheet[x, y] = nil
-#   end
-# end
-
-
-
-# def
-#
-# end
-
-
-
-# require 'pry' ; binding.pry
-# sheet = GSheet.new('')
-# valids = []
-# 1.upto(data_sheet.num_rows) do |row|
-#   # unless data_sheet[row, 13].match(/applied/i)
-#   #   obj = {}
-#   #   obj[:job_id] = data_sheet[row, 1]
-#   #   obj[:title] = data_sheet[row, 2]
-#   #   obj[:company] = data_sheet[row, 3]
-#   #   obj[:source] = data_sheet[row, 4]
-#   #   obj[:post_date] = data_sheet[row, 5]
-#   #   obj[:url] = data_sheet[row, 6]
-#   #   obj[:company_url] = data_sheet[row, 7]
-#   #   obj[:linkedin] = data_sheet[row, 8]
-#   #   obj[:location_city] = data_sheet[row, 9]
-#   #   obj[:location_state] = data_sheet[row, 10]
-#   #   obj[:employees] = data_sheet[row, 11]
-#   #   obj[:industry] = data_sheet[row, 12]
-#   #   obj[:status] = data_sheet[row, 13]
-#   #   obj[:date_applied] = data_sheet[row, 14]
-#   #   obj[:ie_feedback] = data_sheet[row, 15]
-#   #   obj[:viewed] = data_sheet[row, 16]
-#   #   obj[:response] = data_sheet[row, 17]
-#   #   obj[:mql] = data_sheet[row, 18]
-#   #   obj[:feedback] = data_sheet[row, 19]
-#   #   obj[:next_step] = data_sheet[row, 20]
-#   #   listing = Listing.new(obj, finalize: false, ie: false)
-#   #   valids << listing if listing.validated? # [at this point this is Listing.all]
-#   end
-# end
-
-
-# listing = Listing.new(finalize: false).tap do |l|
-  # l.title = data_sheet[row, 1]
-  # l.company = data_sheet[row, 2]
-  # l.source = data_sheet[row, 3]
-  # l.post_date = data_sheet[row, 4]
-  # l.url = data_sheet[row, 5]
-  # l.company_url = data_sheet[row, 6]
-# end
-
-
-# remaining = limit - jobs.size
-#remaining > 0 ? remaining : nil
-# while(true until false)
-# def mapping
-
-# valids << listing if valid
-# https://docs.google.com/spreadsheets/d/1fYSSp1v3zBQ4mhKrIcJ9Sox-BZCE052doPk5gCJ-U00/edit#gid=0
-# https://docs.google.com/spreadsheets/d/1uVZkmo_SPTjXEDc9CZ0QEMotfWiwtybb1QuA7A_cJZI/edit#gid=1256831373
-# require 'pry' ; binding.pry
-  # data_sheet.rows.each{ |job_data|
-  #   listing = Listing.new.tap do |l|
-  #
-  #     job_data.each_with_index{ |col, index|
-  #         l.title = col if index == 0
-  #         l.url = col if index == 1
-  #         l.source = col if index == 2
-  #         l.post_date = col if index == 3
-  #         l.company = col if index == 4
-  #     }
-  #
-  #   end
-  # }
-  # data_sheet.rows.each{
-  #
-  # }
-  # add data to this
-  # sheet2 = GSheet.new()
-# https://docs.google.com/spreadsheets/d/1uVZkmo_SPTjXEDc9CZ0QEMotfWiwtybb1QuA7A_cJZI/edit#gid=1256831373
-
-
-
-# /(?=5).*(?=years)/
-# require 'pry' ; binding.pry
-# save(tab, uris, start_row: 1, start_col: 1)
-# data = {url: search.url}#[search.url]
-
-# sheet[] = data
-# data_found = search(data)#.map{ |d| { url: d.uri }}
-# sheet[] = data_found.first.uri

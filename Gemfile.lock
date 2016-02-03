@@ -46,6 +46,7 @@ GEM
       memoist (~> 0.12)
       multi_json (~> 1.11)
       signet (~> 0.7)
+    hashie (3.4.3)
     http-cookie (1.0.2)
       domain_name (~> 0.5)
     httparty (0.13.7)
@@ -120,6 +121,7 @@ DEPENDENCIES
   google-api-client
   google-search
   google_drive
+  hashie
   httparty
   httpclient
   mechanize
@@ -128,4 +130,4 @@ DEPENDENCIES
   typhoeus
 
 BUNDLED WITH
-   1.10.6
+   1.11.2

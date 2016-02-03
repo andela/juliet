@@ -34,6 +34,9 @@ end
 
 
 def get_indeed_data(limit: 100, search: nil, ie_populate: true)
+  current_size = ie_populate ? Listing.ie_saveable.size : Listing.saveable.size
+  limit += current_size
+  puts "#{current_size} already exists, looking for #{limit} more"
   real_limit = limit
   total = 0
 
@@ -202,6 +205,7 @@ def repopulate_data(sheet, tab)
 end
 
 def ie_populate_data(sheet, tab)
+  puts "Getting current data from spreadsheet to ensure there are no duplicates"
   sheet = sheet.is_a?(String) ? GSheet.new(sheet) : sheet
   data_sheet = sheet.worksheets[tab]
   valids = []
@@ -221,6 +225,7 @@ def ie_populate_data(sheet, tab)
 end
 
 def ie_repopulate_data_remove_applied(sheet, tab)
+  puts "Mainly for easy management, removing all rows that lists as applied"
   sheet = sheet.is_a?(String) ? GSheet.new(sheet) : sheet
   data_sheet = sheet.worksheets[tab]
   unapplied = data_sheet.rows[3..data_sheet.num_rows].select{|x| !x[12].match(/^applied/i) }
@@ -233,10 +238,11 @@ def ie_repopulate_data_remove_applied(sheet, tab)
   sheet
 end
 
-def ie_repopulate_data_resort(sheet, tab)
+def ie_repopulate_data_resort(sheet, tab, data: Listing.saveable)
+  puts "Emptying all the rows and saving all objects that could be saved"
   sheet = sheet.is_a?(String) ? GSheet.new(sheet) : sheet
   data_sheet = sheet.worksheets[tab]
-  data = Listing.saveable
+  # data = Listing.saveable
   (3..data_sheet.num_rows).each do |x|
     1.upto(data_sheet.num_cols) do |y|
       data_sheet[x, y] = nil
@@ -248,12 +254,15 @@ def ie_repopulate_data_resort(sheet, tab)
 end
 
 def save_listing_record(sheet, tab, listing: Listing.ie_saveable)
+  puts "Saving all listsing records. Total of #{listing.size} records will be saved"
   sheet = sheet.is_a?(String) ? GSheet.new(sheet) : sheet
   next_data_row = sheet.worksheets[tab].num_rows + 1
   sheet.save(tab, listing, start_row: next_data_row )
 end
 
 def save_job_ids(sheet, tab)
+  puts "Saving all uniq job ids."
+  puts "This ids are not really being used now, however in the next tweak of the methods, before creating a new Listing object, it would first check if the ids already exists"
   sheet = sheet.is_a?(String) ? GSheet.new(sheet) : sheet
   jobsidtab = sheet.worksheets[tab]
   ids = jobsidtab.rows.flatten
@@ -263,6 +272,7 @@ def save_job_ids(sheet, tab)
 end
 
 def record_stats(sheet, tab)
+  puts "Recording the stats of the search made/done"
   sheet = sheet.is_a?(String) ? GSheet.new(sheet) : sheet
   raise StandardError unless sheet.is_a? GSheet
   data_sheet = sheet.worksheets[tab]
@@ -283,16 +293,18 @@ end
 
 
 def init(sheet, search: ['full', 'stack', 'developer'] , data_sheet: 1, id_sheet: 5, stats_sheet: 6)
+  puts "Initiating the process"
   ie_populate_data(sheet, data_sheet)
   listings = sheet.worksheets[id_sheet]
   ids = listings.rows.flatten
   puts "Current listing at #{ids.size}"
   get_indeed_data(limit: 400, search: search)
-  save_listing_record(sheet, data_sheet)
+  ie_repopulate_data_resort(sheet, data_sheet)
+  # save_listing_record(sheet, data_sheet)
   save_job_ids(sheet, id_sheet)
   listings.reload
-  new_ids = listings.rows.flatten
-  puts "Total of #{ new_ids.size - ids.size } listings has been added"
+  new_ids = listings.rows.flatten.uniq
+  puts "For a search for #{search.join(' ')}, a total of #{ new_ids.size - ids.size } listings has been added"
   record_stats(sheet, stats_sheet)
   require 'pry' ; binding.pry
 end

@@ -6,8 +6,8 @@ require './url-ext'
 
 
 class Listing
-  attr_accessor :id, :title, :company, :source, :post_date, :url, :company_url
-  attr_reader :finalize, :search_date, :search_type
+  attr_accessor :id, :title, :company, :source, :post_date, :url, :company_url, :search_type, :search_date
+  attr_reader :finalize
 
   include Dateable, URLable
 

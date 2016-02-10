@@ -1,6 +1,8 @@
 require 'httpclient'
 require 'pry'
 
+# May not be in use
+
 def get_final_url(uri)
   httpc = HTTPClient.new
   count = 0

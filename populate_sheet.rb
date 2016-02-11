@@ -13,7 +13,15 @@ class PopulateSheet
 
   def save(listings, sheet, start_row = 2, start_col = 1)
     sheet_headers(sheet) if sheet.rows.first.blank?
-    row = start_row
+    fill_rows(listings, sheet, start_row)
+    if sheet.save
+      puts "Data populated"
+    else
+      puts "Unable to populate data"
+    end
+  end
+
+  def fill_rows(listings, sheet, row)
     listings.each do | listing |
       sheet[row, 1] = listing.cacheId
       sheet[row, 2] = listing.title
@@ -22,11 +30,6 @@ class PopulateSheet
       sheet[row, 5] = listing.snippet
       sheet[row, 6] = Date.today.strftime("%d-%m-%Y")
       row += 1
-    end
-    if sheet.save
-      puts "Data populated"
-    else
-      puts "Unable to populate data"
     end
   end
 

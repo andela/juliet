@@ -11,9 +11,6 @@ def get_dice_data(limit: 100)
 end
 
 MAXLIMIT = 100
-# By me
-search_params = [ "fullstack", "full", "stack", "developer", "web developer", "front-end developer", "back-end developer", "software engineer" ]
-
 def indeed_url(limit = MAXLIMIT, search: nil)
   params_to_search = search || %w{ full stack developer }
   search_for = params_to_search.join("+")

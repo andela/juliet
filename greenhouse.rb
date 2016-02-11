@@ -1,20 +1,29 @@
 require "./resources"
-require "mechanize"
-require "uri"
 
-def query_gsce_greenhouse(query_string)
-  agent = Mechanize.new
-   binding.pry
-  agent.get(URI("https://cse.google.com/cse/publicurl?cx=016010277763527429812:tqprubgay5k"))
+class Greenhouse
+  attr_reader :sheet
 
-  listings = page.form_with(class: "gsc-search-box gsc-search-box-tools") do | field |
-    field.search = query_string
-  end.submit
-  binding.pry
+  def initialize
+    @sheet = "1Jdvf9pvAu1VBALc1gyQV75nuu1CUst6C-LvMa-5EvwA"
+  end
+
+  def query_gsce_greenhouse(query_string)
+    listings = []
+    puts "Searching"
+    1.upto(10) do | n |
+      listings_per_page = GoogleCustomSearchApi.search(query_string, page: 1)
+      listings << listings_per_page.items
+    end
+    puts "Found result matching your search" unless listings.empty?
+    sheet_to_populate = PopulateSheet.new(sheet)
+    sheet_to_populate.populate(listings.flatten)
+  end
+
+  def query_string
+    "software developer frontend fullstack backend engineer -senior"
+  end
 end
 
-def query_string
-  "software developer frontend fullstack -senior"
-end
-
-query_gsce_greenhouse(query_string)
+jobs = Greenhouse.new
+query = jobs.query_string
+jobs.query_gsce_greenhouse(query)

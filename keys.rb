@@ -1,0 +1,2 @@
+GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyDDzhd7lRDnhjPOVyxSNmVXF2654G451pE"
+GoogleCustomSearchApi::GOOGLE_SEARCH_CX =  "016010277763527429812:tqprubgay5k"

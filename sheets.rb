@@ -61,25 +61,3 @@ class GSheet
   end
 
 end
-
-
-# get_data_from_column(1) do |data, sheet|
-#   # sheet[] = data
-#   data_found = search(data)#.map{ |d| { url: d.uri }}
-#   sheet[] = data_found.first.uri
-# end
-# data = {url: search.url}#[search.url]
-# save(1, data,start_row: 1, start_col: 1)
-
-
-  # begin
-  #   data = sheet_to_use[row, start_col]
-  #   data_unavailable = data.blank?
-  #   # search(data) unless data_available
-  #   @all_data << data unless data_unavailable
-  #   row += 1
-  # end until(data_unavailable)
-
-  # def search data
-  #   @data << data
-  # end

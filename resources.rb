@@ -12,13 +12,18 @@ require "./date-ext"
 require "./obj-ext"
 require "./url-ext"
 require "./listing-ext"
+require "net/http"
+require "uri"
 require "google/api_client"
 require "google_custom_search_api"
 require "google_drive"
+require "./page_inspector"
 require "./populate_sheet"
 require "./keys"
+require "csv"
 
 Capybara.register_driver :poltergeist do | app |
     Capybara::Poltergeist::Driver.new(app, js_errors: false)
   end
 Capybara.default_driver = :poltergeist
+Capybara.ignore_hidden_elements = false

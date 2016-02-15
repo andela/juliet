@@ -16,13 +16,6 @@ class PageInspector
     if page_url == link
       company_name = browser.find(".company-name", visible: false).text.sub("at ","")
       coy_and_link.merge!(company_name: company_name, link: link)
-    # else
-    #   browser.find("#main").all("a").each do| n |
-    #     unless n.text.scan(permitted_roles).flatten.all?(&:nil?)
-    #       link = n["href"].start_with?("/") ? "https://boards.greenhouse.io" + n["href"] : n["href"]
-    #       listing_info(link)
-    #     end
-    #   end
     end
     coy_and_link
   rescue

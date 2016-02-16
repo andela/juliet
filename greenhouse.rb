@@ -7,10 +7,10 @@ class Greenhouse
     #  Top sheet is to be used
     # @sheet = "1Jdvf9pvAu1VBALc1gyQV75nuu1CUst6C-LvMa-5EvwA"
     @sheet = "1FVfJAmWx_y29Jk1EnGQHB3glK33R8kaQ4ICZ53h9v6k"
+    # @sheet = "1cRkvqzESAJsRTvzmUQyackZrCNVa4yyzTC76jGCbMn8"
   end
 
   def query_string
-    # Split
     ["software developer", "frontend developer", "fullstack developer", "backend developer", "software engineer"]
   end
 

@@ -15,6 +15,8 @@ class PageInspector
     page_url = browser.current_url.split("#").first
     if page_url == link
       company_name = browser.find(".company-name", visible: false).text.sub("at ","")
+      # requirement =
+      # duties =
       coy_and_link.merge!(company_name: company_name, link: link)
     end
     coy_and_link
@@ -31,6 +33,3 @@ class PageInspector
   end
 
 end
-
-# inspector = PageInspector.new("https://boards.greenhouse.io/enernoc/jobs/118749?t=52cgjt")
-# inspector.listing_info

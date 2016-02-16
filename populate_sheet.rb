@@ -6,6 +6,10 @@ class PopulateSheet
     @sheet = session.spreadsheet_by_key(listing_sheet).worksheets[0]
   end
 
+  def number_of_rows
+    sheet.num_rows
+  end
+
   def populate(listings)
     reload_sheet(sheet)
     listings_in_fifties(listings)
@@ -24,6 +28,7 @@ class PopulateSheet
   def fill_rows(listings, sheet, row)
     start_row = row
     listings.each do | listing |
+      next if sheet.cells.values.include? listing.cacheId
       inspector = PageInspector.new(listing.link)
       coy_and_link = inspector.listing_info unless inspector.listing_info.empty? || inspector.listing_info.nil?
       next if coy_and_link.nil?
@@ -36,7 +41,7 @@ class PopulateSheet
       sheet[row, 7] = Date.today.strftime("%d-%m-%Y")
       row += 1
     end
-    puts "Adding #{row - start_row} rows ..."
+    puts "Adding #{row - start_row} row(s) ..."
   end
 
   def listings_in_fifties(listings)
@@ -44,24 +49,23 @@ class PopulateSheet
     number_of_listings = listings.count
     start_index, end_index = 0, 49
     if number_of_listings > 50
-      while start_index < number_of_listings
-        start_row = start_index == 0 ? 2 : start_index + 1
-        set = listings[start_index..end_index]
-        remaining_listings = number_of_listings - ( end_index + 1 )
-        end_index += remaining_listings <= 50 ? remaining_listings : 50
-        start_index += 50
-        save(set, sheet, start_row)
-      end
+      batch_listing(listings, number_of_listings, start_index, end_index)
     else
       set = listings[start_index..number_of_listings]
-      save(set, sheet)
+      save(set, sheet, number_of_rows + 1)
     end
   end
 
-  # def write_to_csv(listing)
-  #   fingerprint = Time.now.strftime("%m%d%Y")
-  #   CSV.open("listings#{fingerprint}.csv", "a+") { |csv|  csv << lisitng }
-  # end
+  def batch_listing(listings, number_of_listings, start_index, end_index)
+    while start_index < number_of_listings
+      start_row = number_of_rows + 1
+      set = listings[start_index..end_index]
+      remaining_listings = number_of_listings - ( end_index + 1 )
+      end_index += remaining_listings <= 50 ? remaining_listings : 50
+      start_index += 50
+      save(set, sheet, start_row)
+    end
+  end
 
   def sheet_headers(sheet)
     sheet[1, 1] = "Unique Id"
@@ -71,6 +75,7 @@ class PopulateSheet
     sheet[1, 5] = "Source"
     sheet[1, 6] = "Description"
     sheet[1, 7] = "Date of Search"
+    sheet.save
   end
 
   def reload_sheet(sheet)

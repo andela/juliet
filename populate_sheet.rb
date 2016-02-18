@@ -1,14 +1,16 @@
 # Populates spreadsheet for greenhouse
+require "./resources"
 class PopulateSheet
-  attr_reader :sheet
+  attr_accessor :sheet
   def initialize(listing_sheet)
     session = GoogleDrive.saved_session("auth.json")
     @sheet = session.spreadsheet_by_key(listing_sheet).worksheets[0]
+    @latest = 0
   end
 
-  def number_of_rows
-    sheet.num_rows
-  end
+  # def number_of_rows
+  #   puts sheet.num_rows
+  # end
 
   def populate(listings)
     reload_sheet(sheet)
@@ -16,7 +18,7 @@ class PopulateSheet
   end
 
   def save(listings, sheet, start_row = 2)
-    sheet_headers(sheet) if sheet.rows.first.blank?
+    sheet_headers(sheet) if sheet.num_rows == 0
     fill_rows(listings, sheet, start_row)
     if sheet.save
       puts "Data populated"
@@ -30,35 +32,39 @@ class PopulateSheet
     listings.each do | listing |
       next if sheet.cells.values.include? listing.cacheId
       inspector = PageInspector.new(listing.link)
-      coy_and_link = inspector.listing_info unless inspector.listing_info.empty? || inspector.listing_info.nil?
-      next if coy_and_link.nil?
+      coy_and_link = inspector.listing_info
+      next if coy_and_link.empty?
       sheet[row, 1] = listing.cacheId
       sheet[row, 2] = listing.title.sub("Job Application for ","").split(" at").first
       sheet[row, 3] = coy_and_link[:company_name]
       sheet[row, 4] = coy_and_link[:link]
       sheet[row, 5] = listing.displayLink
       sheet[row, 6] = listing.snippet
-      sheet[row, 7] = Date.today.strftime("%d-%m-%Y")
+      sheet[row, 7] = coy_and_link[:duties]
+      sheet[row, 8] = coy_and_link[:requirement]
+      sheet[row, 9] = Date.today.strftime("%d-%m-%Y")
       row += 1
     end
+    @latest += row - start_row
     puts "Adding #{row - start_row} row(s) ..."
   end
 
   def listings_in_fifties(listings)
-    puts "There are #{listings.count} listings"
     number_of_listings = listings.count
+    puts "Found #{number_of_listings} listings"
     start_index, end_index = 0, 49
     if number_of_listings > 50
       batch_listing(listings, number_of_listings, start_index, end_index)
     else
       set = listings[start_index..number_of_listings]
-      save(set, sheet, number_of_rows + 1)
+      save(set, sheet, sheet.num_rows + 1)
     end
+    puts "Search completed. A total of #{@latest} listings were added."
   end
 
   def batch_listing(listings, number_of_listings, start_index, end_index)
     while start_index < number_of_listings
-      start_row = number_of_rows + 1
+      start_row = sheet.num_rows + 1
       set = listings[start_index..end_index]
       remaining_listings = number_of_listings - ( end_index + 1 )
       end_index += remaining_listings <= 50 ? remaining_listings : 50
@@ -74,7 +80,9 @@ class PopulateSheet
     sheet[1, 4] = "Url"
     sheet[1, 5] = "Source"
     sheet[1, 6] = "Description"
-    sheet[1, 7] = "Date of Search"
+    sheet[1, 7] = "Applicant's Duties"
+    sheet[1, 8] = "Preferred Candidate"
+    sheet[1, 9] = "Date of Search"
     sheet.save
   end
 

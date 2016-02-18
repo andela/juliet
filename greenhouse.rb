@@ -7,21 +7,21 @@ class Greenhouse
     #  Top sheet is to be used
     # @sheet = "1Jdvf9pvAu1VBALc1gyQV75nuu1CUst6C-LvMa-5EvwA"
     @sheet = "1FVfJAmWx_y29Jk1EnGQHB3glK33R8kaQ4ICZ53h9v6k"
-    # @sheet = "1cRkvqzESAJsRTvzmUQyackZrCNVa4yyzTC76jGCbMn8"
   end
 
   def query_string
-    ["software developer", "frontend developer", "fullstack developer", "backend developer", "software engineer"]
+    [ "software developer", "frontend developer", "fullstack developer", "backend developer", "software engineer",
+      "ruby", "rails", "python", "django", "java", "android", "iOS", "php", "laravel"
+    ]
   end
 
   def unallowed_params
-    "-senior -.NET -c# -Lead -5+ -Director -Manager -Sr"
+    "-senior -.NET -c# -Lead -5+ -Director -Manager -Sr -Ph.D -Master's"
   end
 
   def query_gsce_greenhouse(query_string)
     puts "Searching"
     listings = get_listing.flatten
-    puts "Found result(s) matching your search"
     sheet_to_populate = PopulateSheet.new(sheet)
     sheet_to_populate.populate(listings)
   end

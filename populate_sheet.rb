@@ -8,10 +8,6 @@ class PopulateSheet
     @latest = 0
   end
 
-  # def number_of_rows
-  #   puts sheet.num_rows
-  # end
-
   def populate(listings)
     reload_sheet(sheet)
     listings_in_fifties(listings)

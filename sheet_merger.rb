@@ -26,6 +26,6 @@ class SheetMerger
   end
 end
 
-sheet1 = "1FVfJAmWx_y29Jk1EnGQHB3glK33R8kaQ4ICZ53h9v6k"
-sheet2 = "1inhPxLiqTfrloPPfBOdeRjIMCXcCzZlpwQx-JyqykgA"
+sheet1 = ""
+sheet2 = ""
 SheetMerger.new(sheet1, sheet2).add_non_existing_row

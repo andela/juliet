@@ -37,12 +37,4 @@ class PageInspector
   rescue
     "Please visit the URL of this listing to get this information."
   end
-
-  def permitted_roles
-    /\A(software developer)|frontend|fullstack|backend|(web developer)|(software engineer)|developer|(front end)|(back end)|(full stack)|Full-Stack\z/i
-  end
-
-  def unpermitted_roles
-    /\ASenior|(5+)\z/
-  end
 end

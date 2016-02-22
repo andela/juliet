@@ -1,23 +1,23 @@
 require "./resources"
 
 class Greenhouse
+  include Utility
   attr_reader :sheet
 
   def initialize
-    #  Top sheet is to be used
-    # @sheet = "1Jdvf9pvAu1VBALc1gyQV75nuu1CUst6C-LvMa-5EvwA"
     @sheet = "1FVfJAmWx_y29Jk1EnGQHB3glK33R8kaQ4ICZ53h9v6k"
   end
 
-  def query_string
-    [ "software developer", "frontend developer", "fullstack developer", "backend developer", "software engineer",
-      "ruby", "rails", "python", "django", "java", "android", "iOS", "php", "laravel"
-    ]
-  end
+  # def query_string
+  #   [ "software developer", "frontend developer", "fullstack developer", "backend developer", "software engineer",
+  #     "ruby", "rails", "python", "django", "java", "android", "iOS", "php", "laravel"
+  #   ]
+  # end
 
-  def unallowed_params
-    "-senior -.NET -c# -Lead -5+ -Director -Manager -Sr -Ph.D -Master's"
-  end
+  # def unallowed_params
+  #   "-senior -.NET -c# -c++ -Lead -5+ -Director -Manager -Sr -Ph.D -specialist -experienced \
+  #   -mid -seasoned -part-time -Inc -Co"
+  # end
 
   def query_gsce_greenhouse(query_string)
     puts "Searching"

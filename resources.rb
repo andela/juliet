@@ -21,6 +21,9 @@ require "./page_inspector"
 require "./populate_sheet"
 require "./keys"
 require "csv"
+require "utility"
+require "company"
+
 
 Capybara.register_driver :poltergeist do | app |
     Capybara::Poltergeist::Driver.new(app, js_errors: false)

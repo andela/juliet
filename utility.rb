@@ -6,7 +6,7 @@ module Utility
   end
 
   def unallowed_params
-    "-senior -.NET -c# -c++ -Lead -5+ -Director -Manager -Sr -Ph.D -specialist -experienced \
+    "-senior -.NET -c# -c++ -Lead -5+ -Director -Manager -Sr -Ph.D -PhD -specialist -experienced \
     -mid -seasoned -part-time -Inc -Co"
   end
 

@@ -16,3 +16,7 @@ gem "launchy"
 gem "typhoeus"
 gem "hashie"
 gem "google_custom_search_api"
+gem "whenever", :require => false
+gem "sidekiq"
+gem "rake"
+

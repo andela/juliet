@@ -17,12 +17,13 @@ require "uri"
 require "google/api_client"
 require "google_custom_search_api"
 require "google_drive"
+require "whenever"
+require "./utility"
 require "./page_inspector"
 require "./populate_sheet"
 require "./keys"
+require "./company"
 require "csv"
-require "utility"
-require "company"
 
 
 Capybara.register_driver :poltergeist do | app |

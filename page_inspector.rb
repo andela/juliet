@@ -1,7 +1,7 @@
 require "./resources"
 
 class PageInspector
-
+  # include Utility
   attr_reader :url, :browser
 
   def initialize(url)
@@ -33,7 +33,7 @@ class PageInspector
         property_value += link.text
       end
     end
-    property_value
+    property_value = property_value.include? unallowed_params.split.any? ? nil : property_value
   rescue
     "Please visit the URL of this listing to get this information."
   end

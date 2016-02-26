@@ -1,0 +1,100 @@
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)
+rake aborted!
+NameError: uninitialized constant ScrapeWorker
+/Users/Mattwal/Documents/workspace/projects/juliet/Rakefile:7:in `block (2 levels) in <top (required)>'
+Tasks: TOP => action:search
+(See full trace by running task with --trace)

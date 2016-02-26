@@ -34,7 +34,3 @@ class Greenhouse
     listing
   end
 end
-
-jobs = Greenhouse.new
-query = jobs.query_string
-jobs.query_gsce_greenhouse(query)

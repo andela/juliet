@@ -1,10 +1,11 @@
-# Populates spreadsheet for greenhouse
 require "./resources"
 class PopulateSheet
-  attr_accessor :sheet
+  include Utility
+  attr_accessor :sheet, :exclusion_list
   def initialize(listing_sheet)
     session = GoogleDrive.saved_session("auth.json")
     @sheet = session.spreadsheet_by_key(listing_sheet).worksheets[0]
+    @exclusion_list = session.spreadsheet_by_key(listing_sheet).worksheets[3]
     @company = Company.new(@sheet)
     @latest = 0
   end
@@ -29,26 +30,30 @@ class PopulateSheet
     listings.each do | listing |
       next if sheet.cells.values.include? listing.cacheId
       inspector = PageInspector.new(listing.link)
-      coy_and_link = inspector.listing_info
-      next if coy_and_link.empty?
-      fill_row_cells(listing, coy_and_link, row)
+      coy_info = inspector.listing_info
+      title = listing.title.sub("Job Application for ","").split(" at").first
+      next if (coy_info.values.include? nil) || (coy_info.empty?) || (!permitted?(title))
+      coy_url = @company.look_up_coy_url("#{coy_info[:company_name]} #{coy_info[:location]}")
+      coy_info.merge!(id: listing.cacheId, title: title, source: listing.displayLink, desc: listing.snippet, url: coy_url)
+      fill_row_cells(coy_info, row)
       row += 1
     end
     @latest += row - start_row
     puts "Adding #{row - start_row} row(s) ..."
   end
 
-  def fill_row_cells(listing, coy_and_link, row)
-    sheet[row, 1] = listing.cacheId
-    sheet[row, 2] = listing.title.sub("Job Application for ","").split(" at").first
-    sheet[row, 3] = coy_and_link[:company_name]
-    sheet[row, 4] = coy_and_link[:link]
-    sheet[row, 5] = listing.displayLink
-    sheet[row, 6] = listing.snippet
-    sheet[row, 7] = coy_and_link[:duties]
-    sheet[row, 8] = coy_and_link[:requirement]
-    sheet[row, 9] = Date.today.strftime("%d-%m-%Y")
-    sheet[row, 10] = @company.look_up_coy_url(coy_and_link[:company_name])
+  def fill_row_cells(coy_info, row)
+    sheet[row, 1] = coy_info[:id]
+    sheet[row, 2] = coy_info[:title]
+    sheet[row, 3] = coy_info[:company_name]
+    sheet[row, 4] = coy_info[:link]
+    sheet[row, 5] = coy_info[:source]
+    sheet[row, 6] = coy_info[:desc]
+    sheet[row, 7] = Date.today.strftime("%d-%m-%Y")
+    sheet[row, 8] = coy_info[:url]
+    sheet[row, 9] = coy_info[:duties]
+    sheet[row, 10] = coy_info[:requirement]
+    sheet[row, 11] = coy_info[:date] if coy_info[:date]
   end
 
   def listings_in_fifties(listings)
@@ -75,17 +80,18 @@ class PopulateSheet
     end
   end
 
-  def sheet_headers(sheet)
-    sheet[1, 1] = "Unique Id"
+  def sheet_headers(sheet, posted_on = false)
+    sheet[1, 1] = "Id"
     sheet[1, 2] = "Listing Title"
     sheet[1, 3] = "Company Name"
     sheet[1, 4] = "Url"
     sheet[1, 5] = "Source"
     sheet[1, 6] = "Description"
-    sheet[1, 7] = "Applicant's Duties"
-    sheet[1, 8] = "Preferred Candidate"
-    sheet[1, 9] = "Date of Search"
-    sheet[1, 10] = "Company Url"
+    sheet[1, 7] = "Date of Search"
+    sheet[1, 8] = "Company Url"
+    sheet[1, 9] = "Applicant's Duties"
+    sheet[1, 10] = "Preferred Candidate"
+    sheet[1, 11] = "Date Posted" if posted_on
     sheet.save
   end
 

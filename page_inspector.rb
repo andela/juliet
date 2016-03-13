@@ -1,7 +1,7 @@
-require "./resources"
+ require "./resources"
 
 class PageInspector
-  # include Utility
+  include Utility
   attr_reader :url, :browser
 
   def initialize(url)
@@ -15,7 +15,8 @@ class PageInspector
     page_url = browser.current_url.split("#").first
     if page_url == link
       company_name = browser.find(".company-name", visible: false).text.sub("at ","")
-      coy_and_link.merge!(company_name: company_name, link: link, requirement: property("requirement"), duties: property("duties"))
+      location = browser.has_css?(".location") ? browser.find(".location").text : ""
+      coy_and_link.merge!(company_name: company_name, link: link, requirement: property("requirement"), duties: property("duties"), location: location)
     end
     coy_and_link
   rescue
@@ -33,8 +34,12 @@ class PageInspector
         property_value += link.text
       end
     end
-    property_value = property_value.include? unallowed_params.split.any? ? nil : property_value
+    property_value = permitted?(property_value) ? property_value : nil
+    return property_value
   rescue
     "Please visit the URL of this listing to get this information."
   end
 end
+
+
+PageInspector.new("https://boards.greenhouse.io/popsugar/jobs/173260").listing_info

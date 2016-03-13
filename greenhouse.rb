@@ -5,7 +5,7 @@ class Greenhouse
   attr_reader :sheet
 
   def initialize
-    @sheet = "1FVfJAmWx_y29Jk1EnGQHB3glK33R8kaQ4ICZ53h9v6k"
+    @sheet = ENV["GH_SHEET_ID"]
   end
 
   def query_gsce_greenhouse(query_string)
@@ -34,3 +34,6 @@ class Greenhouse
     listing
   end
 end
+jobs = Greenhouse.new
+query = jobs.query_string
+jobs.query_gsce_greenhouse(query)

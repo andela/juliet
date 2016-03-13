@@ -10,9 +10,8 @@ class Company
   end
 
   # This function is just to get company URLs for
-  # companies already on the spreadsheet before add URL
-  # lookup to the listings search
-
+  # companies already on the spreadsheet before adding
+  # URL lookup to the listings search
   def add_company_url
     (2..@sheet.num_rows).each do |row|
       @sheet[row, 10] = look_up_google(@sheet[row, 3])

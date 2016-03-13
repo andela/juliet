@@ -58,4 +58,4 @@ class WeWorkRemotely
   end
 
 end
-WeWorkRemotely.new("https://weworkremotely.com/categories/2-programming/jobs").lookup
+WeWorkRemotely.new(ENV["WWR_URL"]).lookup

@@ -9,3 +9,4 @@ cron_log.log
 /config
 /workers
 sample.csv
+Rakefile

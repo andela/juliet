@@ -2,7 +2,6 @@
 
 require "./resources"
 class SheetMerger
-  # include Utility #
   def initialize(sheet, comparing_sheet)
     session = GoogleDrive.saved_session("auth.json")
     @sheet = session.spreadsheet_by_key(sheet).worksheets[0]
@@ -14,10 +13,6 @@ class SheetMerger
     insertion_row = @initial_num_rows + 1
     (1..@comparing_sheet.num_rows).each do |row|
       next if @sheet.cells.values.include? @comparing_sheet[row,1]
-      # inspector = PageInspector.new(@comparing_sheet[row,4]) #
-      # coy_info = inspector.listing_info #
-      # title = @comparing_sheet[row,2] #
-      # next if (coy_info.values.include? nil) || (coy_info.empty?) || (!permitted?(title)) #
       (1..@comparing_sheet.num_cols).each do |col|
         @sheet[insertion_row, col] = @comparing_sheet[row, col]
       end

@@ -1,0 +1,45 @@
+body {
+  background: url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/ZALKF2S08S.jpg") no-repeat;
+  background-size: cover;
+  font-family: Helvetical;
+  padding: 0;
+  margin: 0; }
+
+#container {
+  background: #fff;
+  opacity: 0.9;
+  position: relative;
+  width: 55em;
+  min-height: 20em;
+  margin: 18em auto;
+  padding: 3em;
+  border-radius: 1em; }
+  #container h1 {
+    text-align: center; }
+  #container .content form > ul > li {
+    display: block;
+    font-size: 1.4em;
+    padding: 0.5em; }
+    #container .content form > ul > li label {
+      font-weight: 600;
+      width: 12em;
+      display: inline-block; }
+    #container .content form > ul > li input[type="text"] {
+      width: 20em;
+      height: 2.5em;
+      font-size: 0.75em;
+      text-indent: 1em; }
+    #container .content form > ul > li input[type="submit"], #container .content form > ul > li #start-up {
+      margin-left: 18.9em; }
+    #container .content form > ul > li input[type="submit"] {
+      background-color: #000;
+      width: 7em;
+      height: 3em;
+      border: none;
+      color: #fff;
+      font-weight: 500;
+      cursor: pointer; }
+  #container .content #url {
+    visibility: hidden; }
+
+/*# sourceMappingURL=style.css.map */

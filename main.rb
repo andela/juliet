@@ -17,6 +17,3 @@ Capybara.register_driver :poltergeist do | app |
   end
 Capybara.default_driver = :poltergeist
 Capybara.ignore_hidden_elements = false
-
-set :port, 8080
-set :environment, :production

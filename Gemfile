@@ -1,0 +1,10 @@
+source "https://rubygems.org"
+
+gem "sinatra"
+# gem "activerecord", require: "active_record"
+gem "pry"
+gem "google-search"
+gem "sinatra-cross_origin", "~> 0.3.1"
+gem "capybara"
+gem "poltergeist"
+gem "phantomjs", :require => "phantomjs/poltergeist"

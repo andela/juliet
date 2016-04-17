@@ -1,6 +1,6 @@
 require "pry"
-require "keys"
 require "google_drive"
+require "./keys"
 require "./searcher"
 
 class Fetcher
@@ -18,11 +18,11 @@ class Fetcher
   end
 
   def make_search
-    batch_in_fifties(name_sheet, num_of_coy)
+    batches(name_sheet, num_of_coy)
     puts "Completed. Total of #{insertion_row -  initial_num_urls - 1} url(s) added in #{@total_time} minutes"
   end
 
-  def batch_in_fifties(name_sheet, num_of_coy)
+  def batches(name_sheet, num_of_coy)
     start_index, end_index = 2, 501
     if num_of_coy > 500
       batch_coy_names(name_sheet, num_of_coy, start_index, end_index, initial_num_urls)

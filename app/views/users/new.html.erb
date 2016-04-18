@@ -1,2 +1,10 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<div id="feedback"></div>
+<div id="login">
+  <%= form_for @user, remote: true do |f| %>
+    <%= f.label :name %>:
+    <%= f.text_field :name %> <br>
+    <%= f.label :email %>:
+    <%= f.text_field :email %> <br>
+    <%= f.submit "Export My LinkedIn Data"%>
+  <% end %><%= render "partials/form" %>
+</div>

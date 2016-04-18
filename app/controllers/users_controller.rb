@@ -1,8 +1,6 @@
 class UsersController < ApplicationController
-  def index
-  end
-
   def new
+    @user = User.new
   end
 
   def show
@@ -10,14 +8,22 @@ class UsersController < ApplicationController
   end
 
   def create
-    token_expiry = Time.at(env["omniauth.auth"]["credentials"]["token"]["expires"])
-    Tokenizer.refresh_token if token_expiry < 1.day.from_now
-    session[:token] = env["omniauth.auth"]["credentials"]["token"]
-    redirect_to user_path(id: 1)
+    @user = User.first_or_create(user_params)
+    # export_url = "https://www.linkedin.com/people/export-settings"
+    # redirect_to export_url
+
+    respond_to do |format|
+      # format.html { redirect_to export_url }
+      # format.json { head: no_content }
+      format.js { flash[:notice] = "Identity Confirmed" }
+    end
   end
 
 
   private
 
+  def user_params
+    params.require(:user).permit(:name, :email)
+  end
 
 end

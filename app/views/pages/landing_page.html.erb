@@ -1,0 +1,57 @@
+<div class="ui container" style="padding-top: 20px;">
+  <div class="ui middle center aligned container text">
+    <h1 class="ui header">Andela Referral Campaign</h1>
+  </div>
+  <br>
+  <br>
+  <div class="ui container center aligned">
+    <div class="ui steps">
+      <a class="completed step">
+        <div class="content">
+    <div class="title">Step One</div>
+    <div class="description">Enter name & Email</div>
+        </div>
+      </a>
+      <a class="active step">
+        <div class="content">
+    <div class="title">Step Two</div>
+    <div class="description">Description</div>
+        </div>
+      </a>
+      <a class="active step">
+        <div class="content">
+    <div class="title">Step Three</div>
+    <div class="description">Description</div>
+        </div>
+      </a>
+    </div>
+  </div>
+    <div class="ui middle container center aligned" style="padding: 20px 0px;">
+      <div class="ui middle container text">
+        <h2>We'll help you export your LinkedIn connections in no time</h2>
+      </div>
+      <br>
+      <br>
+      <a class="ui huge primary button" href="Javascript:window.open(
+		'https://www.linkedin.com/people/export-settings','popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes');">Go to LinkedIn Export Page<i class="right arrow icon"></i></a>
+      <a class="ui huge primary button disabled" href="<%= page_path('thankyou') %>">Submit<i class="right arrow icon"></i></a>
+  </div>
+  <div class="ui container center aligned">
+    <%= form_for User.new, url: { action: "create"}, html: { class: 'ui form error' } do  |f| %>
+      <%= f.text_field :name, placeholder: 'John Doe'  %>
+      <%= f.email_field :email, placeholder: 'john.doe@example.com' %>
+      <%= f.submit 'Submit', class: 'ui submit button' %>
+    <% end %>
+  </div>
+
+  <div class="ui main center aligned container tertiary segment" style="bottom: 2%; position: absolute">
+    <%= form_tag '/media_contents', method: :post, class: 'ui form large dropzone needsclick dz-clickable', id: 'media-dropzone', style: 'border: none; background: transparent;' do %>
+      <div class="field">
+        <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>"/>
+        <div class="fallback">
+          <%= file_field_tag "media", multiple: true %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

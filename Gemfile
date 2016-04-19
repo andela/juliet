@@ -11,7 +11,10 @@ gem "turbolinks"
 gem "jbuilder", "~> 2.0"
 gem "puma"
 gem "sdoc", "~> 0.4.0", group: :doc
-
+gem 'high_voltage', '~> 3.0.0'
+gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
+gem 'dropzonejs-rails'
+gem 'carrierwave'
 group :development do
 end
 

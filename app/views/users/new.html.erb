@@ -1,10 +1,70 @@
-<div id="feedback"></div>
-<div id="login">
-  <%= form_for @user, remote: true do |f| %>
-    <%= f.label :name %>:
-    <%= f.text_field :name %> <br>
-    <%= f.label :email %>:
-    <%= f.text_field :email %> <br>
-    <%= f.submit "Export My LinkedIn Data"%>
-  <% end %><%= render "partials/form" %>
+<div class="ui container" style="padding-top: 20px;">
+  <div class="ui middle center aligned container text">
+    <h1 class="ui header">Andela Referral Campaign</h1>
+  </div>
+  <br>
+    <%= flash[:error] unless flash[:error].nil? %>
+  <br>
+  <div class="ui container center aligned">
+    <div class="ui ordered steps">
+      <a class="completed step">
+        <div class="content">
+          <div class="title">Step One</div>
+          <div class="description">Enter name & Email</div>
+        </div>
+      </a>
+      <a class="active step">
+        <div class="content">
+          <div class="title">Step Two</div>
+          <div class="description">Description</div>
+        </div>
+      </a>
+      <a class="active step">
+        <div class="content">
+          <div class="title">Step Three</div>
+          <div class="description">Description</div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="ui middle container center aligned" style="padding: 20px 0px;">
+    <div class="ui middle container text">
+      <h2>We'll help you export your LinkedIn connections in no time</h2>
+    </div>
+    <br>
+    <br>
+  </div>
+  <div class="ui container center aligned">
+    <%= form_for @user, remote: true do  |f| %>
+      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+      <div class="ui four column grid center aligned">
+        <div id="feedback"></div>
+        <div class="row">
+          <div class="field">
+            <%= f.text_field :name, placeholder: 'John Doe'  %>
+          </div>
+          <div class="field">
+            <%= f.email_field :email, placeholder: 'john.doe@example.com' %>
+          </div>
+          <%= f.submit 'Submit', class: 'ui submit button massive positive' %>
+        </div>
+      </div>
+    <% end %>
+      <div class="ui twelve column grid center aligned">
+        <div class="row">
+          <a class="ui massive primary button" href="Javascript:window.open(
+            'https://www.linkedin.com/people/export-settings','popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes');">Go to LinkedIn Export Page<i class="right arrow icon"></i>
+          </a>
+        </div>
+      </div>
+      <div class="ui twelve column grid center aligned tertiary segment drop-zone">
+      <%= form_tag media_contents_path,  { multipart: true, class: 'ui form error dropzone override' } do %>
+      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+        <div class="row">
+          <%= file_field_tag "attachment" %>
+          <%= submit_tag 'Submit', class: 'ui submit button massive positive' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
 </div>

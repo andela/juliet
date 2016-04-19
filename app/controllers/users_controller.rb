@@ -8,12 +8,8 @@ class UsersController < ApplicationController
 
   def create
     @user = User.first_or_create(user_params)
-    # export_url = "https://www.linkedin.com/people/export-settings"
-    # redirect_to export_url
-
+    session[:user_id] ||= @user.id
     respond_to do |format|
-      # format.html { redirect_to export_url }
-      # format.json { head: no_content }
       format.js { flash[:notice] = "Identity Confirmed" }
     end
   end

@@ -7,4 +7,9 @@ class MediaContentsController < ApplicationController
       end
     end
   end
+
+private
+  def media_params
+    params.require(:media).permit(:file
+  end
 end

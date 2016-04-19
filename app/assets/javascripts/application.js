@@ -17,11 +17,20 @@
 //= require dropzone
 //= require_tree .
 
-$(function() {
+$(document).ready(function() {
+  Dropzone.autoDiscover = false;
   var mediaDropzone;
-  mediaDropzone = new Dropzone("#media-dropzone");
+  mediaDropzone = new Dropzone(".dropzone", { url: '/file/post' });
   return mediaDropzone.on("success", function(file, responseText) {
     var fileUrl;
     fileUrl = responseText.file_name.url;
   });
+  
+  return mediaDropzone.on("complete", function(file, responseText) {
+  
+  });
+
 });
+
+//$(document).on("ready page:load", Dropzone.discover);
+

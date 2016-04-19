@@ -32,26 +32,33 @@
       </div>
       <br>
       <br>
-      <a class="ui huge primary button" href="Javascript:window.open(
-		'https://www.linkedin.com/people/export-settings','popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes');">Go to LinkedIn Export Page<i class="right arrow icon"></i></a>
-      <a class="ui huge primary button disabled" href="<%= page_path('thankyou') %>">Submit<i class="right arrow icon"></i></a>
-  </div>
+        </div>
   <div class="ui container center aligned">
-    <%= form_for User.new, url: { action: "create"}, html: { class: 'ui form error' } do  |f| %>
-      <%= f.text_field :name, placeholder: 'John Doe'  %>
-      <%= f.email_field :email, placeholder: 'john.doe@example.com' %>
-      <%= f.submit 'Submit', class: 'ui submit button' %>
-    <% end %>
-  </div>
-
-  <div class="ui main center aligned container tertiary segment" style="bottom: 2%; position: absolute">
-    <%= form_tag '/media_contents', method: :post, class: 'ui form large dropzone needsclick dz-clickable', id: 'media-dropzone', style: 'border: none; background: transparent;' do %>
-      <div class="field">
-        <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>"/>
-        <div class="fallback">
-          <%= file_field_tag "media", multiple: true %>
+    <%= form_for @user = User.new, html: { multipart: true, class: 'ui form error dropzone override' } do  |f| %>
+      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
+      <div class="ui four column grid center aligned">
+        <div class="row">
+          <div class="field">
+            <%= f.text_field :name, placeholder: 'John Doe'  %>
+          </div>
+          <div class="field">
+            <%= f.email_field :email, placeholder: 'john.doe@example.com' %>
+          </div> 
         </div>
       </div>
+      <div class="ui twelve column grid center aligned">
+        <div class="row">
+          <a class="ui massive primary button" href="Javascript:window.open(
+            'https://www.linkedin.com/people/export-settings','popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes');">Go to LinkedIn Export Page<i class="right arrow icon"></i></a>
+          <%= f.submit 'Submit', class: 'ui submit button massive positive' %>
+        </div>
+      </div>
+      <div class="ui twelve column grid center aligned tertiary segment drop-zone">
+        <div class="row">
+          <%= f.file_field :attachment %>
+          <div class="fallback">
+            <%= f.file_field :attachment %>
+          </div>
+      </div>
     <% end %>
-  </div>
 </div>

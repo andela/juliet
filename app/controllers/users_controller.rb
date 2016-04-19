@@ -6,18 +6,18 @@ class UsersController < ApplicationController
   end
 
   def show
-
   end
 
   def create
-    token_expiry = Time.at(env["omniauth.auth"]["credentials"]["token"]["expires"])
-    Tokenizer.refresh_token if token_expiry < 1.day.from_now
-    session[:token] = env["omniauth.auth"]["credentials"]["token"]
-    redirect_to user_path(id: 1)
+    @user = User.new(user_params)
+    if @user.save
+      redirect_to page_path('thankyou')
+    end
   end
 
-
   private
-
+    def user_params
+      params.require(:user).permit(:name, :email, :attachment)
+    end
 
 end

@@ -11,20 +11,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160418152903) do
+ActiveRecord::Schema.define(version: 20160419021158) do
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
   create_table "media", force: :cascade do |t|
     t.string   "file_name"
     t.string   "cloud_url"
-    t.datetime "create_at", null: false
+    t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "user_id"
   end
+
+  add_index "media", ["user_id"], name: "index_media_on_user_id", using: :btree
+
   create_table "users", force: :cascade do |t|
     t.string   "name"
     t.string   "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "attachment"
   end
 
+  add_foreign_key "media", "users"
 end

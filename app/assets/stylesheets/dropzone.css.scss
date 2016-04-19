@@ -1,8 +1,14 @@
-.dropzone {
-  border: 2px dashed #3359df;
+.dropzone.override {
+  border: none;
   border-radius: 5px;
   background: white;
 }
+
 .dropzone.dz-clickable{
   cursor: pointer
- }
+}
+
+.segment.drop-zone {
+  background: white;
+  height: auto;
+}

@@ -11,14 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160419021158) do
+ActiveRecord::Schema.define(version: 20160419234444) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "media", force: :cascade do |t|
     t.string   "file_name"
-    t.string   "cloud_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "user_id"
@@ -31,7 +30,6 @@ ActiveRecord::Schema.define(version: 20160419021158) do
     t.string   "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string   "attachment"
   end
 
   add_foreign_key "media", "users"

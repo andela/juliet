@@ -4,13 +4,20 @@ class UsersController < ApplicationController
   end
 
   def show
+    session.clear
   end
 
   def create
     @user = User.first_or_create(user_params)
     session[:user_id] ||= @user.id
-    respond_to do |format|
-      format.js { flash[:notice] = "Identity Confirmed" }
+    if @user
+      respond_to do |format|
+        format.js { flash[:notice] = "Identity Confirmed" }
+      end
+    else
+      respond_to do |format|
+        format.js { flash[:error] = "Invalid Details" }
+      end
     end
   end
 

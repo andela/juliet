@@ -61,7 +61,7 @@
       <%= form_tag media_contents_path,  { multipart: true, class: 'ui form error dropzone override' } do %>
       <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
         <div class="row">
-          <%= file_field_tag "attachment" %>
+          <%= file_field_tag "attachment", { required: true }%>
           <%= submit_tag 'Submit', class: 'ui submit button massive positive' %>
         </div>
       </div>

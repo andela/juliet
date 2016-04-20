@@ -1,24 +1,19 @@
 class MediaContentsController < ApplicationController
+  before_action :is_verified?
 
   def create
-    if current_user
-      @contact_file = media_params[:attachment].original_filename
-      @file_ext = @contact_file.split(".").last.downcase
-      if valid_ext?(@file_ext)
-        path = Rails.root.join("public", "uploads", @contact_file)
-        temp_save(path)
-        @session = GoogleDrive.saved_session("config.json")
-        save_to_drive(path)
-      else
-        flash[:error] = "Invalid file type. Upload your LinkedIn .csv or .vcf file"
-        redirect_to root_url
-      end
+    @contact_file = media_params[:attachment].original_filename
+    @file_ext = @contact_file.split(".").last.downcase
+    if valid_ext?(@file_ext)
+      path = Rails.root.join("public", "uploads", @contact_file)
+      temp_save(path)
+      @session = GoogleDrive.saved_session("config.json")
+      save_to_drive(path)
     else
-      flash[:error] = "You must confirm your identity first."
+      flash[:error] = "Invalid file type. Upload your LinkedIn .csv or .vcf file"
       redirect_to root_url
     end
   end
-
 
 private
   def media_params

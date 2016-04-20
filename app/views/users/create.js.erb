@@ -1,1 +1,1 @@
-$("#feedback").html("<%= escape_javascript( flash[:notice] ) %>");
+$("#feedback").html("<%= escape_javascript( render 'partials/flash' ) %>");

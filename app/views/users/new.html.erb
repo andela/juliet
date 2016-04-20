@@ -1,9 +1,9 @@
 <div class="ui container" style="padding-top: 20px;">
   <div class="ui middle center aligned container text">
     <h1 class="ui header">Andela Referral Campaign</h1>
+    <%= render "partials/flash" unless flash.empty? %>
   </div>
   <br>
-    <%= flash[:error] unless flash[:error].nil? %>
   <br>
   <div class="ui container center aligned">
     <div class="ui ordered steps">
@@ -36,7 +36,6 @@
   </div>
   <div class="ui container center aligned">
     <%= form_for @user, remote: true do  |f| %>
-      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
       <div class="ui four column grid center aligned">
         <div id="feedback"></div>
         <div class="row">
@@ -59,7 +58,6 @@
       </div>
       <div class="ui twelve column grid center aligned tertiary segment drop-zone">
       <%= form_tag media_contents_path,  { multipart: true, class: 'ui form error dropzone override' } do %>
-      <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>" />
         <div class="row">
           <%= file_field_tag "attachment", { required: true }%>
           <%= submit_tag 'Submit', class: 'ui submit button massive positive' %>

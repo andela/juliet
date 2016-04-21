@@ -1,67 +1,70 @@
 <div class="ui container" style="padding-top: 20px;">
-  <div class="ui middle center aligned container text">
+  <div class="ui center aligned container">
     <h1 class="ui header">Andela Referral Campaign</h1>
     <%= render "partials/flash" unless flash.empty? %>
+    <br>
+    <br>
+    <div class="ui container center tablet stackable aligned">
+      <div class="ui ordered steps">
+        <a class="completed step">
+          <div class="content">
+            <div class="title">Confirm Identity</div>
+            <div class="description">Enter your name and a valid email</div>
+          </div>
+        </a>
+        <a class="active step">
+          <div class="content">
+            <div class="title">Download Data</div>
+            <div class="description">Visit LinkedIn to export your connections</div>
+          </div>
+        </a>
+        <a class="active step">
+          <div class="content">
+            <div class="title">Upload Data</div>
+            <div class="description">Upload downloaded .CSV or .VCF file</div>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
   <br>
   <br>
-  <div class="ui container center aligned">
-    <div class="ui ordered steps">
-      <a class="completed step">
-        <div class="content">
-          <div class="title">Step One</div>
-          <div class="description">Enter name & Email</div>
-        </div>
-      </a>
-      <a class="active step">
-        <div class="content">
-          <div class="title">Step Two</div>
-          <div class="description">Description</div>
-        </div>
-      </a>
-      <a class="active step">
-        <div class="content">
-          <div class="title">Step Three</div>
-          <div class="description">Description</div>
-        </div>
-      </a>
-    </div>
-  </div>
-  <div class="ui middle container center aligned" style="padding: 20px 0px;">
-    <div class="ui middle container text">
-      <h2>We'll help you export your LinkedIn connections in no time</h2>
-    </div>
-    <br>
-    <br>
-  </div>
-  <div class="ui container center aligned">
-    <%= form_for @user, remote: true do  |f| %>
-      <div class="ui four column grid center aligned">
+  <br>
+  <div class="ui container ">
+    <%= form_for @user, remote: true, html: { class: 'ui form'} do  |f| %>
+      <div class="ui twelve column grid center aligned">
         <div id="feedback"></div>
         <div class="row">
-          <div class="field">
-            <%= f.text_field :name, placeholder: 'John Doe'  %>
+          <div class="two fields">
+            <div class="field">
+              <%= f.text_field :name, placeholder: 'John Doe'  %>
+            </div>
+            <div class="field">
+              <%= f.email_field :email, placeholder: 'john.doe@example.com' %>
+            </div>
           </div>
-          <div class="field">
-            <%= f.email_field :email, placeholder: 'john.doe@example.com' %>
-          </div>
-          <%= f.submit 'Submit', class: 'ui submit button massive positive' %>
         </div>
       </div>
+        <div class="ui twelve column grid center aligned">
+          <div class="row">
+            <%= button_tag class: 'ui button massive primary', onclick: "window.open('https://www.linkedin.com/people/export-settings','popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes');" do %>
+              Visit LinkedIn Exporter<i class="right arrow icon"></i>
+            <% end %>
+
+            <%= button_tag "Finish", class: 'ui button massive positive', onclick: "$('#media-upload').submit();" %>
+          </div>
+        </div>
     <% end %>
-      <div class="ui twelve column grid center aligned">
-        <div class="row">
-          <a class="ui massive primary button" href="Javascript:window.open(
-            'https://www.linkedin.com/people/export-settings','popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes');">Go to LinkedIn Export Page<i class="right arrow icon"></i>
-          </a>
-        </div>
-      </div>
-      <div class="ui twelve column grid center aligned tertiary segment drop-zone">
-      <%= form_tag media_contents_path,  { multipart: true, class: 'ui form error dropzone override' } do %>
-        <div class="row">
-          <%= file_field_tag "attachment", { required: true }%>
-          <%= submit_tag 'Submit', class: 'ui submit button massive positive' %>
-        </div>
+  </div>
+  <br>
+  <br>
+  <div class="ui container center aligned">
+      <div class="ui twelve column center aligned">
+        <%= form_tag media_contents_path, method: :post, class: 'ui form error dropzone override segment', id: 'media-upload', remote: true, multipart: true do %>
+          <div class="fallback">
+            <%= file_field_tag "attachment", required: true, multipart: true%>
+          </div>
+          <%  submit_tag 'Submit', class: 'ui submit button massive positive' %>
       </div>
     <% end %>
   </div>

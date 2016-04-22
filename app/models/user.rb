@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :medias
+  has_many :medias, dependent: :destroy
   ALLOWED = /[A-z]{2,50}/
   VALID_EMAIL = /[\w\-\.]+@[\w]+.[A-z]{2,8}/
   validates :name, presence: true, format: { with: ALLOWED }

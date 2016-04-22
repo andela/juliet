@@ -20,7 +20,7 @@
 $(function() {
   Dropzone.autoDiscover = false;
   var mediaDropzone;
-  mediaDropzone = new Dropzone("#media-upload", { 
+  mediaDropzone = new Dropzone("#media-upload", {
     addRemoveLinks: true
   });
   return mediaDropzone.on("success", function(file, responseText) {
@@ -28,9 +28,9 @@ $(function() {
     fileUrl = responseText.file_name.url;
     console.log('success');
   });
-  
+
   return mediaDropzone.on("complete", function(file, responseText) {
-    console.log('complete'); 
+    console.log('complete');
   });
 
 });

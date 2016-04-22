@@ -31,7 +31,7 @@
   <br>
   <br>
   <div class="ui container ">
-    <%= form_for @user, remote: true, html: { class: 'ui form'} do  |f| %>
+    <%= form_for @user, method: :post, remote: true, html: { class: 'ui form'} do  |f| %>
       <div class="ui twelve column grid center aligned">
         <div id="feedback"></div>
         <div class="row">
@@ -50,8 +50,6 @@
             <%= button_tag class: 'ui button massive primary', onclick: "window.open('https://www.linkedin.com/people/export-settings','popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes');" do %>
               Visit LinkedIn Exporter<i class="right arrow icon"></i>
             <% end %>
-
-            <%= button_tag "Finish", class: 'ui button massive positive', onclick: "$('#media-upload').submit();" %>
           </div>
         </div>
     <% end %>
@@ -60,12 +58,12 @@
   <br>
   <div class="ui container center aligned">
       <div class="ui twelve column center aligned">
-        <%= form_tag media_contents_path, method: :post, class: 'ui form error dropzone override segment', id: 'media-upload', remote: true, multipart: true do %>
-          <div class="fallback">
-            <%= file_field_tag "attachment", required: true, multipart: true%>
+        <%= form_tag media_contents_path, method: :post, class: 'ui form', id: 'media-upload', multipart: true do %>
+          <div class="row">
+            <input type="file" name="attachment">
           </div>
-          <%  submit_tag 'Submit', class: 'ui submit button massive positive' %>
-      </div>
+      </div> <br>
+      <%=  submit_tag 'Submit', class: 'ui submit button massive positive' %>
     <% end %>
   </div>
 </div>

@@ -1,4 +1,83 @@
-<div class="ui container" style="padding-top: 20px;">
+<div class="ui one column grid container">
+  <div class="ten wide centered column">
+    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
+    <div class="ui embed">
+      <div class="wistia_responsive_padding" style="padding:56.25% 0 28px 0;position:relative;">
+        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
+          <div class="wistia_embed wistia_async_5asmywmy0c videoFoam=true" style="height:100%;width:100%">&nbsp;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui two column stackable grid container">
+  <div class="two column row">
+    <div class="six wide column">
+      <div class="ui ordered tablet stackable vertical steps">
+        <div class="active step step-one">
+          <div class="content">
+            <div class="title">Confirm Identity</div>
+            <div class="description">Enter your name and a valid email</div>
+          </div>
+        </div>
+        <div class="disabled step step-two">
+          <div class="content">
+            <div class="title">Download Data</div>
+            <div class="description">Visit LinkedIn to export your connections</div>
+          </div>
+        </div>
+        <div class="disabled step step-three">
+          <div class="content">
+            <div class="title">Upload Data</div>
+            <div class="description">Upload downloaded .CSV or .VCF file</div>
+          </div>
+        </div>
+      </div>
+	  </div>
+	  <div class="nine wide column">
+      <div class="ui">
+        <%= form_for @user, method: :post, remote: true, html: { class: 'ui form'} do  |f| %>
+          <div class="field">
+            <div class="two fields">
+              <div class="field">
+                <%= f.text_field :name, placeholder: 'John Doe', id: 'name'  %>
+              </div>
+              <div class="field">
+                <%= f.email_field :email, placeholder: 'john.doe@example.com', id: 'email' %>
+              </div>
+            </div>
+          </div>
+          <% end %>
+        </div>
+        <div class="ui export-linkedin">
+          <%= button_tag class: 'ui button massive export-btn disabled andela-color_1' do %>
+              Visit LinkedIn Exporter<i class="right arrow icon"></i>
+          <% end %>
+        </div>
+      <div class="ui ">
+        <%= form_tag media_contents_path, method: :post, class: 'ui form', id: 'media-upload', multipart: true do %>
+          <div class="field">
+            <div class="two fields">
+              <div class="field">
+                <a href="javascript:;" onclick="openFileUploader();" class="ui button massive full-width disabled">
+                  <i class="file icon"></i> Open File
+                    <input type="file" id="file" name="attachment" style="display:none">
+                </a>
+              </div>
+              <div class="field">
+                <%=  submit_tag 'Finish', class: 'ui submit button massive andela-color_4 full-width disabled' %>
+              </div>
+            </div>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- <div class="ui container" style="padding-top: 20px;">
   <div class="ui center aligned container">
     <h1 class="ui header">Andela Referral Campaign</h1>
     <%= render "partials/flash" unless flash.empty? %>
@@ -66,4 +145,4 @@
       <%=  submit_tag 'Submit', class: 'ui submit button massive positive' %>
     <% end %>
   </div>
-</div>
+</div> -->

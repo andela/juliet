@@ -17,22 +17,94 @@
 //= require dropzone
 //= require_tree .
 
-$(function() {
-  Dropzone.autoDiscover = false;
-  var mediaDropzone;
-  mediaDropzone = new Dropzone("#media-upload", {
-    addRemoveLinks: true
-  });
-  return mediaDropzone.on("success", function(file, responseText) {
-    var fileUrl;
-    fileUrl = responseText.file_name.url;
-    console.log('success');
-  });
 
-  return mediaDropzone.on("complete", function(file, responseText) {
-    console.log('complete');
-  });
 
+
+$(document).ready(function () {
+
+   var stepOne = $('.step-one');
+   var stepTwo = $('.step-two');
+   var stepThree = $('.step-three');
+   var exportButton = $('.export-btn');
+
+   exportButton.on('click', function(event){
+     event.preventDefault();
+     openPopUpWindow();
+     stepTwo.removeClass('active');
+     stepThree.addClass('active');
+     stepThree.removeClass('disabled');
+     stepTwo.addClass('completed');
+   });
+
+  $('.ui.form').form({
+    on: 'blur',
+    inline: true,
+    transition: 'scale',
+    revalidate: 'true',
+    onSuccess: function(event, fields) {
+      console.log('success');
+      stepOne.removeClass('active');
+      stepTwo.addClass('active');
+      stepTwo.removeClass('disabled');
+      stepOne.addClass('completed');
+      exportButton.removeClass('disabled');
+    },
+    onInvalid: function() {
+     console.log('invalid');
+    },
+    onVaid: function() {
+      console.log('valid');
+    },
+    onFailure: function(formErrors, fields) {
+     console.log('failure');
+   },
+    fields: {
+     name: {
+       identifier: 'name',
+       rules: [
+         {
+           type: 'empty',
+           prompt: 'Please enter your name'
+         },
+         {
+           type: 'minLength[2]',
+           prompt: 'Your name must be at least {ruleValue} characters'
+         }
+
+       ]
+     },
+     email: {
+       identifier: 'email',
+       rules: [
+         {
+           type: 'email',
+           prompt: 'Please provide a valid e-mail'
+         }
+       ]
+     }
+   }
+ });
 });
 
+function openFileUploader () {
+  console.log('howdyyyyy');
+  var fileUploadButton = document.getElementById('file');
+  fileUploadButton
+  fileUploadButton.addEventListener('click', function(event){
+    console.log('howdyyyyy');
+    if (event.preventDefault) event.preventDefault();
+    if (event.stopPropagation) event.stopPropagation();
+    console.log('howdyyyyy');
+    this.click();
 
+    return false;
+  });
+}
+
+function openPopUpWindow () {
+  window.open(
+    'https://www.linkedin.com/people/export-settings',
+    'popUpWindow',
+    'height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes'
+  );
+}

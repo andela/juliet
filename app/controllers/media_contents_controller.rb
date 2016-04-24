@@ -1,5 +1,7 @@
 class MediaContentsController < ApplicationController
+  skip_before_filter :login_required, only: [:new, :create]
   before_action :is_verified?, :attachment_present?
+
 
   def create
     @contact_file = attachment.original_filename

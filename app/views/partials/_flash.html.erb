@@ -1,6 +1,6 @@
 <% flash.each do | name, msg | %>
   <div id = "flash">
-    <%= content_tag :h3, msg, class: name %>
+    <%= content_tag :h3, msg, class: "ui small message #{name}" %>
   </div>
   <% flash.clear %>
 <% end %>

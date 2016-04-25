@@ -24,7 +24,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="overflow-hidden">
   <div class="theme-andela-blue"></div>
   <div class="ui container">
     <div class="ui large secondary network menu">
@@ -47,6 +47,7 @@
           </div>
           <div id="feedback"></div>
           <!-- Body -->
+
           <%= yield %>
 
         </div>

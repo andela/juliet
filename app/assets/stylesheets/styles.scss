@@ -12,7 +12,7 @@
 }
 
 .logo {
-  width: 8rem;
+  width: 12rem;
 }
 
 .theme-andela-blue {
@@ -76,7 +76,15 @@
   padding: 2% 0 !important;
 }
 
+.vertical-align-center {
+  display: table-cell !important;
+  vertical-align: middle;
+  height: 100vh;
+}
 
+.overflow-hidden {
+  overflow: hidden;
+}
 // .ui.form.chubby input[type="text"], .ui.form.chubby input[type="email"] {
 //   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 //   margin: 0em;

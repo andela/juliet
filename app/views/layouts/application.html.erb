@@ -2,13 +2,55 @@
 <html>
 <head>
   <title>Shokai</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3359df">
+	<meta name="msapplication-TileColor" content="#2b5797">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="theme-andela-blue"></div>
+  <div class="ui container">
+    <div class="ui large secondary network menu">
+      <div class="item">
+        <div class="ui logo shape">
+          <div class="sides">
+            <div class="active ui side">
+              <%= link_to(image_tag('andela-logo-blue.png', :class => 'ui image logo'), 'https://andela.com') %>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="pusher">
+        <div class="full height">
+          <!-- Header -->
+          <div  class="ui one column center aligned container">
+            <!-- <h1 class="ui header">Andela Referral Campaign</h1> -->
+            <%= render "partials/flash" unless flash.empty? %>
+          </div>
+          <div id="feedback"></div>
+          <!-- Body -->
+          <%= yield %>
 
-<%= yield %>
-
+        </div>
+      </div>
+    </div>
 </body>
 </html>

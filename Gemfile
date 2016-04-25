@@ -14,6 +14,7 @@ gem "sdoc", "~> 0.4.0", group: :doc
 gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem 'dropzonejs-rails'
 gem 'carrierwave'
+gem 'responders', '~> 2.0'
 
 group :development do
   gem "figaro"
@@ -28,4 +29,3 @@ group :development do
   gem "web-console", "~> 2.0"
   gem "spring"
 end
-

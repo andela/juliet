@@ -15,6 +15,7 @@ gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
 gem 'dropzonejs-rails'
 gem 'carrierwave'
 gem 'responders', '~> 2.0'
+gem 'js-routes'
 
 group :development do
   gem "figaro"

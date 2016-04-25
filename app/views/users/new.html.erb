@@ -36,7 +36,7 @@
       </div>
 	  </div>
 	  <div class="nine wide column">
-      <div class="ui">
+      <div class="ui user-info transition">
         <%= form_for @user, method: :post, remote: true, html: { class: 'ui form'} do  |f| %>
           <div class="field">
             <div class="two fields">
@@ -50,15 +50,19 @@
           </div>
           <% end %>
         </div>
-        <div class="ui export-linkedin">
+        <div class="ui export-linkedin transition">
           <%= button_tag class: 'ui button massive export-btn disabled andela-color_1' do %>
               Visit LinkedIn Exporter<i class="right arrow icon"></i>
           <% end %>
         </div>
-      <div class="ui ">
-        <%= form_tag media_contents_path, method: :post, class: 'ui form', id: 'media-upload', multipart: true do %>
+      <div class="ui upload transition">
+        <%= form_tag media_contents_path, method: :post, class: 'ui form dropzone override segment disabled', id: 'media-dropzone', multipart: true do %>
           <div class="field">
-            <div class="two fields">
+            <div class="fallback">
+              <input name="file" type="file"/>
+            </div>
+
+            <!-- <div class="two fields">
               <div class="field">
                 <a href="javascript:;" onclick="openFileUploader();" class="ui button massive full-width disabled">
                   <i class="file icon"></i> Open File
@@ -68,81 +72,9 @@
               <div class="field">
                 <%=  submit_tag 'Finish', class: 'ui submit button massive andela-color_4 full-width disabled' %>
               </div>
-            </div>
+            </div> -->
           </div>
         <% end %>
       </div>
     </div>
   </div>
-</div>
-
-
-<!-- <div class="ui container" style="padding-top: 20px;">
-  <div class="ui center aligned container">
-    <h1 class="ui header">Andela Referral Campaign</h1>
-    <%= render "partials/flash" unless flash.empty? %>
-    <br>
-    <br>
-    <div class="ui container center tablet stackable aligned">
-      <div class="ui ordered steps">
-        <a class="completed step">
-          <div class="content">
-            <div class="title">Confirm Identity</div>
-            <div class="description">Enter your name and a valid email</div>
-          </div>
-        </a>
-        <a class="active step">
-          <div class="content">
-            <div class="title">Download Data</div>
-            <div class="description">Visit LinkedIn to export your connections</div>
-          </div>
-        </a>
-        <a class="active step">
-          <div class="content">
-            <div class="title">Upload Data</div>
-            <div class="description">Upload downloaded .CSV or .VCF file</div>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <div class="ui container ">
-    <%= form_for @user, method: :post, remote: true, html: { class: 'ui form'} do  |f| %>
-      <div class="ui twelve column grid center aligned">
-        <div id="feedback"></div>
-        <div class="row">
-          <div class="two fields">
-            <div class="field">
-              <%= f.text_field :name, placeholder: 'John Doe'  %>
-            </div>
-            <div class="field">
-              <%= f.email_field :email, placeholder: 'john.doe@example.com' %>
-            </div>
-          </div>
-        </div>
-      </div>
-        <div class="ui twelve column grid center aligned">
-          <div class="row">
-            <%= button_tag class: 'ui button massive primary', onclick: "window.open('https://www.linkedin.com/people/export-settings','popUpWindow','height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes');" do %>
-              Visit LinkedIn Exporter<i class="right arrow icon"></i>
-            <% end %>
-          </div>
-        </div>
-    <% end %>
-  </div>
-  <br>
-  <br>
-  <div class="ui container center aligned">
-      <div class="ui twelve column center aligned">
-        <%= form_tag media_contents_path, method: :post, class: 'ui form', id: 'media-upload', multipart: true do %>
-          <div class="row">
-            <input type="file" name="attachment">
-          </div>
-      </div> <br>
-      <%=  submit_tag 'Submit', class: 'ui submit button massive positive' %>
-    <% end %>
-  </div>
-</div> -->

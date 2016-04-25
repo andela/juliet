@@ -21,19 +21,23 @@
 
 
 $(document).ready(function () {
+   Dropzone.autoDiscover = false;
 
    var stepOne = $('.step-one');
    var stepTwo = $('.step-two');
    var stepThree = $('.step-three');
    var exportButton = $('.export-btn');
+   var dropzone = $('.dropzone');
+   var mediaDropzone = new Dropzone("#media-dropzone");
 
    exportButton.on('click', function(event){
      event.preventDefault();
      openPopUpWindow();
      stepTwo.removeClass('active');
-     stepThree.addClass('active');
+     stepThree.addClass('active').transition('pulse');
      stepThree.removeClass('disabled');
-     stepTwo.addClass('completed');
+     dropzone.removeClass('disabled');
+     stepTwo.addClass('completed').transition('pulse');
    });
 
   $('.ui.form').form({
@@ -44,9 +48,9 @@ $(document).ready(function () {
     onSuccess: function(event, fields) {
       console.log('success');
       stepOne.removeClass('active');
-      stepTwo.addClass('active');
+      stepTwo.addClass('active').transition('pulse');;
       stepTwo.removeClass('disabled');
-      stepOne.addClass('completed');
+      stepOne.addClass('completed').transition('pulse');;
       exportButton.removeClass('disabled');
     },
     onInvalid: function() {
@@ -84,22 +88,40 @@ $(document).ready(function () {
      }
    }
  });
+
+ return mediaDropzone.on('success', function(file, responseText){
+   console.log('file uploaded successfully');
+   $('.user-info').transition('fade');
+   $('.export-linkedin').transition('fade');
+   $('.dropzone').addClass('dropzone-filed-added').transition('jiggle');
+ });
+
+ return mediaDropzone.on('drop', function(event){
+   console.log('file dropped');
+   $('.user-info').transition('fade');
+   $('.export-linkedin').transition('fade');
+   $('.dropzone').addClass('dropzone-filed-added').transition('jiggle');
+
+ });
+
+ return mediaDropzone.on('addedfile', function(file){
+   console.log('file added');
+   $('.user-info').transition('fade');
+   $('.export-linkedin').transition('fade');
+   $('.dropzone').addClass('dropzone-filed-added').transition('jiggle');
+ });
+
 });
 
-function openFileUploader () {
-  console.log('howdyyyyy');
-  var fileUploadButton = document.getElementById('file');
-  fileUploadButton
-  fileUploadButton.addEventListener('click', function(event){
-    console.log('howdyyyyy');
-    if (event.preventDefault) event.preventDefault();
-    if (event.stopPropagation) event.stopPropagation();
-    console.log('howdyyyyy');
-    this.click();
-
-    return false;
-  });
-}
+// function openFileUploader () {
+//   var fileUploadButton = document.getElementById('file');
+//   fileUploadButton.addEventListener('click', function(event){
+//     if (event.preventDefault) event.preventDefault();
+//     if (event.stopPropagation) event.stopPropagation();
+//     this.click();
+//     return false;
+//   });
+// }
 
 function openPopUpWindow () {
   window.open(

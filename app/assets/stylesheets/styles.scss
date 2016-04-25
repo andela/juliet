@@ -1,0 +1,107 @@
+.pusher {
+  // padding: 15px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.full-width {
+  width: 100%;
+}
+.ui.secondary.menu {
+  margin-bottom: 0;
+}
+
+.logo {
+  width: 12rem;
+}
+
+.theme-andela-blue {
+  border-top: 5px solid #6376f9;
+  width: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.ui.form input[type="text"], .ui.form input[type="email"] {
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  margin: 0em;
+  outline: none;
+  -webkit-appearance: none;
+  tap-highlight-color: rgba(255, 255, 255, 0);
+  line-height: 2em;
+  padding: 1em 1.2em;
+  font-size: 1em;
+  background: #ffffff;
+  border: 2px solid rgba(34, 36, 38, 0.15);
+  color: rgba(0, 0, 0, 0.87);
+  border-radius: 0.28571429rem;
+  box-shadow: 0em 0em 0em 0em transparent inset;
+  transition: color 0.1s ease, border-color 0.1s ease;
+}
+
+.export-linkedin {
+  padding: 1rem 0;
+}
+.export-btn {
+  width: 100%;
+}
+
+.andela-color_0 {
+  background-color: #3359df !important;
+  color: #fff !important;
+}
+
+.andela-color_1 {
+  background-color: #6376f9 !important;
+  color: #fff !important;
+}
+.andela-color_2 {
+  background-color: #f0405e !important;
+  color: #fff !important;
+}
+
+.andela-color_3 {
+  background-color: #0fd8e8 !important;
+  color: #fff !important;
+}
+
+.andela-color_4 {
+  background-color: #09dbaa !important;
+  color: #fff !important;
+}
+
+.dropzone-file-added {
+  padding: 2% 0 !important;
+}
+
+.vertical-align-center {
+  display: table-cell !important;
+  vertical-align: middle;
+  height: 100vh;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+// .ui.form.chubby input[type="text"], .ui.form.chubby input[type="email"] {
+//   font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+//   margin: 0em;
+//   outline: none;
+//   -webkit-appearance: none;
+//   tap-highlight-color: rgba(255, 255, 255, 0);
+//   line-height: 1.2142em;
+//   padding: 1em 1.2em;
+//   font-size: 1em;
+//   background: #ffffff;
+//   border: 2px solid rgba(34, 36, 38, 0.15);
+//   color: rgba(0, 0, 0, 0.87);
+//   border-radius: 0.28571429rem;
+//   box-shadow: 0em 0em 0em 0em transparent inset;
+//   transition: color 0.1s ease, border-color 0.1s ease;
+// }
+//
+// .ui.form.flat input[type="text"] {
+//
+// }

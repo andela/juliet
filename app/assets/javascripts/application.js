@@ -15,24 +15,6 @@
 //= require turbolinks
 //= require semantic-ui
 //= require dropzone
+//= require js-routes
 //= require_tree .
-
-$(function() {
-  Dropzone.autoDiscover = false;
-  var mediaDropzone;
-  mediaDropzone = new Dropzone("#media-upload", {
-    addRemoveLinks: true
-  });
-  return mediaDropzone.on("success", function(file, responseText) {
-    var fileUrl;
-    fileUrl = responseText.file_name.url;
-    console.log('success');
-  });
-
-  return mediaDropzone.on("complete", function(file, responseText) {
-    console.log('complete');
-  });
-
-});
-
 

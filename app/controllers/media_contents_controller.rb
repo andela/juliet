@@ -1,34 +1,29 @@
 class MediaContentsController < ApplicationController
-  before_action :is_verified?, :attachment_present?
+  before_action :is_verified?
 
   def create
     @contact_file = attachment.original_filename
     @file_ext = @contact_file.split(".").last.downcase
+    path = Rails.root.join("public", "uploads", filename)
     if valid_ext?(@file_ext)
-      path = Rails.root.join("public", "uploads", @contact_file)
-      temp_save(path)
-      @session = GoogleDrive.saved_session("config.json")
-      save_to_drive(path)
+      @media = current_user.medias.new(file_name: @contact_file)
+      begin
+        save_file(@media, path)
+      rescue
+        response_json("error", "An error occurred. Please, try again.")
+      end
     else
-      flash[:error] = "Invalid file type. Upload your LinkedIn .csv or .vcf file"
-      redirect_to root_url
+      response_json("error", "Invalid file type. Upload your LinkedIn .csv or .vcf file")
     end
   end
 
 private
   def media_params
-    params.permit(:attachment)
+    params.permit(:file)
   end
 
   def attachment
-    media_params[:attachment]
-  end
-
-  def attachment_present?
-    unless attachment && attachment != ""
-      flash[:error] = "You must attach a file."
-      redirect_to root_url
-    end
+    media_params[:file]
   end
 
   def temp_save(path)
@@ -38,7 +33,7 @@ private
   end
 
   def filename
-    @contact_file.split(".")[0..-2].join + "_" + Time.now.to_i.to_s + "." + @file_ext
+    @contact_file.split(".")[0..-2].join.gsub(/\s/,"") + "_" + Time.now.to_i.to_s + "." + @file_ext
   end
 
   def valid_ext?(file_ext)
@@ -46,16 +41,30 @@ private
   end
 
   def allowed_types
-    %w(csv vcf)
+   %w(csv vcf)
   end
 
   def save_to_drive(path)
-    if @session.upload_from_file("#{path}", "#{filename}", convert: false)
+    gdrive_session = GoogleDrive.saved_session("config.json")
+    if gdrive_session.upload_from_file("#{path}", "#{filename}", convert: false)
       File.delete(path)
-      redirect_to user_path(current_user.id) if current_user.medias.create(file_name: filename)
-    else
-      flash[:error] = "An error occurred. Please, try again."
-      redirect_to root_url
     end
   end
+
+  def save_file(media, path)
+    if media.save!
+      temp_save(path)
+      save_to_drive(path)
+      respond_to do |format|
+        format.json { render json: media }
+      end
+    end
+  end
+
+  def response_json(key, val)
+    respond_to do |format|
+      format.json { render json: { key => val } }
+    end
+  end
+
 end

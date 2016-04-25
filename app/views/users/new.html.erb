@@ -1,17 +1,6 @@
-<div class="ui one column grid container">
-  <div class="ten wide centered column">
-    <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
-    <div class="ui embed">
-      <div class="wistia_responsive_padding" style="padding:56.25% 0 28px 0;position:relative;">
-        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;">
-          <div class="wistia_embed wistia_async_5asmywmy0c videoFoam=true" style="height:100%;width:100%">&nbsp;</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<div class="ui hidden divider"></div> 
 
-<div class="ui two column stackable grid container">
+<div class="ui two column stackable grid container vertical-align-center">
   <div class="two column row">
     <div class="six wide column">
       <div class="ui ordered tablet stackable vertical steps">
@@ -48,31 +37,19 @@
               </div>
             </div>
           </div>
-          <% end %>
-        </div>
-        <div class="ui export-linkedin transition">
-          <%= button_tag class: 'ui button massive export-btn disabled andela-color_1' do %>
+        <% end %>  
+      </div>
+      <div class="ui export-linkedin transition">
+        <%= button_tag class: 'ui button massive export-btn disabled andela-color_1' do %>
               Visit LinkedIn Exporter<i class="right arrow icon"></i>
-          <% end %>
-        </div>
+        <% end %>
+      </div>
       <div class="ui upload transition">
         <%= form_tag media_contents_path, method: :post, class: 'ui form dropzone override segment disabled', id: 'media-dropzone', multipart: true do %>
           <div class="field">
             <div class="fallback">
               <input name="file" type="file"/>
             </div>
-
-            <!-- <div class="two fields">
-              <div class="field">
-                <a href="javascript:;" onclick="openFileUploader();" class="ui button massive full-width disabled">
-                  <i class="file icon"></i> Open File
-                    <input type="file" id="file" name="attachment" style="display:none">
-                </a>
-              </div>
-              <div class="field">
-                <%=  submit_tag 'Finish', class: 'ui submit button massive andela-color_4 full-width disabled' %>
-              </div>
-            </div> -->
           </div>
         <% end %>
       </div>

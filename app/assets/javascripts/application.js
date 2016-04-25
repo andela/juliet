@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require semantic-ui
 //= require dropzone
+//= require js-routes
 //= require_tree .
 
 
@@ -91,16 +92,22 @@ $(document).ready(function () {
 
  return mediaDropzone.on('success', function(file, responseText){
    console.log('file uploaded successfully');
-   $('.user-info').transition('fade');
-   $('.export-linkedin').transition('fade');
-   $('.dropzone').addClass('dropzone-filed-added').transition('jiggle');
+   console.log('File: ' + file);
+   console.log('responseText: ' + responseText);
+   
+  $('.user-info').transition('fade');
+  $('.export-linkedin').transition('fade');
+  $('.upload').addClass('dropzone-filed-added').transition('jiggle');
+  setTimeout(function() { 
+    window.location = Routes.user_path(responseText.user_id);
+  }, 3000);
  });
 
  return mediaDropzone.on('drop', function(event){
    console.log('file dropped');
    $('.user-info').transition('fade');
    $('.export-linkedin').transition('fade');
-   $('.dropzone').addClass('dropzone-filed-added').transition('jiggle');
+   $('.upload').addClass('dropzone-filed-added').transition('jiggle');
 
  });
 
@@ -108,13 +115,13 @@ $(document).ready(function () {
    console.log('file added');
    $('.user-info').transition('fade');
    $('.export-linkedin').transition('fade');
-   $('.dropzone').addClass('dropzone-filed-added').transition('jiggle');
+   $('.upload').addClass('dropzone-filed-added').transition('jiggle');
  });
  return mediaDropzone.on('processing', function(file){
    console.log('file added');
    $('.user-info').transition('fade');
    $('.export-linkedin').transition('fade');
-   $('.dropzone').addClass('dropzone-filed-added').transition('jiggle');
+   $('.upload').addClass('dropzone-filed-added').transition('jiggle');
  });
 
 

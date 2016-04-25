@@ -110,6 +110,13 @@ $(document).ready(function () {
    $('.export-linkedin').transition('fade');
    $('.dropzone').addClass('dropzone-filed-added').transition('jiggle');
  });
+ return mediaDropzone.on('processing', function(file){
+   console.log('file added');
+   $('.user-info').transition('fade');
+   $('.export-linkedin').transition('fade');
+   $('.dropzone').addClass('dropzone-filed-added').transition('jiggle');
+ });
+
 
 });
 

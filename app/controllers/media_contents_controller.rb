@@ -12,9 +12,11 @@ class MediaContentsController < ApplicationController
 
     if @media.save!
       temp_save(@file_path)
-      @gdrive_session.upload_from_file("#{@file_path}", "#{params[:file].original_filename}", convert: false)
+      @gdrive_session.upload_from_file("#{@file_path}", "#{params[:file].original_filename}-#{Time.now.to_i.to_s}", convert: false)
       File.delete(@file_path)
-      redirect_to user_path(@user)
+      respond_to do |format|
+        format.json { render :json => @media }
+      end
     end
   end
 

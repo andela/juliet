@@ -99,7 +99,7 @@
   $('.export-linkedin').transition('fade');
   $('.upload').addClass('dropzone-filed-added').transition('jiggle');
   setTimeout(function() {
-    window.location = Routes.thank_you_path(responseText.user_id);
+    window.location = Routes.thank_you_path();
   }, 3000);
  });
 

@@ -1,6 +1,10 @@
-<% flash.each do | name, msg | %>
-  <div id = "flash">
-    <%= content_tag :h3, msg, class: "ui small message #{name}" %>
+<% flash.each do | name, message | %>
+  <div id="flash">
+    <%= content_tag :div, class: "ui transition #{name} message" do %>
+      <i class="close icon"></i>
+      <%= content_tag :div, message, class: "header" %>
+    <% end %>
   </div>
+  <div class="ui hidden divider"></div>
   <% flash.clear %>
 <% end %>

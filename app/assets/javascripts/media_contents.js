@@ -6,7 +6,23 @@
    var stepThree = $('.step-three');
    var exportButton = $('.export-btn');
    var dropzone = $('.dropzone');
-   var mediaDropzone = new Dropzone("#media-dropzone");
+   var mediaDropzone = new Dropzone("#media-dropzone", {
+     addRemoveLinks: true,
+		init: function() {
+    	return this.on('removedfile', function(file) {
+      	if (file.xhr) {
+        	return $.ajax({
+          	url: "" + ($("#media-dropzone").attr("action")) + "/" + (JSON.parse(file.xhr.response).id),
+          	type: 'DELETE'
+        	});
+      	}
+    	});
+ 		}
+  });
+
+  // Temporarily disable dropzone zone
+  dropzone.removeClass('dz-clickable');
+  $(".dz-hidden-input").prop("disabled",true);
 
    exportButton.on('click', function(event){
      event.preventDefault();
@@ -14,7 +30,8 @@
      stepTwo.removeClass('active');
      stepThree.addClass('active').transition('pulse');
      stepThree.removeClass('disabled');
-     dropzone.removeClass('disabled');
+     dropzone.removeClass('disabled').addClass('dz-clickable');
+     $(".dz-hidden-input").prop("disabled", false);
      stepTwo.addClass('completed').transition('pulse');
    });
 
@@ -67,7 +84,13 @@
    }
  });
 
- return mediaDropzone.on('success', function(file, responseText){
+ // Notifications
+	$('.message.close').on('click', function() {
+    $(this).closest('.message').transition('fade');
+  });
+
+  // Handle dropzone events
+  return mediaDropzone.on('success', function(file, responseText){
    console.log('file uploaded successfully');
    console.log('File: ' + file);
    console.log('responseText: ' + responseText);
@@ -76,7 +99,7 @@
   $('.export-linkedin').transition('fade');
   $('.upload').addClass('dropzone-filed-added').transition('jiggle');
   setTimeout(function() {
-    window.location = Routes.user_path(responseText.user_id);
+    window.location = Routes.thank_you_path(responseText.user_id);
   }, 3000);
  });
 
@@ -90,17 +113,22 @@
 
  return mediaDropzone.on('addedfile', function(file){
    console.log('file added');
+  $('.user-info').transition('fade');
+  $('.export-linkedin').transition('fade');
+  $('.upload').transition('jiggle').addClass('dropzone-filed-added');
+ });
+	return mediaDropzone.on('thumbnail', function(file, dataUrl){
+   console.log('file added');
    $('.user-info').transition('fade');
    $('.export-linkedin').transition('fade');
-   $('.upload').addClass('dropzone-filed-added').transition('jiggle');
+   $('.upload').transition('jiggle').addClass('dropzone-filed-added');
  });
  return mediaDropzone.on('processing', function(file){
    console.log('file added');
    $('.user-info').transition('fade');
    $('.export-linkedin').transition('fade');
-   $('.upload').addClass('dropzone-filed-added').transition('jiggle');
+   $('.upload').transition('jiggle').addClass('dropzone-filed-added');
  });
-
 
 });
 

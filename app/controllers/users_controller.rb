@@ -13,8 +13,8 @@ class UsersController < ApplicationController
     @user = User.where(user_params).first_or_create
     session[:current_user_id] ||= @user.id
     respond_to do |format|
-      format.js { flash[:notice] = "Identity Confirmed" } if current_user
-      format.js { flash[:error] = "Invalid Details" } unless current_user
+      format.js { flash[:success] = "Identity Confirmed" } if current_user
+      format.js { flash[:warning] = "Invalid Details" } unless current_user
     end
   end
 

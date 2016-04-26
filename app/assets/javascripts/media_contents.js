@@ -32,20 +32,20 @@
      stepThree.removeClass('disabled');
      dropzone.removeClass('disabled').addClass('dz-clickable');
      $(".dz-hidden-input").prop("disabled", false);
-     stepTwo.addClass('completed').transition('pulse');
+     stepTwo.addClass('completed');
    });
 
-  $('.ui.form').form({
+  $('.user-info-form').form({
     on: 'blur',
     inline: true,
     transition: 'scale',
     revalidate: 'true',
     onSuccess: function(event, fields) {
-      console.log('success');
+      // console.log('success');
       stepOne.removeClass('active');
-      stepTwo.addClass('active').transition('pulse');;
+      stepTwo.addClass('active').transition('pulse');
       stepTwo.removeClass('disabled');
-      stepOne.addClass('completed').transition('pulse');;
+      stepOne.addClass('completed');
       exportButton.removeClass('disabled');
     },
     onInvalid: function() {
@@ -85,22 +85,29 @@
  });
 
  // Notifications
-	$('.message.close').on('click', function() {
-    $(this).closest('.message').transition('fade');
+
+  // Listen on user typing
+  var typingTimer;
+  var doneTypingInterval = 800;
+
+  $('#email').keyup(function(){
+    clearTimeout(typingTimer);
+    if($('.user-info-form').form('is valid', '#email') && $('.user-info-form').form('is valid', '#name') && !stepOne.hasClass('completed')) {
+      typingTimer = setTimeout(doneTyping, doneTypingInterval);
+    }
   });
+
 
   // Handle dropzone events
   return mediaDropzone.on('success', function(file, responseText){
-   console.log('file uploaded successfully');
-   console.log('File: ' + file);
-   console.log('responseText: ' + responseText);
+
 
   $('.user-info').transition('fade');
   $('.export-linkedin').transition('fade');
   $('.upload').addClass('dropzone-filed-added').transition('jiggle');
   setTimeout(function() {
     window.location = Routes.thank_you_path();
-  }, 3000);
+  }, 1000);
  });
 
  return mediaDropzone.on('drop', function(event){
@@ -137,6 +144,10 @@ function openPopUpWindow () {
   window.open(
     'https://www.linkedin.com/people/export-settings',
     'popUpWindow',
-    'height=300,width=400,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes'
+    'height=500,width=500,left=10,top=10,resizable=yes,scrollbars=yes,toolbar=yes,menubar=no,location=no,directories=no,status=yes'
   );
+}
+
+function doneTyping () {
+  $('.user-info-form').form('submit');
 }

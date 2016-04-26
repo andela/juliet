@@ -83,3 +83,4 @@ production:
   database: shokai_production
   username: shokai
   password: <%= ENV['SHOKAI_DATABASE_PASSWORD'] %>
+  pool: 25

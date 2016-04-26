@@ -10,12 +10,14 @@ gem "turbolinks"
 gem "google_drive"
 gem "jbuilder", "~> 2.0"
 gem "puma"
+gem "sidekiq"
+gem "sinatra", require: false
+gem "semantic-ui-sass", github: "doabit/semantic-ui-sass"
+gem "dropzonejs-rails"
+gem "carrierwave"
+gem "responders", "~> 2.0"
+gem "js-routes"
 gem "sdoc", "~> 0.4.0", group: :doc
-gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
-gem 'dropzonejs-rails'
-gem 'carrierwave'
-gem 'responders', '~> 2.0'
-gem 'js-routes'
 
 group :development, :test do
   gem "rspec-rails"
@@ -28,6 +30,6 @@ group :development do
   gem "figaro"
 end
 
-group :production do 
+group :production do
   gem "rails_12factor"
 end

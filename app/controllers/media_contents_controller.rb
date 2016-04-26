@@ -33,7 +33,7 @@ private
   end
 
   def filename
-    @contact_file.split(".")[0..-2].join.gsub(/\s/,"") + "_" + Time.now.to_i.to_s + "." + @file_ext
+    @contact_file.split(".")[0..-2].join.gsub(/\s/,"") + "_" + current_user.email + "." + @file_ext
   end
 
   def valid_ext?(file_ext)
@@ -44,17 +44,10 @@ private
    %w(csv vcf)
   end
 
-  def save_to_drive(path)
-    gdrive_session = GoogleDrive.saved_session("config.json")
-    if gdrive_session.upload_from_file("#{path}", "#{filename}", convert: false)
-      File.delete(path)
-    end
-  end
-
   def save_file(media, path)
     if media.save!
       temp_save(path)
-      save_to_drive(path)
+      SaveToDrive.perform_async(path, filename)
       respond_to do |format|
         format.json { render json: media }
       end

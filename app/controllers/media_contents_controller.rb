@@ -13,7 +13,7 @@ class MediaContentsController < ApplicationController
         response_json("error", "An error occurred. Please, try again.")
       end
     else
-      response_json("error", "Invalid file type. Upload your LinkedIn .csv or .vcf file")
+      response_json("error", "Invalid file type. Upload your LinkedIn .csv file")
     end
   end
 
@@ -41,7 +41,7 @@ private
   end
 
   def allowed_types
-   %w(csv vcf)
+   %w(csv)
   end
 
   def save_to_drive(path)

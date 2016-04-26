@@ -1,3 +1,11 @@
+<div class="ui hidden divider"></div>
+<div class="ui one column grid container">
+  <div class="twelve wide centered column">
+    <% if @user %>
+      <div class="ui header centered">Thank you <%= @user.name %> </div>
+    <% end %>
+  </div>
+</div>
 <div class="ui one column grid container">
   <div class="twelve wide centered column">
     <script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
@@ -10,5 +18,3 @@
     </div>
   </div>
 </div>
-
-

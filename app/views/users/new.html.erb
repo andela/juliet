@@ -1,14 +1,14 @@
 
-<div class="ui one column centered grid container andela-color_2 landing-img-section">
+<div class="ui one column centered grid container andela-color_0 landing-img-section">
   <div class="one column">
     <%= link_to(image_tag('andela-logo-white.png', :class => 'ui centered large fluid image'), 'https://andela.com') %>
   </div>
   <div class="ui header">
-    <h1 class="title"> Referral Campaign </h1>
+    <h1 class="banner-title"> Referral Campaign </h1>
   </div>
 </div>
 <div class="ui hidden divider"></div>
-<div class="ui hidden divider"></div> 
+<div class="ui hidden divider"></div>
 <div class="ui hidden divider"></div>
 <div class="ui two column stackable grid container">
   <div class="two column row">
@@ -23,20 +23,20 @@
         <div class="disabled step step-two">
           <div class="content">
             <div class="title">Download Data</div>
-            <div class="description">Visit LinkedIn to export your connections</div>
+            <div class="description"><strong>Click</strong> button to visit LinkedIn to export your connection</div>
           </div>
         </div>
         <div class="disabled step step-three">
           <div class="content">
             <div class="title">Upload Data</div>
-            <div class="description">Upload downloaded .CSV or .VCF file</div>
+            <div class="description"><strong>Upload</strong> downloaded <i>.csv</i> File</div>
           </div>
         </div>
       </div>
 	  </div>
 	  <div class="nine wide column">
       <div class="ui user-info transition">
-        <%= form_for @user, method: :post, remote: true, html: { class: 'ui form'} do  |f| %>
+        <%= form_for @user, method: :post, remote: true, html: { class: 'ui form user-info-form'} do  |f| %>
           <div class="field">
             <div class="two fields">
               <div class="field">
@@ -47,7 +47,7 @@
               </div>
             </div>
           </div>
-        <% end %>  
+        <% end %>
       </div>
       <div class="ui export-linkedin transition">
         <%= button_tag class: 'ui button massive export-btn disabled andela-color_1' do %>

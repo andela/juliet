@@ -6,7 +6,7 @@ class MediaContentsController < ApplicationController
     @file_ext = @contact_file.split(".").last.downcase
     path = Rails.root.join("public", "uploads", filename)
     if valid_ext?(@file_ext)
-      @media = current_user.medias.new(file_name: @contact_file)
+      @media = current_user.medias.new(file_name: filename)
       begin
         save_file(@media, path)
       rescue

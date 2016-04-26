@@ -24,9 +24,11 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body class="overflow-hidden">
+<body>
   <div class="theme-andela-blue"></div>
+  <div class="ui hidden divider"></div>
   <div class="ui container">
+    <% if !current_page?(:controller => 'users', :action => 'new') %>
     <div class="ui large secondary network menu">
       <div class="item">
         <div class="ui logo shape">
@@ -37,7 +39,8 @@
           </div>
         </div>
       </div>
-      </div>
+    </div>
+  <% end %>
       <div class="pusher">
         <div class="full height">
           <!-- Header -->
@@ -46,6 +49,7 @@
             <%= render "partials/flash" unless flash.empty? %>
           </div>
           <div id="feedback"></div>
+					<div id="ui hidden divider"></div>
           <!-- Body -->
 
           <%= yield %>

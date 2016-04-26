@@ -17,10 +17,6 @@ gem 'carrierwave'
 gem 'responders', '~> 2.0'
 gem 'js-routes'
 
-group :development do
-  gem "figaro"
-end
-
 group :development, :test do
   gem "rspec-rails"
   gem "pry"
@@ -29,4 +25,9 @@ end
 group :development do
   gem "web-console", "~> 2.0"
   gem "spring"
+  gem "figaro"
+end
+
+group :production do 
+  gem "rails_12factor"
 end

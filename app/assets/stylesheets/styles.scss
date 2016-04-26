@@ -1,3 +1,28 @@
+
+
+h1,h2,h3,strong,b {
+  font-family: 'DINPro';
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*text-shadow: 0 0 1px rgba(0,0,0,0.3) !important;*/
+}
+h4,h5,h6 {
+ font-family: 'DINPro';
+ font-weight: medium;
+ -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+    /*text-shadow: 0 0 1px rgba(0,0,0,0.3) !important;*/
+}
+
+html, body, div, p, span, i, li, a {
+  font-family: 'DINPro';
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
 .pusher {
   // padding: 15px;
   min-height: 100%;
@@ -13,6 +38,12 @@
 
 .logo {
   width: 12rem;
+}
+.title {
+ color: #fff;
+}
+.landing-img-section {
+  padding: 4rem !important;
 }
 
 .theme-andela-blue {

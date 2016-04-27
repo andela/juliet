@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Shokai</title>
+  <title>Andela Referral Campaign</title>
   <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
@@ -25,9 +25,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <div class="theme-andela-blue"></div>
-  <div class="ui hidden divider"></div>
-  <div class="ui container">
+  <div class="ui container" style="overflow:hidden">
+    <div class="theme-andela-blue"></div>
+    <div class="ui hidden divider"></div>
     <% if !current_page?(:controller => 'users', :action => 'new') %>
     <div class="ui large secondary network menu">
       <div class="item">
@@ -41,21 +41,20 @@
       </div>
     </div>
   <% end %>
-      <div class="pusher">
-        <div class="full height">
-          <!-- Header -->
-          <div  class="ui one column center aligned container">
-            <!-- <h1 class="ui header">Andela Referral Campaign</h1> -->
-            <%= render "partials/flash" unless flash.empty? %>
-          </div>
-          <div id="feedback"></div>
-					<div id="ui hidden divider"></div>
-          <!-- Body -->
 
-          <%= yield %>
 
-        </div>
-      </div>
+  <% if !current_page?(:controller => 'users', :action => 'show') %>
+    <div class="ui hidden divider"></div>
+    <%= render "partials/flash" unless flash.empty? %>
+    <div id="feedback"></div>
+    <div class="ui hidden divider"></div>
+  <% end %>
+
+  <div class="pusher">
+    <div class="full height">
+      <%= yield %>
     </div>
+  </div>
+ </div>
 </body>
 </html>

@@ -28,6 +28,7 @@ group :development do
   gem "web-console", "~> 2.0"
   gem "spring"
   gem "figaro"
+  gem "rubocop", '~> 0.39.0', require: false
 end
 
 group :production do

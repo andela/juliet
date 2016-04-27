@@ -4,7 +4,8 @@ class User < ActiveRecord::Base
   VALID_EMAIL = /([\w\-\.]{2,})@([\w]{2,}).[A-z]{2,8}/
   validates :name, presence: true, format: { with: ALLOWED }
   validates :email, presence: true, length: { maximum: 255 },
-            uniqueness: { case_sensitive: false }, format: { with: VALID_EMAIL }
+                    uniqueness: { case_sensitive: false },
+                    format: { with: VALID_EMAIL }
 
   before_save :downcase_fields
 

@@ -1,5 +1,5 @@
 class MediaContentsController < ApplicationController
-  before_action :is_verified?
+  before_action :verified?
 
   def create
     @contact_file = attachment.original_filename
@@ -13,11 +13,13 @@ class MediaContentsController < ApplicationController
         response_json("error", "An error occurred. Please, try again.")
       end
     else
-      response_json("error", "Invalid file type. Upload your LinkedIn .csv file")
+      response_json("error", "Invalid file type. Upload your LinkedIn
+                     .csv or .vcf file")
     end
   end
 
-private
+  private
+
   def media_params
     params.permit(:file)
   end
@@ -27,13 +29,14 @@ private
   end
 
   def temp_save(path)
-    File.open(path, 'wb') do |file|
+    File.open(path, "wb") do |file|
       file.write(attachment.read)
     end
   end
 
   def filename
-    @contact_file.split(".")[0..-2].join.gsub(/\s/,"") + "_" + Time.now.to_i.to_s + "." + @file_ext
+    @contact_file.split(".")[0..-2].join.gsub(/\s/, "") + "_" +
+      current_user.email + "_" + Time.now.to_i.to_s + "." + @file_ext
   end
 
   def valid_ext?(file_ext)
@@ -41,20 +44,13 @@ private
   end
 
   def allowed_types
-   %w(csv)
-  end
-
-  def save_to_drive(path)
-    gdrive_session = GoogleDrive.saved_session("config.json")
-    if gdrive_session.upload_from_file("#{path}", "#{filename}", convert: false)
-      File.delete(path)
-    end
+    %w(csv vcf)
   end
 
   def save_file(media, path)
     if media.save!
       temp_save(path)
-      save_to_drive(path)
+      SaveToDriveJob.perform_async(path, filename)
       respond_to do |format|
         format.json { render json: media }
       end
@@ -66,5 +62,4 @@ private
       format.json { render json: { key => val } }
     end
   end
-
 end

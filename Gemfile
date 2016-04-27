@@ -7,15 +7,18 @@ gem "uglifier", ">= 1.3.0"
 gem "coffee-rails", "~> 4.1.0"
 gem "jquery-rails"
 gem "turbolinks"
+gem "google-search"
 gem "google_drive"
 gem "jbuilder", "~> 2.0"
 gem "puma"
+gem "sidekiq"
+gem "sinatra", require: false
+gem "semantic-ui-sass", github: "doabit/semantic-ui-sass"
+gem "dropzonejs-rails"
+gem "carrierwave"
+gem "responders", "~> 2.0"
+gem "js-routes"
 gem "sdoc", "~> 0.4.0", group: :doc
-gem 'semantic-ui-sass', github: 'doabit/semantic-ui-sass'
-gem 'dropzonejs-rails'
-gem 'carrierwave'
-gem 'responders', '~> 2.0'
-gem 'js-routes'
 
 group :development, :test do
   gem "rspec-rails"
@@ -26,8 +29,9 @@ group :development do
   gem "web-console", "~> 2.0"
   gem "spring"
   gem "figaro"
+  gem "rubocop", '~> 0.39.0', require: false
 end
 
-group :production do 
+group :production do
   gem "rails_12factor"
 end

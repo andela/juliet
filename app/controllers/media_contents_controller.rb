@@ -50,7 +50,7 @@ class MediaContentsController < ApplicationController
   def save_file(media, path)
     if media.save!
       temp_save(path)
-      SaveToDrive.perform_async(path, filename)
+      SaveToDriveJob.perform_async(path, filename)
       respond_to do |format|
         format.json { render json: media }
       end

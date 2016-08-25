@@ -130,6 +130,7 @@ DEPENDENCIES
   google-search
   google_custom_search_api
   google_drive
+  httparty
   phantomjs
   poltergeist
   pry
@@ -138,4 +139,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   1.11.2
+   1.12.5

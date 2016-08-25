@@ -1,18 +1,28 @@
 require "./resources"
+require "capybara/poltergeist"
 
 class Greenhouse
   include Utility
-  attr_reader :sheet
+  attr_reader :sheet, :browser
 
   def initialize
     @sheet = ENV["GH_SHEET_ID"]
+    # @data_storage = DataStorage.new
+    @browser = Capybara.current_session
   end
 
   def query_gsce_greenhouse(query_string)
     puts "Searching"
     listings = get_listing.flatten
+    # @data_storage.save_data(listings)
     sheet_to_populate = PopulateSheet.new(sheet)
     sheet_to_populate.populate(listings)
+  end
+
+  def get_job_description(item)
+    browser.visit item.link
+    item["snippet"] = browser.find("#content").text if browser.has_css?("#content")
+    item
   end
 
   def get_listing

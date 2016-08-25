@@ -33,6 +33,7 @@ class PopulateSheet
       coy_info = inspector.listing_info
       title = listing.title.sub("Job Application for ","").split(" at").first
       next if (coy_info.values.include? nil) || (coy_info.empty?) || (!permitted?(title))
+
       coy_url = @company.look_up_coy_url("#{coy_info[:company_name]} #{coy_info[:location]}")
       coy_info.merge!(id: listing.cacheId, title: title, source: listing.displayLink, desc: listing.snippet, url: coy_url)
       fill_row_cells(coy_info, row)

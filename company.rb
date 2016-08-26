@@ -3,10 +3,11 @@ require "./resources"
 class Company
   def initialize(sheet)
     @sheet = sheet
+    BingSearch.account_key = "CIQ1Ne+untlnZdyUM5lkqive6UmB6Tk03XRcin4xtkw"
   end
 
   def look_up_coy_url(company_name)
-    Google::Search::Web.new(query: company_name).all[0..2].map{ |result| result.visible_uri }.join(" OR ")
+    BingSearch.web(company_name)[0..1].map{ |result| result.url }.join(" OR ")
   end
 
   # This function is just to get company URLs for

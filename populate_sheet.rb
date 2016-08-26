@@ -5,7 +5,7 @@ class PopulateSheet
   def initialize(listing_sheet)
     session = GoogleDrive.saved_session("auth.json")
     @sheet = session.spreadsheet_by_key(listing_sheet).worksheets[0]
-    @exclusion_list = session.spreadsheet_by_key(listing_sheet).worksheets[3]
+    # @exclusion_list = session.spreadsheet_by_key(listing_sheet).worksheets[3]
     @company = Company.new(@sheet)
     @latest = 0
   end

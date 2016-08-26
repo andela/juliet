@@ -28,7 +28,8 @@ class PageInspector
   def property(property_name)
     element_index = 0 if property_name == "duties"
     element_index = 1 if property_name == "requirement"
-    property_value = ""
+    property_value = browser.find('#content').text
+=begin
     browser.find("#content").all("ul")[ element_index ].all("li").each do |link|
       if link.first("span")
         property_value += link.first("span").text
@@ -37,6 +38,8 @@ class PageInspector
       end
     end
     property_value = permitted?(property_value) ? property_value : nil
+=end
+		property_value = permitted?(property_value) ? property_value : nil
     return property_value
   rescue
     "Please visit the URL of this listing to get this information."

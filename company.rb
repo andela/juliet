@@ -3,7 +3,7 @@ require "./resources"
 class Company
   def initialize(sheet)
     @sheet = sheet
-    BingSearch.account_key = "CIQ1Ne+untlnZdyUM5lkqive6UmB6Tk03XRcin4xtkw"
+    BingSearch.account_key = ENV["BING_KEY"]
   end
 
   def look_up_coy_url(company_name)

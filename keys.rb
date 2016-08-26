@@ -1,5 +1,6 @@
 ENV["GH_SHEET_ID"] = "15lCiHzbfqjA-oY45sf3fuh3mEEP4pTaLAqUw8vHA4jE"
 ENV["WWR_SHEET_ID"] = "10pZKcKlq2bHy4o-Qb2WXqCBwjbzzGVEsV6Bdeq2bduo"
+ENV["BING_KEY"] = "CIQ1Ne+untlnZdyUM5lkqive6UmB6Tk03XRcin4xtkw"
 ENV["WWR_URL"] = "https://weworkremotely.com/categories/2-programming/jobs"
 
 # GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyAa3FgaIlXHtJuGxlR3DUgMxjCoRa5mAz4"

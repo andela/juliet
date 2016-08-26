@@ -4,6 +4,7 @@ require 'google_drive'
 require './string-ext'
 require './google-search-ext'
 
+# May not be in use
 
 class GetInfo
   attr_reader :sheet
@@ -58,24 +59,6 @@ class GetInfo
     results.sort_by{|result| result.match_value(company)}.reverse
   end
 
-
-
-  # def second_sort(result, company)
-  #   x = result.to_a
-  #   result.to_a.each_with_index{ |comp, index|
-  #     unless comp.title.downcase.match(company.downcase)
-  #       swap(x, index, index + 1) unless x[index + 1] == nil
-  #     end
-  #   }
-  #   x
-  # end
-
-  # def swap(arr, index, with_index)
-  #   old_elem = arr[index]
-  #   arr[index] = arr[with_index]
-  #   arr[with_index] = old_elem
-  #   arr
-  # end
 
   class << self
     attr_accessor :session

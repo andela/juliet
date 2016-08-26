@@ -1,25 +1,16 @@
-require 'nokogiri'
-require 'httparty'
-require 'pry'
-require 'httpclient'
-require 'active_support/core_ext/integer/time'
-require 'hashie'
-require 'forwardable'
+require "./resources"
 
-require './custom_google'
-require './sheets'
-require './date-ext'
-require './obj-ext'
-require './url-ext'
-require './listing-ext'
 
+def start
+  #  Extend to accept more than one argument from CLI
+  init(ARGV[0])
+end
 
 def get_dice_data(limit: 100)
   dice_url = ''
 end
 
 MAXLIMIT = 100
-
 def indeed_url(limit = MAXLIMIT, search: nil)
   params_to_search = search || %w{ full stack developer }
   search_for = params_to_search.join("+")
@@ -27,11 +18,6 @@ def indeed_url(limit = MAXLIMIT, search: nil)
   indeed_url = "http://www.indeed.com/jobs?as_and=#{search_for},Indeedapply:1&as_phr=&as_any=&as_not=senior,+lead,+director,+specialist,+experienced,+senior,+Mid+Level,+Seasoned,+Parttime&as_ttl=&as_cmp=&jt=fulltime&st=employer&sr=directhire&salary=&fromage=any&limit=#{upper_bound}&sort=&psf=advsrch"
   indeed_url
 end
-
-# "http://www.indeed.com/jobs?q=#{search_for}+-senior,+-lead,+-director,+-specialist,+-experienced,+-senior,+-Mid+-Level,+-Seasoned,+-Parttime,+Indeedapply%3A1&radius=25"
-# "http://www.indeed.com/jobs?q=full+stack+developer+-senior%2C+-lead%2C+-director%2C+-specialist%2C+-experienced%2C+-senior%2C+-Mid+-Level%2C+-Seasoned%2C+-Parttime%2C+Indeedapply%3A1&start=30"
-
-
 
 def get_indeed_data(limit: 100, search: nil, ie_populate: true)
   current_size = ie_populate ? Listing.ie_saveable.size : Listing.saveable.size
@@ -293,6 +279,7 @@ end
 
 
 def init(sheet, search: ['full', 'stack', 'developer'] , data_sheet: 1, id_sheet: 5, stats_sheet: 6)
+  sheet = sheet.is_a?(String) ? GSheet.new(sheet) : sheet
   puts "Initiating the process"
   ie_populate_data(sheet, data_sheet)
   listings = sheet.worksheets[id_sheet]
@@ -306,5 +293,6 @@ def init(sheet, search: ['full', 'stack', 'developer'] , data_sheet: 1, id_sheet
   new_ids = listings.rows.flatten.uniq
   puts "For a search for #{search.join(' ')}, a total of #{ new_ids.size - ids.size } listings has been added"
   record_stats(sheet, stats_sheet)
-  require 'pry' ; binding.pry
 end
+
+start

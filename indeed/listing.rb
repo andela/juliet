@@ -6,8 +6,8 @@ require './url-ext'
 
 
 class Listing
-  attr_accessor :id, :title, :company, :source, :post_date, :url, :company_url
-  attr_reader :finalize, :search_date, :search_type
+  attr_accessor :id, :title, :company, :source, :post_date, :url, :company_url, :search_type, :search_date
+  attr_reader :finalize
 
   include Dateable, URLable
 
@@ -27,6 +27,7 @@ class Listing
       listing_by_id = listing_id.blank? ? nil : self.class.find(listing_id)
       listing_by_url = listing_url.blank? ? nil : self.class.find_by_url(listing_url)
       existing_listing = listing_by_id || listing_by_url
+       binding.pry
       if existing_listing
         return existing_listing
       else
@@ -77,18 +78,6 @@ class Listing
     info
   end
 
-  # def ie_to_h
-  #   {
-  #     id: id,
-  #     title: title,
-  #     company: company,
-  #     source: source,
-  #     post_date: post_date,
-  #     url: url,
-  #     company_url: company_url
-  #   }
-  # end
-
   def valid?
     regex_match = /^http[s]?:\/\/www.indeed.com\//i
     !!(regex_match =~ url)
@@ -125,4 +114,3 @@ class Listing
   end
 end
 
-# self.send(attr_set, val) if self.respond_to? attr_set

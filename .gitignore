@@ -1,3 +1,12 @@
 codesnip
 /auth.json
 auth.json
+doc.txt
+keys.rb
+dump.rdb
+textcsv.rb
+cron_log.log
+/config
+/workers
+sample.csv
+Rakefile

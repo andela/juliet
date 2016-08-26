@@ -1,3 +1,4 @@
+#  May not be in use.
 Google::Search::Item::Web.class_eval do
   def match_value(company)
     val = 0

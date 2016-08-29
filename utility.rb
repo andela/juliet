@@ -7,7 +7,7 @@ module Utility
   def unallowed_params
  		" -senior -Lead -5+ -Director -Manager -Sr -Ph.D -PhD -specialist -experienced \
     	-mid -seasoned -part-time -Inc -Co -X-Team -experienced -Instructor -Co-Founder \
-			-CTO -intern -internship -test -solution" 
+			-CTO -intern -internship -test -solution"
 	end
 
   def permitted?(page_content)

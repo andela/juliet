@@ -43,17 +43,13 @@ class PopulateSheet
   end
 
   def fill_row_cells(coy_info, row)
-    sheet[row, 1] = coy_info[:id]
-    sheet[row, 2] = coy_info[:title]
-    sheet[row, 3] = coy_info[:company_name]
-    sheet[row, 4] = coy_info[:link]
-    sheet[row, 5] = coy_info[:source]
-    sheet[row, 6] = coy_info[:desc]
-    sheet[row, 7] = Date.today.strftime("%d-%m-%Y")
-    sheet[row, 8] = coy_info[:url]
-    sheet[row, 9] = coy_info[:duties]
-    sheet[row, 10] = coy_info[:requirement]
-    sheet[row, 11] = coy_info[:date] if coy_info[:date]
+    sheet[row, 1] = coy_info[:title]
+    sheet[row, 2] = coy_info[:company_name]
+    sheet[row, 3] = coy_info[:url]
+    sheet[row, 4] = Date.today.strftime("%d-%m-%Y")
+    sheet[row, 5] = coy_info[:desc]
+    sheet[row, 6] = coy_info[:duties]
+    sheet[row, 7] = coy_info[:date] if coy_info[:date]
   end
 
   def listings_in_fifties(listings)
@@ -81,17 +77,13 @@ class PopulateSheet
   end
 
   def sheet_headers(sheet, posted_on = false)
-    sheet[1, 1] = "Id"
-    sheet[1, 2] = "Listing Title"
-    sheet[1, 3] = "Company Name"
-    sheet[1, 4] = "Url"
-    sheet[1, 5] = "Source"
-    sheet[1, 6] = "Description"
-    sheet[1, 7] = "Date of Search"
-    sheet[1, 8] = "Company Url"
-    sheet[1, 9] = "Applicant's Duties"
-    sheet[1, 10] = "Preferred Candidate"
-    sheet[1, 11] = "Date Posted" if posted_on
+    sheet[1, 1] = "Listing Title"
+    sheet[1, 2] = "Company Name"
+    sheet[1, 3] = "Company Url"
+    sheet[1, 4] = "Date scraped"
+    sheet[1, 5] = "Description snippet"
+    sheet[1, 6] = "Description full"
+    sheet[1, 7] = "Date Posted" if posted_on
     sheet.save
   end
 

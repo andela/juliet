@@ -1,13 +1,15 @@
 require "./resources"
 
 class Company
+  include Utility
+
   def initialize(sheet)
     @sheet = sheet
     BingSearch.account_key = ENV["BING_KEY"]
   end
 
   def look_up_coy_url(company_name)
-    BingSearch.web(company_name)[0..1].map{ |result| result.url }.join(" OR ")
+    BingSearch.web("#{company_name} #{youtube_exclusion}")[0].url
   end
 
   # This function is just to get company URLs for

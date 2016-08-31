@@ -26,8 +26,11 @@ class PopulateSheet
   end
 
   def country_lookup(location)
+    location = location.to_s
     if (location.length > 1)
-      Geocoder.search(location).first.country
+      Geocoder.search(location).first.country if Geocoder.search(location).first != nil
+    else
+      false
     end
   end
 

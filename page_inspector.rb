@@ -13,12 +13,26 @@ class PageInspector
     coy_and_link = {}
     browser.visit link
     page_url = browser.current_url.split("#").first
-    if page_url == link
-      company_name = browser.find(".company-name", visible: false).text.sub("at ","")
-      location = browser.has_css?(".location") ? browser.find(".location").text : ""
-      coy_and_link.merge!(company_name: company_name, link: link, requirement: property("requirement"), duties: property("duties"), location: location)
+
+    if link.include? "greenhouse"
+      if page_url == link
+        company_name = browser.find(".company-name", visible: false).text.sub("at ","")
+        location = browser.has_css?(".location") ? browser.find(".location").text : ""
+        coy_and_link.merge!(company_name: company_name, link: link, requirement: property("requirement"), duties: property("duties"), location: location)
+      end
+      coy_and_link
+    elsif link.include? "lever"
+      if page_url == link
+        company_name = browser.find("title").text.split("-").first.strip
+        location = browser.has_css?(".posting-categories") ? browser.find(".sort-by-time").text : ""
+        coy_and_link.merge!(company_name: company_name, link: link, requirement: property("requirement"), duties: property("duties"), location: location)
+      end
+      coy_and_link
+
+    elsif linl.include? "workable"
+
     end
-    coy_and_link
+
   rescue
     coy_and_link
   end
@@ -26,7 +40,12 @@ class PageInspector
   def property(property_name)
     element_index = 0 if property_name == "duties"
     element_index = 1 if property_name == "requirement"
-    property_value = browser.find('#content').text
+
+    if link.include? "greenhouse"
+      property_value = browser.find('#content').text
+    elsif link.include? "lever"
+      property_value = browser.all('.content > .section-wrapper', match: :first)[1].text
+    end
 =begin
     browser.find("#content").all("ul")[ element_index ].all("li").each do |link|
       if link.first("span")

@@ -13,6 +13,7 @@ require "./populate_sheet"
 require "./keys"
 require "./company"
 require "mechanize"
+require "geocoder"
 
 Capybara.register_driver :poltergeist do | app |
   Capybara::Poltergeist::Driver.new(app, js_errors: false)

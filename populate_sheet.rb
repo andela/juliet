@@ -25,12 +25,19 @@ class PopulateSheet
     end
   end
 
+  def country_lookup(location)
+    if (location.length > 1)
+      Geocoder.search(location).first.country
+    end
+  end
+
   def fill_rows(listings, sheet, row)
     start_row = row
     listings.each do | listing |
       inspector = PageInspector.new(listing.link)
       coy_info = inspector.listing_info
-      next if (sheet.cells.values.include? listing.cacheId) || (sheet.cells.values.include? coy_info.values[0])
+      next unless (["United States", "United Kingdom", "Canada"]).include? country_lookup(coy_info[:location])
+      next if (sheet.cells.values.include? listing.cacheId) || (sheet.cells.values.include? coy_info[:company_name])
       title = listing.title.sub("Job Application for ","").split(" at").first
       next if (coy_info.values.include? nil) || (coy_info.empty?) || (!permitted?(title))
       coy_url = @company.look_up_coy_url("#{coy_info[:company_name]} #{coy_info[:location]}")

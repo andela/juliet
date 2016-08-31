@@ -14,4 +14,5 @@ gem "rake"
 gem 'mechanize'
 gem 'duckduckgo'
 gem 'bing-search'
+gem 'geocoder'
 

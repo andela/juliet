@@ -16,9 +16,7 @@ class PageInspector
     if page_url == link
       company_name = browser.find(".company-name", visible: false).text.sub("at ","")
       location = browser.has_css?(".location") ? browser.find(".location").text : ""
-      coy_and_link.merge!(company_name: company_name, link: link, requirement: property("requirement"),
-                          duties: property("duties"), location: location
-                         )
+      coy_and_link.merge!(company_name: company_name, link: link, requirement: property("requirement"), duties: property("duties"), location: location)
     end
     coy_and_link
   rescue
@@ -39,7 +37,7 @@ class PageInspector
     end
     property_value = permitted?(property_value) ? property_value : nil
 =end
-		property_value = permitted?(property_value) ? property_value : nil
+    property_value = permitted?(property_value) ? property_value : nil
     return property_value
   rescue
     "Please visit the URL of this listing to get this information."

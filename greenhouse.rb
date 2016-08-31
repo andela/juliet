@@ -5,7 +5,7 @@ class Greenhouse
   attr_reader :sheet
 
   def initialize
-    @sheet = ENV["GH_SHEET_ID"]
+    @sheet = ENV["WORKABLE_SHEET_ID"]
   end
 
   def query_gsce_greenhouse(query_string)
@@ -19,7 +19,7 @@ class Greenhouse
     listing, prev_items = [], []
     1.upto(1) do | n |
       query_string.each do | query_param |
-        page_listing = GoogleCustomSearchApi.search("#{query_param} #{unallowed_params}", page: n)
+        page_listing = GoogleCustomSearchApi.search("#{query_param}", page: n)
         items = page_listing.items
         if items.empty? && n == 1
           puts "No results found"

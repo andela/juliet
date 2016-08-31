@@ -28,11 +28,12 @@ class PopulateSheet
   def fill_rows(listings, sheet, row)
     start_row = row
     listings.each do | listing |
-      next if sheet.cells.values.include? listing.cacheId
+
       inspector = PageInspector.new(listing.link)
       coy_info = inspector.listing_info
+      next if (sheet.cells.values.include? listing.cacheId) || (sheet.cells.values.include? coy_info.values[0])
       title = listing.title.sub("Job Application for ","").split(" at").first
-      next if (coy_info.values.include? nil) || (coy_info.empty?) || (!permitted?(title))
+      next if (coy_info.values.include? nil) || (coy_info.empty?) || (!permitted?(title)) || (coy_info)
       coy_url = @company.look_up_coy_url("#{coy_info[:company_name]} #{coy_info[:location]}")
       coy_info.merge!(id: listing.cacheId, title: title, source: listing.displayLink, desc: listing.snippet, url: coy_url)
       fill_row_cells(coy_info, row)

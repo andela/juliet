@@ -1,10 +1,10 @@
-ENV["GH_SHEET_ID"] = "1RXT1_-OzXjgBM_RND9DD735Mz0Y9Ib7FfMWK-h_Ngjk"
+ENV["GH_SHEET_ID"] = "1MxCcCALqPLyqUk8yCSOloZz54vIbhLFnUwzNyyQEgJo"
 ENV["WWR_SHEET_ID"] = "10pZKcKlq2bHy4o-Qb2WXqCBwjbzzGVEsV6Bdeq2bduo"
 ENV["BING_KEY"] = "CIQ1Ne+untlnZdyUM5lkqive6UmB6Tk03XRcin4xtkw"
 ENV["WWR_URL"] = "https://weworkremotely.com/categories/2-programming/jobs"
 
-# GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyAa3FgaIlXHtJuGxlR3DUgMxjCoRa5mAz4"
-GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyDDzhd7lRDnhjPOVyxSNmVXF2654G451pE"
+GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyAa3FgaIlXHtJuGxlR3DUgMxjCoRa5mAz4"
+# GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyDDzhd7lRDnhjPOVyxSNmVXF2654G451pE"
 # GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyC61_cb5U9OwHMjc31ateh5-mdxXqpLk8Y"
 # GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyCiKBT6cQl_dVkAQTHzZ-Imitg7cv-hH3M"
 # GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyBsoGLdxIsIMgPSZzLkRiqb8RqcWBKb4ko"

@@ -5,7 +5,7 @@ module Utility
   end
 
   def unallowed_params
-    " -senior -Lead -5+ -Director -Manager -Sr -Ph.D -PhD -specialist -experienced \
+    " -senior -Lead -5+ -Director -Manager -Sr -.Sr -Ph.D -PhD -specialist -experienced \
       -mid -seasoned -part-time -Inc -Co -X-Team -experienced -Instructor -Co-Founder \
 			-CTO -intern -internship -test -solution -scrum-master -ux-designer"
   end

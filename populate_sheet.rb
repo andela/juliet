@@ -8,6 +8,7 @@ class PopulateSheet
     # @exclusion_list = session.spreadsheet_by_key(listing_sheet).worksheets[3]
     @company = Company.new(@sheet)
     @latest = 0
+    # Geocoder.configure(:timeout => 15)
   end
 
   def populate(listings)
@@ -42,10 +43,18 @@ class PopulateSheet
       coy_info = inspector.listing_info
       next unless (["United States", "United Kingdom", "Canada"]).include? country_lookup(coy_info[:location])
       next if (sheet.cells.values.include? listing.cacheId) || (sheet.cells.values.include? coy_info[:company_name])
-      title = listing.title.sub("Job Application for ","").split(" at").first
+      if listing.link.include? "greenhouse"
+        title = listing.title.sub("Job Application for ","").split(" at").first
+      elsif listing.link.include? "lever"
+        title = coy_info[:title]
+      elsif listing.link.include? "workable"
+        title = coy_info[:title]
+      end
+
       next if (coy_info.values.include? nil) || (coy_info.empty?) || (!permitted?(title)) # skip if the job description or title is in the exclusion list
       coy_url = @company.look_up_coy_url("#{coy_info[:company_name]} #{coy_info[:location]}")
-      coy_info.merge!(id: listing.cacheId, title: title, source: listing.displayLink, desc: listing.snippet, url: coy_url)
+      country = country_lookup(coy_info[:location])
+      coy_info.merge!(id: listing.cacheId, title: title, source: listing.displayLink, desc: listing.snippet, url: coy_url, location: country)
       fill_row_cells(coy_info, row)
       row += 1
     end
@@ -57,9 +66,9 @@ class PopulateSheet
     sheet[row, 1] = coy_info[:id]
     sheet[row, 2] = coy_info[:title]
     sheet[row, 3] = coy_info[:company_name]
-    sheet[row, 4] = coy_info[:url]
-    sheet[row, 5] = Date.today.strftime("%d-%m-%Y")
-    sheet[row, 6] = coy_info[:desc]
+    sheet[row, 4] = coy_info[:location]
+    sheet[row, 5] = coy_info[:url]
+    sheet[row, 6] = Date.today.strftime("%d-%m-%Y")
     sheet[row, 7] = coy_info[:duties]
     sheet[row, 8] = coy_info[:date] if coy_info[:date]
   end
@@ -92,10 +101,10 @@ class PopulateSheet
     sheet[1, 1] = "Listing Id"
     sheet[1, 2] = "Listing Title"
     sheet[1, 3] = "Company Name"
-    sheet[1, 4] = "Company Url"
-    sheet[1, 5] = "Date scraped"
-    sheet[1, 6] = "Description snippet"
-    sheet[1, 7] = "Description full"
+    sheet[1, 4] = "Country"
+    sheet[1, 5] = "Company Url"
+    sheet[1, 6] = "Date scraped"
+    sheet[1, 7] = "Description"
     sheet[1, 8] = "Date Posted" if posted_on
     sheet.save
   end

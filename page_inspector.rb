@@ -26,15 +26,17 @@ class PageInspector
       if page_url == link
         company_name = browser.find("title").text.split("-").first.strip
         location = browser.has_css?(".posting-categories") ? browser.find(".sort-by-time").text : ""
-        coy_and_link.merge!(company_name: company_name, link: link, requirement: property("requirement", link), duties: property("duties", link), location: location)
+        title = browser.find("h2", match: :first).text
+        coy_and_link.merge!(company_name: company_name, link: link, requirement: property("requirement", link), duties: property("duties", link), location: location, title: title)
       end
       coy_and_link
     elsif link.include? "workable"
       browser.visit link
       page_url = browser.current_url.split("#").first
       company_name = browser.find("title").text.split("-").first.strip
-      location = browser.has_css?(".section--header") ? browser.find(".meta").text : ""
-      coy_and_link.merge!(company_name: company_name, link: link, requirement: property("requirement", link), duties: property("duties", link), location: location)
+      location = browser.has_css?(".section--header") ? browser.find(".meta").text.split(",").first.strip : ""
+      title = browser.find("h1").text
+      coy_and_link.merge!(company_name: company_name, link: link, requirement: property("requirement", link), duties: property("duties", link), location: location, title: title)
       coy_and_link
     end
 
@@ -50,7 +52,7 @@ class PageInspector
     elsif link.include? "lever"
       property_value = browser.all('.content > .section-wrapper', match: :first)[1].text
     elsif link.include? "workable"
-      property_value = browser.all('.section--text')[0].text + browser.all('.section--text')[1].text
+      property_value = browser.all('.section--text')[0].text.sub("Description","") + browser.all('.section--text')[1].text
     end
 =begin
     browser.find("#content").all("ul")[ element_index ].all("li").each do |link|

@@ -17,7 +17,7 @@ class Greenhouse
 
   def get_listing
     listing, prev_items = [], []
-    600.downto(1) do | n |
+    1.upto(1000) do | n |
       query_string.each do | query_param |
         page_listing = GoogleCustomSearchApi.search("#{query_param}", page: n)
         items = page_listing.items

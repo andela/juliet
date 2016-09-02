@@ -6,7 +6,7 @@ ENV["BING_KEY"] = "CIQ1Ne+untlnZdyUM5lkqive6UmB6Tk03XRcin4xtkw"
 ENV["WWR_URL"] = "https://weworkremotely.com/categories/2-programming/jobs"
 
 ## REST
-# GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyAa3FgaIlXHtJuGxlR3DUgMxjCoRa5mAz4"
+GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyAa3FgaIlXHtJuGxlR3DUgMxjCoRa5mAz4"
 # GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyDDzhd7lRDnhjPOVyxSNmVXF2654G451pE"
 # GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyC61_cb5U9OwHMjc31ateh5-mdxXqpLk8Y"
 # GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyBsoGLdxIsIMgPSZzLkRiqb8RqcWBKb4ko"
@@ -16,8 +16,10 @@ ENV["WWR_URL"] = "https://weworkremotely.com/categories/2-programming/jobs"
 # GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyA-PKLda3V_7tL9GIsOXqXNAV_MQEvOZ6U"
 # GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyAJISY6ZiZ2aJOOlfKHbe0YyVcN16hjXM8"
 
+
+# GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyDETwzK9KsnupxjQejWZBjXVpHRJKCSFk4"
 ## USE
-GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyAI9wAw_7ggU_D20UPjW__tnjU1Tcesn5g"
+# GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyAI9wAw_7ggU_D20UPjW__tnjU1Tcesn5g"
 # GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyBW-bdsWt5cKlWPSUPXjs_IflDOV-e71CE"
 # GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyDNPNaiZg5jkIx3OV9uC0jwZP_c_Ulgt6o"
 # GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyCAUAy36fdET09tFdb8m9RNMLggqwGVRRk"
@@ -29,6 +31,8 @@ GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyAI9wAw_7ggU_D20UPjW__tnjU1Tcesn5g
 # GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyDtyP0Vq4en4-Na0ZAYrOVnmqnOcE9SgAk"
 # GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyCr5KzqyjiJLkVztdEH1ZUww0H32bGZbvw"
 # GoogleCustomSearchApi::GOOGLE_API_KEY = "AIzaSyCbAQQiJJscE0oreLP9TBGn0pzKwbbxS4U"
+
+
 # Custom Search Engines
 
 # Greenhouse

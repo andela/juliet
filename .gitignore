@@ -10,3 +10,4 @@ cron_log.log
 /workers
 sample.csv
 Rakefile
+.DS_Store

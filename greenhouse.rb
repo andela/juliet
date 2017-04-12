@@ -17,19 +17,30 @@ class Greenhouse
 
   def get_listing
     listing, prev_items = [], []
-    1.upto(1000) do | n |
-      query_string.each do | query_param |
-        page_listing = GoogleCustomSearchApi.search("#{query_param}", page: n)
-        items = page_listing.items
-        if items.empty? && n == 1
-          puts "No results found"
-          exit
-        elsif items.empty? || prev_items == items
-          break
-        end
-        prev_items = items
-        listing << items
+    # (0..50).to_a.shuffle.take(x)
+    1.upto(100) do | n |
+      # query_string.each do | query_param |
+      #   page_listing = GoogleCustomSearchApi.search("#{query_param}", start: n)
+      #   items = page_listing.items
+      #   if items.empty? && n == 1
+      #     puts "No results found"
+      #     exit
+      #   elsif items.empty? || prev_items == items
+      #     break
+      #   end
+      #   prev_items = items
+      #   listing << items
+      # end
+      page_listing = GoogleCustomSearchApi.search("#{query_string}", start: n)
+      items = page_listing.items
+      if items.empty? && n == 1
+        puts "No results found"
+        exit
+      elsif items.empty? || prev_items == items
+        break
       end
+      prev_items = items
+      listing << items
     end
     listing
   end

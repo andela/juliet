@@ -19,8 +19,7 @@ class Scraper
 
   def get_listing
     listing, prev_items = [], []
-    # (0..50).to_a.shuffle.take(x)
-    1.upto(1) do | n |
+    1.upto(ENV["custom_search_page_count"].to_i) do | n |
       page_listing = GoogleCustomSearchApi.search("#{query}", start: n)
       items = page_listing.items
       if items.empty? && n == 1

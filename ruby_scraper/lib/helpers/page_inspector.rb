@@ -1,4 +1,4 @@
- require "./resources"
+# require "#{Rails.root}/lib/helpers/resources"
 
 class PageInspector
   include Utility

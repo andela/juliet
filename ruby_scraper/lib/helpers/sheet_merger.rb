@@ -1,6 +1,5 @@
 # This is very useful if you have two spreadsheets you want to compare and merge.
 
-require "./resources"
 class SheetMerger
   def initialize(sheet, comparing_sheet)
     session = GoogleDrive.saved_session("auth.json")

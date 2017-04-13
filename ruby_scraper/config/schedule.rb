@@ -18,3 +18,6 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
+every 1.week do
+  rake "scraper:jobs"
+end

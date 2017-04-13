@@ -1,11 +1,11 @@
-require "./resources"
+# require "#{Rails.root}/lib/helpers/resources"
 
 class Company
   include Utility
 
   def initialize(sheet)
     @sheet = sheet
-    BingSearch.account_key = ENV["BING_KEY"]
+    BingSearch.account_key = ENV["bing_api_key"]
   end
 
   def look_up_coy_url(company_name)

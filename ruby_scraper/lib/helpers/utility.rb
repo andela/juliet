@@ -3,8 +3,7 @@ module Utility
 		# [ "software developer", "frontend developer", "front end", "front-end developer", "mobile developer", "fullstack developer", "full stack", "full-stack developer", "backend developer", "back end", "back-end developer", "software engineer"
     # ]
     # ["[Mobile Developer]", "[Front-end Developer]", "[Back-end Developer]"]
-    # ["[Front-end Developer]", "[Back-end Developer]", "[Mobile Developer]", "[Mid-Level Developer]", "[Senior Developer]", ["Technical Product Manager"], "[DevOps Engineer]", "QA/Test Engineer", "[Engineering Manager]", "[VP Engineering]"]
-    "Front-end Developer"
+    ["[Front-end Developer]", "[Back-end Developer]", "[Mobile Developer]", "[Mid-Level Developer]", "[Senior Developer]", ["Technical Product Manager"], "[DevOps Engineer]", "QA/Test Engineer", "[Engineering Manager]", "[VP Engineering]"]
   end
 
   def unallowed_params

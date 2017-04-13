@@ -1,12 +1,14 @@
-require "./resources"
+# require "#{Rails.root}/lib/helpers/resources"
+
 class PopulateSheet
   include Utility
-  attr_accessor :sheet, :exclusion_list
-  def initialize(listing_sheet)
+  attr_accessor :sheet, :exclusion_list, :query
+  def initialize(listing_sheet, query)
     session = GoogleDrive.saved_session("auth.json")
     @sheet = session.spreadsheet_by_key(listing_sheet).worksheets[0]
     # @exclusion_list = session.spreadsheet_by_key(listing_sheet).worksheets[3]
     @company = Company.new(@sheet)
+    @query = query
     @latest = 0
     Geocoder.configure(:timeout => 5)
   end
@@ -84,7 +86,7 @@ class PopulateSheet
     sheet[row, 9] = coy_info[:responsibilities]
     sheet[row, 10] = Date.today.strftime("%d-%m-%Y")
     sheet[row, 11] = coy_info[:posting_source]
-    sheet[row, 12] = query_string
+    sheet[row, 12] = query
     sheet[row, 13] = coy_info[:date] if coy_info[:date]
   end
 

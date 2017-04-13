@@ -1,5 +1,14 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
+git_source(:github) do |repo_name|
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  "https://github.com/#{repo_name}.git"
+end
+gem 'rails', '~> 5.0.2'
+gem 'sqlite3'
+gem 'puma', '~> 3.0'
+gem 'capistrano-rails', group: :development
+gem 'whenever', :require => false
 gem 'pry-byebug'
 gem "capybara"
 gem "poltergeist"
@@ -8,11 +17,26 @@ gem "google-search"
 gem "google_drive"
 gem "google-api-client"
 gem "google_custom_search_api"
-gem "whenever", :require => false
 gem "sidekiq"
-gem "rake"
 gem 'mechanize'
-gem 'duckduckgo'
+# gem 'duckduckgo'
 gem 'bing-search'
 gem 'geocoder'
+gem "figaro"
 
+group :development, :test do
+  gem 'byebug', platform: :mri
+end
+
+group :development do
+  gem 'web-console', '>= 3.3.0'
+  gem 'listen', '~> 3.0.5'
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :production do
+  gem 'pg'
+end
+
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

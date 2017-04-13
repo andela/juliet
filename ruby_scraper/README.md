@@ -4,24 +4,28 @@ A collection of web scraping scripts
 ## Websites
 - [Greenhouse](https://www.greenhouse.io/)
 - [Lever](https://www.lever.co/)
-- [We Work Remotely](https://weworkremotely.com/)
+- [Workable](https://workable.com)
+- [Smartrecruiters](https://smartrecruiters.com)
+- [Jobvite](https://jobvite.com)
 
-## Setup
-
+## Setup && Usage
 ```
-gem install bundler   # install bundler dependency manager ( bundler.io )
+git clone 
 bundle install        # install deps
+rake scraper:jobs     # run scraper for all search terms (see
+lib/tasks/scraper.rake)
 ```
 [Mac OS X Setup Guide](http://sourabhbajaj.com/mac-setup/index.html)
 
-## Keys
-You can add keys in `keys.rb` file (request a copy of this file from @pauldariye )
-Keys such as
-- `*_SHEET_ID         # Google Spreadsheet ID`
-- `GOOGLE_API_KEY     # Google Search Key (rate limited)`
-- `GOOGLE_SEARCH_CX   # Google Custom Search Paid Key (rate limited :( )`
-- `BING_KEY           # BING Search API Key (rate limited) `
-- `WWR_URL            # We work remotely key`
+## ENV Vars
+We use the [figaro gem](https://github.com/laserlemon/figaro) to hide secrets
+
+Update `config/application.yml` with:
+
+- `sheet_id                  # Google Spreadsheet ID`
+- `google_api_key            # Google Search Key (rate limited)`
+- `google_custom_search_id   # Google Custom Search Paid Key (rate limited :( )`
+- `bing_api_key              # BING Search API Key (rate limited) `
 
 ### Google Spreadsheet ID
 ![Google Sheet ID](screenshot.png)
@@ -36,9 +40,7 @@ Keys such as
 The columns in row 1 in screenshot above also shows the data that is collected for all the scraps.
 [Guide to scraping Greenhouse](https://docs.google.com/document/d/1MavkX0pHW6hHySt0jjDRHxrC6y9P9wp2XMMG9gTj6eA/edit#heading=h.i8azkbec9zxk)
 
-## Usage
-```
-ruby greenhouse.rb        # Greenhouse
-ruby lever.rb             # Lever
-ruby we_work_remotely.rb  # We Work Remotely
-```
+## Output
+
+[View Scraped Job
+Listings](https://docs.google.com/spreadsheets/d/1978FEQGZx1J4FicWa3YJMeHe66uMpNZCK_jMY2uzj_s/edit#gid=0)
